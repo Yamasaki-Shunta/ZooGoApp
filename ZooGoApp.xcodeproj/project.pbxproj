@@ -15,6 +15,9 @@
 		6E9097B2259DCA4700DFDFA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9097B0259DCA4700DFDFA4 /* LaunchScreen.storyboard */; };
 		6E9097BD259DCA4700DFDFA4 /* ZooGoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9097BC259DCA4700DFDFA4 /* ZooGoAppTests.swift */; };
 		6E9097C8259DCA4700DFDFA4 /* ZooGoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9097C7259DCA4700DFDFA4 /* ZooGoAppUITests.swift */; };
+		6E90981B259E081B00DFDFA4 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E90981A259E081B00DFDFA4 /* 1.json */; };
+		6E909820259E082300DFDFA4 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E90981F259E082300DFDFA4 /* 2.json */; };
+		6E909825259E082800DFDFA4 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E909824259E082800DFDFA4 /* 3.json */; };
 		9BD4DC279D0074BEC8515CB0 /* Pods_ZooGoApp_ZooGoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912CE5296352D55BFE60C7AC /* Pods_ZooGoApp_ZooGoAppUITests.framework */; };
 		B0913851DCA00EE84F80BA5A /* Pods_ZooGoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C1728321376BFF4000E295 /* Pods_ZooGoAppTests.framework */; };
 		D58D36B24AE8CAC4442DF8DB /* Pods_ZooGoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33EE8755C58CFC0795C8E984 /* Pods_ZooGoApp.framework */; };
@@ -55,6 +58,9 @@
 		6E9097C3259DCA4700DFDFA4 /* ZooGoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZooGoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9097C7259DCA4700DFDFA4 /* ZooGoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooGoAppUITests.swift; sourceTree = "<group>"; };
 		6E9097C9259DCA4700DFDFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E90981A259E081B00DFDFA4 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		6E90981F259E082300DFDFA4 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
+		6E909824259E082800DFDFA4 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
 		6EB0D8C892C4F7E29661CFAF /* Pods-ZooGoApp-ZooGoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooGoApp-ZooGoAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ZooGoApp-ZooGoAppUITests/Pods-ZooGoApp-ZooGoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		70C1728321376BFF4000E295 /* Pods_ZooGoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZooGoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		912CE5296352D55BFE60C7AC /* Pods_ZooGoApp_ZooGoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZooGoApp_ZooGoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +137,7 @@
 				6E909800259E045300DFDFA4 /* Controller */,
 				6E9097B0259DCA4700DFDFA4 /* LaunchScreen.storyboard */,
 				6E9097B3259DCA4700DFDFA4 /* Info.plist */,
+				6E909819259E07F100DFDFA4 /* Json */,
 			);
 			path = ZooGoApp;
 			sourceTree = "<group>";
@@ -177,6 +184,16 @@
 				6E9097A9259DCA4600DFDFA4 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		6E909819259E07F100DFDFA4 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				6E90981A259E081B00DFDFA4 /* 1.json */,
+				6E90981F259E082300DFDFA4 /* 2.json */,
+				6E909824259E082800DFDFA4 /* 3.json */,
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 		E39746387424395ED82D836F /* Pods */ = {
@@ -300,9 +317,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E909820259E082300DFDFA4 /* 2.json in Resources */,
 				6E9097B2259DCA4700DFDFA4 /* LaunchScreen.storyboard in Resources */,
 				6E9097AF259DCA4700DFDFA4 /* Assets.xcassets in Resources */,
+				6E909825259E082800DFDFA4 /* 3.json in Resources */,
 				6E9097AD259DCA4600DFDFA4 /* Main.storyboard in Resources */,
+				6E90981B259E081B00DFDFA4 /* 1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
