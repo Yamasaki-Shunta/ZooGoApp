@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -126,11 +126,9 @@
 		6E9097A4259DCA4600DFDFA4 /* ZooGoApp */ = {
 			isa = PBXGroup;
 			children = (
-				6E9097A5259DCA4600DFDFA4 /* AppDelegate.swift */,
-				6E9097A7259DCA4600DFDFA4 /* SceneDelegate.swift */,
-				6E9097A9259DCA4600DFDFA4 /* ViewController.swift */,
-				6E9097AB259DCA4600DFDFA4 /* Main.storyboard */,
-				6E9097AE259DCA4700DFDFA4 /* Assets.xcassets */,
+				6E9097FE259E042700DFDFA4 /* Model */,
+				6E9097FF259E044000DFDFA4 /* View */,
+				6E909800259E045300DFDFA4 /* Controller */,
 				6E9097B0259DCA4700DFDFA4 /* LaunchScreen.storyboard */,
 				6E9097B3259DCA4700DFDFA4 /* Info.plist */,
 			);
@@ -155,6 +153,32 @@
 			path = ZooGoAppUITests;
 			sourceTree = "<group>";
 		};
+		6E9097FE259E042700DFDFA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6E9097FF259E044000DFDFA4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6E9097AB259DCA4600DFDFA4 /* Main.storyboard */,
+				6E9097AE259DCA4700DFDFA4 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6E909800259E045300DFDFA4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6E9097A5259DCA4600DFDFA4 /* AppDelegate.swift */,
+				6E9097A7259DCA4600DFDFA4 /* SceneDelegate.swift */,
+				6E9097A9259DCA4600DFDFA4 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E39746387424395ED82D836F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +189,6 @@
 				96101BC27E8991868B473E32 /* Pods-ZooGoAppTests.debug.xcconfig */,
 				C9EA11E0E2C130F386E92D7D /* Pods-ZooGoAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
