@@ -1,0 +1,60 @@
+PODS:
+  - Alamofire (5.2.2)
+  - ImpressiveNotifications (0.5.0)
+  - Koloda (5.0.1):
+    - pop (~> 1.0)
+  - lottie-ios (3.1.8)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - pop (1.0.12)
+  - SDWebImage (5.9.1):
+    - SDWebImage/Core (= 5.9.1)
+  - SDWebImage/Core (5.9.1)
+  - SegementSlide (3.0.1)
+  - SwiftVideoGenerator (1.4.0)
+  - SwiftyCam (4.0.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - ImpressiveNotifications
+  - Koloda (~> 5.0.1)
+  - lottie-ios
+  - NVActivityIndicatorView
+  - SDWebImage (~> 5.0)
+  - SegementSlide
+  - SwiftVideoGenerator
+  - SwiftyCam
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ImpressiveNotifications
+    - Koloda
+    - lottie-ios
+    - NVActivityIndicatorView
+    - pop
+    - SDWebImage
+    - SegementSlide
+    - SwiftVideoGenerator
+    - SwiftyCam
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  ImpressiveNotifications: 9a3921276e916e244abb7e4b2a6661133479a17c
+  Koloda: d07b9199a383abc5898b62aa945a599f5e7c0c4b
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SDWebImage: a990c053fff71e388a10f3357edb0be17929c9c5
+  SegementSlide: 83b56ffb66b9c0edc4e4f2a74229309c62915db3
+  SwiftVideoGenerator: 804637c18f68a4f205d806e305ebceb4adcf3d25
+  SwiftyCam: 6e57914771d972fbe508e759dc9d0150a44a93fd
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 03c575b19275681f05f4e3202ead7794a39cbc22
+
+COCOAPODS: 1.9.3
