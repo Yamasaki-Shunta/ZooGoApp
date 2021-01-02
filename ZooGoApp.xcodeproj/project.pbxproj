@@ -190,13 +190,11 @@
 		6E909800259E045300DFDFA4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6E9097A5259DCA4600DFDFA4 /* AppDelegate.swift */,
-				6E9097A7259DCA4600DFDFA4 /* SceneDelegate.swift */,
+				6E90986725A0586300DFDFA4 /* Newsreader */,
 				6E90982F259E0EBF00DFDFA4 /* IntoroViewController.swift */,
 				6E90983A259EE73400DFDFA4 /* BaseViewController.swift */,
-				6E909845259F1AAB00DFDFA4 /* NewsViewController.swift */,
-				6E909855259F201100DFDFA4 /* PageViewController.swift */,
-				6E90985D259F259C00DFDFA4 /* WebViewController.swift */,
+				6E9097A5259DCA4600DFDFA4 /* AppDelegate.swift */,
+				6E9097A7259DCA4600DFDFA4 /* SceneDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -209,6 +207,16 @@
 				6E909824259E082800DFDFA4 /* 3.json */,
 			);
 			path = Json;
+			sourceTree = "<group>";
+		};
+		6E90986725A0586300DFDFA4 /* Newsreader */ = {
+			isa = PBXGroup;
+			children = (
+				6E909845259F1AAB00DFDFA4 /* NewsViewController.swift */,
+				6E909855259F201100DFDFA4 /* PageViewController.swift */,
+				6E90985D259F259C00DFDFA4 /* WebViewController.swift */,
+			);
+			path = Newsreader;
 			sourceTree = "<group>";
 		};
 		E39746387424395ED82D836F /* Pods */ = {
