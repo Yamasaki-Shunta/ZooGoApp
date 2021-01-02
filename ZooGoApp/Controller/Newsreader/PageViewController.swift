@@ -29,6 +29,12 @@ class PageViewController: UITableViewController,SegementSlideContentScrollViewDe
 
         tableView.backgroundColor = .clear
         
+        //画像をtableViewの下に置く
+//        let image = UIImage(named: "")
+//        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.size.width, height: self.tableView.frame.size.height))
+//        imageView.image = image
+//        self.tableView.backgroundView = imageView
+//
         
         //XMLパース
         let urlString = "http://www3.asahi.com/rss/animal.rdf"
@@ -93,6 +99,20 @@ class PageViewController: UITableViewController,SegementSlideContentScrollViewDe
         return cell
     }
     
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//
+//        let label : UILabel = UILabel()
+//        label.backgroundColor = UIColor.gray
+//        label.textColor = UIColor.white
+//
+//        if(section == 0){
+//                    label.text = sections [section]
+//                } else if (section == 1){
+//                    label.text = sections [section]
+//                }
+//                return label
+//
+//    }
 
     //XMLパース
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
@@ -166,6 +186,8 @@ class PageViewController: UITableViewController,SegementSlideContentScrollViewDe
         let newsItem = newsItems[indexPath.row]
         UserDefaults.standard.set(newsItem.url, forKey: "url")
         
+//        webVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+//        navigationController?.pushViewController(webVC, animated: true)
         present(webVC, animated: true, completion: nil)
         
         
