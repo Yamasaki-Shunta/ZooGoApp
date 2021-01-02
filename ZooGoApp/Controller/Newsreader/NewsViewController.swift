@@ -66,7 +66,7 @@ class NewsViewController: SegementSlideDefaultViewController{
     override func segementSlideContentViewController(at index: Int) -> SegementSlideContentScrollViewDelegate? {
         
             
-            return PageViewController()
+        return PageViewController()
     
         }
     }
