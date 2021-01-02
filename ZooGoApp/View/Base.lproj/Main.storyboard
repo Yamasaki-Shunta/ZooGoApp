@@ -177,6 +177,9 @@
                                     <constraint firstAttribute="height" constant="100" id="rGu-yq-NFc"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="ニュース"/>
+                                <connections>
+                                    <segue destination="8Xb-em-viG" kind="presentation" id="1Xb-IA-GVh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4T-fC-H4c">
                                 <rect key="frame" x="247.5" y="343.5" width="80" height="80"/>
@@ -240,6 +243,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgV-7U-opH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1892" y="92.203898050974516"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="8EP-4k-nhg">
+            <objects>
+                <viewController storyboardIdentifier="newsVC" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Xb-em-viG" customClass="NewsViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U1A-jY-aLj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Gbz-K3-yG5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iNM-en-TEU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqE-41-h1m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892" y="863"/>
         </scene>
     </scenes>
     <resources>
