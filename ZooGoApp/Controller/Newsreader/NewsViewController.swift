@@ -20,8 +20,7 @@ class NewsViewController: SegementSlideDefaultViewController{
 
     defaultSelectedIndex = 0
         
-    
-
+   
     }
 
 

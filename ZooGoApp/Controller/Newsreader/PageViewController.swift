@@ -35,8 +35,7 @@ class PageViewController: UITableViewController,SegementSlideContentScrollViewDe
         parser = XMLParser(contentsOf: url)!
         parser.delegate = self
         parser.parse()
-        
-        
+      
         
     }
     
