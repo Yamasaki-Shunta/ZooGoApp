@@ -177,20 +177,24 @@ class PageViewController: UITableViewController,SegementSlideContentScrollViewDe
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //WebViewContorllerにurlを渡して、表示したい
+        //WebViewContorllerへ値を渡しながら遷移
         let webVC = WebViewController() as UIViewController
-        
-        
-        //モーダルで遷移するときにトラディション
-        webVC.modalTransitionStyle = .coverVertical
+        navigationController?.pushViewController(webVC, animated: true)
         let newsItem = newsItems[indexPath.row]
         UserDefaults.standard.set(newsItem.url, forKey: "url")
         
-//        webVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-//        navigationController?.pushViewController(webVC, animated: true)
-        present(webVC, animated: true, completion: nil)
+        
         
         
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        
+    }
+    
     
 }

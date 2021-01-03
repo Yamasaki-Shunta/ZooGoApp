@@ -27,7 +27,7 @@
                                         </constraints>
                                         <state key="normal" title="スキップ"/>
                                         <connections>
-                                            <segue destination="t7x-w4-Sb9" kind="show" id="3Wc-hD-cNm"/>
+                                            <segue destination="t7x-w4-Sb9" kind="show" identifier="webVC" id="3Wc-hD-cNm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -191,7 +191,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="ニュース"/>
                                 <connections>
-                                    <segue destination="8Xb-em-viG" kind="presentation" id="1Xb-IA-GVh"/>
+                                    <segue destination="8Xb-em-viG" kind="show" id="T2s-hs-2ic"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4T-fC-H4c">
@@ -260,18 +260,37 @@
         <!--News View Controller-->
         <scene sceneID="8EP-4k-nhg">
             <objects>
-                <viewController storyboardIdentifier="newsVC" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Xb-em-viG" customClass="NewsViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newsVC" extendedLayoutIncludesOpaqueBars="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Xb-em-viG" customClass="NewsViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U1A-jY-aLj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Gbz-K3-yG5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="iNM-en-TEU"/>
+                    <connections>
+                        <segue destination="WNu-GN-BnL" kind="show" id="3mZ-iu-0Fd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqE-41-h1m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1892" y="863"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="P8e-XC-KED">
+            <objects>
+                <viewController id="WNu-GN-BnL" customClass="WebViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7JK-WP-W7p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zVS-WH-whW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="L8t-WN-tqU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZCQ-ae-Sci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2770" y="862"/>
         </scene>
     </scenes>
     <resources>
