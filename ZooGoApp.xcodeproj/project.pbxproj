@@ -23,6 +23,7 @@
 		6E90987E25A0620800DFDFA4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E90987D25A0620800DFDFA4 /* NewsViewController.swift */; };
 		6E90988325A062DC00DFDFA4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E90988225A062DC00DFDFA4 /* PageViewController.swift */; };
 		6E90988B25A0643200DFDFA4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E90988A25A0643200DFDFA4 /* WebViewController.swift */; };
+		6E90989625A1A3D700DFDFA4 /*  backsystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E90989525A1A3D700DFDFA4 /*  backsystem.swift */; };
 		9BD4DC279D0074BEC8515CB0 /* Pods_ZooGoApp_ZooGoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912CE5296352D55BFE60C7AC /* Pods_ZooGoApp_ZooGoAppUITests.framework */; };
 		B0913851DCA00EE84F80BA5A /* Pods_ZooGoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C1728321376BFF4000E295 /* Pods_ZooGoAppTests.framework */; };
 		D58D36B24AE8CAC4442DF8DB /* Pods_ZooGoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33EE8755C58CFC0795C8E984 /* Pods_ZooGoApp.framework */; };
@@ -71,6 +72,7 @@
 		6E90987D25A0620800DFDFA4 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		6E90988225A062DC00DFDFA4 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		6E90988A25A0643200DFDFA4 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		6E90989525A1A3D700DFDFA4 /*  backsystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " backsystem.swift"; sourceTree = "<group>"; };
 		6EB0D8C892C4F7E29661CFAF /* Pods-ZooGoApp-ZooGoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooGoApp-ZooGoAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ZooGoApp-ZooGoAppUITests/Pods-ZooGoApp-ZooGoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		70C1728321376BFF4000E295 /* Pods_ZooGoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZooGoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		912CE5296352D55BFE60C7AC /* Pods_ZooGoApp_ZooGoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZooGoApp_ZooGoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				6E90986225A0537500DFDFA4 /* Item.swift */,
+				6E90989525A1A3D700DFDFA4 /*  backsystem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E90989625A1A3D700DFDFA4 /*  backsystem.swift in Sources */,
 				6E9097A6259DCA4600DFDFA4 /* AppDelegate.swift in Sources */,
 				6E90983B259EE73400DFDFA4 /* BaseViewController.swift in Sources */,
 				6E9097A8259DCA4600DFDFA4 /* SceneDelegate.swift in Sources */,
@@ -658,6 +662,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q39474W8H;
 				INFOPLIST_FILE = ZooGoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -677,6 +682,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Q39474W8H;
 				INFOPLIST_FILE = ZooGoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

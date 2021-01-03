@@ -10,7 +10,7 @@ import SegementSlide
 
 class NewsViewController: SegementSlideDefaultViewController{
     
-    
+
     
     override func viewDidLoad() {
 
@@ -19,6 +19,9 @@ class NewsViewController: SegementSlideDefaultViewController{
       reloadData()
 
     defaultSelectedIndex = 0
+        
+        setSwipeBack()
+        
         
 
     }
