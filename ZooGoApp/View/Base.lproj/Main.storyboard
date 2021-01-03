@@ -25,6 +25,7 @@
                                             <constraint firstAttribute="height" constant="30" id="DEj-NS-muC"/>
                                             <constraint firstAttribute="width" constant="62" id="wcR-lT-lPS"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="スキップ"/>
                                         <connections>
                                             <segue destination="t7x-w4-Sb9" kind="show" identifier="webVC" id="3Wc-hD-cNm"/>
@@ -191,7 +192,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="ニュース"/>
                                 <connections>
-                                    <segue destination="8Xb-em-viG" kind="show" id="T2s-hs-2ic"/>
+                                    <segue destination="8Xb-em-viG" kind="show" id="3lZ-Lb-4Pj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4T-fC-H4c">
@@ -274,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqE-41-h1m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1892" y="863"/>
+            <point key="canvasLocation" x="1892" y="862.21889055472275"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="P8e-XC-KED">
