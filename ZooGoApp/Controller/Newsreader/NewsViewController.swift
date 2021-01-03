@@ -20,9 +20,7 @@ class NewsViewController: SegementSlideDefaultViewController{
 
     defaultSelectedIndex = 0
         
-        setSwipeBack()
-        
-        
+    
 
     }
 

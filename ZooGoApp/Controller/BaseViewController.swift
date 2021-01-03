@@ -24,6 +24,7 @@ class BaseViewController: UIViewController {
         
         self.questionLabel.clipsToBounds = true
         
+        
        
     }
     

@@ -85,7 +85,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   どんなことを楽しむ？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPX-KU-bGg">
                                 <rect key="frame" x="39" y="37" width="297" height="43"/>
-                                <color key="backgroundColor" red="0.99712020160000003" green="0.459405601" blue="0.45488321780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="4wu-3h-9WX"/>
                                     <constraint firstAttribute="width" constant="297" id="VbE-QR-WC4"/>
@@ -137,6 +137,9 @@
                                     <constraint firstAttribute="height" constant="80" id="Oax-yK-aDy"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="かわいい"/>
+                                <connections>
+                                    <segue destination="nZr-hY-IaS" kind="presentation" id="qJg-0N-Unp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フィーディング" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Noe-o2-jOw">
                                 <rect key="frame" x="37.5" y="223" width="100" height="17"/>
@@ -258,6 +261,49 @@
             </objects>
             <point key="canvasLocation" x="1892" y="92.203898050974516"/>
         </scene>
+        <!--Select View Controller-->
+        <scene sceneID="quF-0O-5zF">
+            <objects>
+                <viewController id="nZr-hY-IaS" customClass="SelectViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J6q-xZ-WJ9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="キリン" translatesAutoresizingMaskIntoConstraints="NO" id="1SM-Eb-6pM">
+                                <rect key="frame" x="44" y="10" width="287" height="627"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yr3-3g-hKf">
+                                <rect key="frame" x="72" y="184" width="231" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
+                                <state key="normal" title="東日本">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nW3-cy-gcb">
+                                <rect key="frame" x="72" y="313" width="231" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
+                                <state key="normal" title="西日本">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rfG-XE-Hzs"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="eastJapanButton" destination="yr3-3g-hKf" id="pbf-oi-1da"/>
+                        <outlet property="westJapanButton" destination="nW3-cy-gcb" id="EPp-d2-Xh6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zXw-yW-efg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2668" y="91.304347826086968"/>
+        </scene>
         <!--News View Controller-->
         <scene sceneID="8EP-4k-nhg">
             <objects>
@@ -298,6 +344,7 @@
         <image name="かわいい" width="757" height="800"/>
         <image name="イベント" width="800" height="800"/>
         <image name="カメラ" width="512" height="512"/>
+        <image name="キリン" width="640" height="1280"/>
         <image name="ニュース" width="512" height="512"/>
         <image name="フィーディング" width="574" height="572"/>
         <image name="吹き出し背景" width="542" height="547"/>

@@ -26,6 +26,8 @@ class WebViewController: UIViewController,WKUIDelegate {
         let request = URLRequest(url: url!)
         webView.load(request)
         
+        setSwipeBack()
+        
     
     }
          
