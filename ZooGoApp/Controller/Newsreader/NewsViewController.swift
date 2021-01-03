@@ -36,9 +36,10 @@ class NewsViewController: SegementSlideDefaultViewController{
     headerView.image = UIImage(named: "header")
 
     headerView.translatesAutoresizingMaskIntoConstraints = false
+        
 
     let headerHeight: CGFloat
-
+    
     if #available(iOS 11.0, *) {
 
     headerHeight = view.bounds.height/5+view.safeAreaInsets.top
@@ -47,11 +48,11 @@ class NewsViewController: SegementSlideDefaultViewController{
 
     headerHeight = view.bounds.height/5+topLayoutGuide.length
 
-    }
+   }
 
     headerView.heightAnchor.constraint(equalToConstant: headerHeight).isActive = true
 
-    return headerView
+   return headerView
 
     }
     
@@ -69,5 +70,8 @@ class NewsViewController: SegementSlideDefaultViewController{
         return PageViewController()
     
         }
+    
+    
+    
     }
 

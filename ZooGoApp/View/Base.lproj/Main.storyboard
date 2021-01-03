@@ -260,7 +260,7 @@
         <!--News View Controller-->
         <scene sceneID="8EP-4k-nhg">
             <objects>
-                <viewController storyboardIdentifier="newsVC" extendedLayoutIncludesOpaqueBars="YES" modalPresentationStyle="pageSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Xb-em-viG" customClass="NewsViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newsVC" extendedLayoutIncludesOpaqueBars="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Xb-em-viG" customClass="NewsViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U1A-jY-aLj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
