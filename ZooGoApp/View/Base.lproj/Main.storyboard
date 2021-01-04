@@ -342,61 +342,81 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jR-ID-Pea" customClass="KolodaView" customModule="Koloda">
                                 <rect key="frame" x="12.5" y="108.5" width="350" height="350"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="1Nb-2y-aFY"/>
-                                    <constraint firstAttribute="width" constant="350" id="u9Z-bm-dUs"/>
-                                </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9gt-eU-jTL">
                                 <rect key="frame" x="112.5" y="466" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="17u-XI-4Xg"/>
-                                    <constraint firstAttribute="width" constant="150" id="voR-CT-89l"/>
-                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r7-5X-Ng8">
                                 <rect key="frame" x="12.5" y="478.5" width="110" height="110"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="v4l-px-xfK"/>
-                                    <constraint firstAttribute="width" constant="110" id="vet-Hl-G25"/>
+                                    <constraint firstAttribute="height" constant="110" id="Wjg-zF-7nC"/>
+                                    <constraint firstAttribute="width" constant="110" id="atE-is-wyP"/>
                                 </constraints>
                                 <state key="normal" image="nopeButtonImage"/>
                                 <connections>
                                     <action selector="nopeButton:" destination="3ds-zJ-LRb" eventType="touchUpInside" id="GGc-12-ayA"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="8vh-jN-yAw">
-                                <rect key="frame" x="137.5" y="-2" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="pW1-Ev-9hD"/>
-                                    <constraint firstAttribute="height" constant="100" id="x6f-Gl-yKc"/>
-                                </constraints>
-                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10a-RJ-a8g">
+                                <rect key="frame" x="0.0" y="6" width="375" height="44"/>
+                                <items/>
+                            </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYN-9L-DJP">
                                 <rect key="frame" x="252.5" y="478.5" width="110" height="110"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="Y8T-Q0-CNu"/>
-                                    <constraint firstAttribute="height" constant="110" id="bwM-ht-sVe"/>
+                                    <constraint firstAttribute="width" constant="110" id="XKB-fJ-1Sj"/>
                                 </constraints>
                                 <state key="normal" image="likeButtonImage"/>
                                 <connections>
                                     <action selector="likeButton:" destination="3ds-zJ-LRb" eventType="touchUpInside" id="7uO-Hm-jcx"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="8vh-jN-yAw">
+                                <rect key="frame" x="137.5" y="-2" width="100" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W78-PR-GYv">
+                                <rect key="frame" x="22.5" y="14.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Ri7-aC-u90"/>
+                                    <constraint firstAttribute="height" constant="30" id="faI-Bh-sls"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="線の三角矢印のアイコン"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ0-bP-AHJ">
+                                <rect key="frame" x="322" y="13" width="30" height="30"/>
+                                <state key="normal" title="Button" image="シャッフルアイコン"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sTt-Bl-vlr"/>
                         <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9gt-eU-jTL" firstAttribute="top" secondItem="5jR-ID-Pea" secondAttribute="bottom" constant="7.5" id="1Ii-o1-nRf"/>
-                            <constraint firstItem="5jR-ID-Pea" firstAttribute="centerY" secondItem="oMh-1o-kr5" secondAttribute="centerY" constant="-50" id="AMV-a9-YTE"/>
-                            <constraint firstItem="1r7-5X-Ng8" firstAttribute="centerX" secondItem="oMh-1o-kr5" secondAttribute="centerX" constant="-120" id="LQs-yE-hGZ"/>
-                            <constraint firstItem="dYN-9L-DJP" firstAttribute="centerX" secondItem="oMh-1o-kr5" secondAttribute="centerX" constant="120" id="NRP-ke-TYa"/>
-                            <constraint firstItem="dYN-9L-DJP" firstAttribute="centerY" secondItem="oMh-1o-kr5" secondAttribute="centerY" constant="200" id="Pvw-pF-VL9"/>
-                            <constraint firstItem="1r7-5X-Ng8" firstAttribute="centerY" secondItem="oMh-1o-kr5" secondAttribute="centerY" constant="200" id="SYM-M8-oLT"/>
-                            <constraint firstItem="5jR-ID-Pea" firstAttribute="centerX" secondItem="oMh-1o-kr5" secondAttribute="centerX" id="UgH-5L-mwP"/>
-                            <constraint firstItem="8vh-jN-yAw" firstAttribute="top" secondItem="oMh-1o-kr5" secondAttribute="topMargin" constant="-2" id="gej-Uj-Qae"/>
-                            <constraint firstItem="9gt-eU-jTL" firstAttribute="centerX" secondItem="5jR-ID-Pea" secondAttribute="centerX" id="sU0-Ag-GGw"/>
-                            <constraint firstItem="8vh-jN-yAw" firstAttribute="centerX" secondItem="5jR-ID-Pea" secondAttribute="centerX" id="ts5-Wb-LbV"/>
+                            <constraint firstItem="5jR-ID-Pea" firstAttribute="top" secondItem="W78-PR-GYv" secondAttribute="bottom" constant="64" id="1Kl-lp-tz7"/>
+                            <constraint firstItem="5jR-ID-Pea" firstAttribute="top" secondItem="10a-RJ-a8g" secondAttribute="bottom" constant="58.5" id="1c7-WW-CT4"/>
+                            <constraint firstItem="5jR-ID-Pea" firstAttribute="leading" secondItem="1r7-5X-Ng8" secondAttribute="leading" id="3gi-MK-oXk"/>
+                            <constraint firstItem="10a-RJ-a8g" firstAttribute="centerY" secondItem="aQ0-bP-AHJ" secondAttribute="centerY" id="7d4-LZ-uMc"/>
+                            <constraint firstItem="9gt-eU-jTL" firstAttribute="leading" secondItem="sTt-Bl-vlr" secondAttribute="leading" constant="112.5" id="8EP-Z0-b7r"/>
+                            <constraint firstItem="W78-PR-GYv" firstAttribute="leading" secondItem="sTt-Bl-vlr" secondAttribute="leading" constant="22.5" id="8Rr-g2-h0t"/>
+                            <constraint firstItem="sTt-Bl-vlr" firstAttribute="bottom" secondItem="1r7-5X-Ng8" secondAttribute="bottom" constant="78.5" id="8l2-gg-8fE"/>
+                            <constraint firstItem="10a-RJ-a8g" firstAttribute="centerX" secondItem="oMh-1o-kr5" secondAttribute="centerX" id="9TW-o9-I8F"/>
+                            <constraint firstItem="10a-RJ-a8g" firstAttribute="leading" secondItem="sTt-Bl-vlr" secondAttribute="leading" id="CBU-Ld-JXP"/>
+                            <constraint firstItem="aQ0-bP-AHJ" firstAttribute="top" secondItem="sTt-Bl-vlr" secondAttribute="top" constant="13" id="EXt-QL-6lL"/>
+                            <constraint firstItem="8vh-jN-yAw" firstAttribute="top" secondItem="oMh-1o-kr5" secondAttribute="topMargin" constant="-2" id="JIK-jZ-afp"/>
+                            <constraint firstItem="5jR-ID-Pea" firstAttribute="trailing" secondItem="dYN-9L-DJP" secondAttribute="trailing" id="K8h-fp-hwI"/>
+                            <constraint firstItem="sTt-Bl-vlr" firstAttribute="bottom" secondItem="9gt-eU-jTL" secondAttribute="bottom" constant="51" id="KKJ-Oc-0ca"/>
+                            <constraint firstItem="1r7-5X-Ng8" firstAttribute="top" secondItem="5jR-ID-Pea" secondAttribute="bottom" constant="20" id="KLR-tF-WkE"/>
+                            <constraint firstItem="8vh-jN-yAw" firstAttribute="leading" secondItem="W78-PR-GYv" secondAttribute="trailing" constant="85" id="OSp-1L-rzN"/>
+                            <constraint firstItem="1r7-5X-Ng8" firstAttribute="bottom" secondItem="dYN-9L-DJP" secondAttribute="bottom" id="OzD-gu-feD"/>
+                            <constraint firstItem="5jR-ID-Pea" firstAttribute="centerX" secondItem="9gt-eU-jTL" secondAttribute="centerX" id="PBB-uI-VCl"/>
+                            <constraint firstItem="5jR-ID-Pea" firstAttribute="top" secondItem="8vh-jN-yAw" secondAttribute="bottom" constant="10.5" id="PZJ-YM-5dz"/>
+                            <constraint firstItem="1r7-5X-Ng8" firstAttribute="top" secondItem="dYN-9L-DJP" secondAttribute="top" id="VJz-53-muQ"/>
+                            <constraint firstItem="5jR-ID-Pea" firstAttribute="leading" secondItem="sTt-Bl-vlr" secondAttribute="leading" constant="12.5" id="VYG-OA-0GX"/>
+                            <constraint firstItem="8vh-jN-yAw" firstAttribute="centerX" secondItem="10a-RJ-a8g" secondAttribute="centerX" id="WEs-2v-d3a"/>
+                            <constraint firstItem="10a-RJ-a8g" firstAttribute="top" secondItem="sTt-Bl-vlr" secondAttribute="top" constant="6" id="XGi-VG-eUI"/>
+                            <constraint firstItem="W78-PR-GYv" firstAttribute="top" secondItem="sTt-Bl-vlr" secondAttribute="top" constant="14.5" id="Yrs-Qe-2r5"/>
+                            <constraint firstItem="sTt-Bl-vlr" firstAttribute="trailing" secondItem="aQ0-bP-AHJ" secondAttribute="trailing" constant="23" id="bGK-vz-KGt"/>
+                            <constraint firstItem="10a-RJ-a8g" firstAttribute="centerX" secondItem="5jR-ID-Pea" secondAttribute="centerX" id="cZa-dx-nAR"/>
+                            <constraint firstItem="9gt-eU-jTL" firstAttribute="top" secondItem="5jR-ID-Pea" secondAttribute="bottom" constant="7.5" id="i0C-qd-ZTU"/>
+                            <constraint firstItem="aQ0-bP-AHJ" firstAttribute="leading" secondItem="8vh-jN-yAw" secondAttribute="trailing" constant="84.5" id="mBC-Uy-Rgv"/>
                         </constraints>
                     </view>
                     <connections>
@@ -452,10 +472,12 @@
         <image name="イベント" width="800" height="800"/>
         <image name="カメラ" width="512" height="512"/>
         <image name="キリン背景" width="640" height="1280"/>
+        <image name="シャッフルアイコン" width="256" height="256"/>
         <image name="ニュース" width="512" height="512"/>
         <image name="フィーディング" width="574" height="572"/>
         <image name="吹き出し背景" width="542" height="547"/>
         <image name="絶滅危惧種" width="639" height="684"/>
+        <image name="線の三角矢印のアイコン" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
