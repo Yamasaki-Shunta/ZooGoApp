@@ -286,6 +286,9 @@
                                 <state key="normal" title="東日本">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3ds-zJ-LRb" kind="presentation" id="a03-jy-IyS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nW3-cy-gcb">
                                 <rect key="frame" x="62.5" y="397.5" width="250" height="52"/>
@@ -328,6 +331,77 @@
             </objects>
             <point key="canvasLocation" x="2668" y="91.304347826086968"/>
         </scene>
+        <!--Cute Eastern Japan Controller-->
+        <scene sceneID="9ie-cs-Pvz">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="3ds-zJ-LRb" customClass="CuteEasternJapanController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oMh-1o-kr5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jR-ID-Pea" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="12.5" y="108.5" width="350" height="350"/>
+                                <color key="backgroundColor" red="0.99707120660000004" green="0.69061005119999996" blue="0.43523287770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="1Nb-2y-aFY"/>
+                                    <constraint firstAttribute="width" constant="350" id="u9Z-bm-dUs"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9gt-eU-jTL">
+                                <rect key="frame" x="122.5" y="466" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="GOc-5H-465"/>
+                                    <constraint firstAttribute="height" constant="130" id="WyK-GP-b9c"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r7-5X-Ng8">
+                                <rect key="frame" x="12.5" y="478.5" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="v4l-px-xfK"/>
+                                    <constraint firstAttribute="width" constant="110" id="vet-Hl-G25"/>
+                                </constraints>
+                                <state key="normal" image="nopeyesOverlayImage"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="8vh-jN-yAw">
+                                <rect key="frame" x="122.5" y="-11" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="DGC-WT-ovp"/>
+                                    <constraint firstAttribute="height" constant="130" id="YIh-8e-XbJ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYN-9L-DJP">
+                                <rect key="frame" x="252.5" y="478.5" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="Y8T-Q0-CNu"/>
+                                    <constraint firstAttribute="height" constant="110" id="bwM-ht-sVe"/>
+                                </constraints>
+                                <state key="normal" image="likeOverlayImage"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sTt-Bl-vlr"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9gt-eU-jTL" firstAttribute="top" secondItem="5jR-ID-Pea" secondAttribute="bottom" constant="7.5" id="1Ii-o1-nRf"/>
+                            <constraint firstItem="5jR-ID-Pea" firstAttribute="centerY" secondItem="oMh-1o-kr5" secondAttribute="centerY" constant="-50" id="AMV-a9-YTE"/>
+                            <constraint firstItem="1r7-5X-Ng8" firstAttribute="centerX" secondItem="oMh-1o-kr5" secondAttribute="centerX" constant="-120" id="LQs-yE-hGZ"/>
+                            <constraint firstItem="dYN-9L-DJP" firstAttribute="centerX" secondItem="oMh-1o-kr5" secondAttribute="centerX" constant="120" id="NRP-ke-TYa"/>
+                            <constraint firstItem="dYN-9L-DJP" firstAttribute="centerY" secondItem="oMh-1o-kr5" secondAttribute="centerY" constant="200" id="Pvw-pF-VL9"/>
+                            <constraint firstItem="1r7-5X-Ng8" firstAttribute="centerY" secondItem="oMh-1o-kr5" secondAttribute="centerY" constant="200" id="SYM-M8-oLT"/>
+                            <constraint firstItem="5jR-ID-Pea" firstAttribute="centerX" secondItem="oMh-1o-kr5" secondAttribute="centerX" id="UgH-5L-mwP"/>
+                            <constraint firstItem="8vh-jN-yAw" firstAttribute="top" secondItem="oMh-1o-kr5" secondAttribute="topMargin" constant="-11" id="gej-Uj-Qae"/>
+                            <constraint firstItem="8vh-jN-yAw" firstAttribute="centerX" secondItem="5jR-ID-Pea" secondAttribute="centerX" id="qtI-wr-rfa"/>
+                            <constraint firstItem="9gt-eU-jTL" firstAttribute="centerX" secondItem="5jR-ID-Pea" secondAttribute="centerX" id="sU0-Ag-GGw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="kolodaView" destination="5jR-ID-Pea" id="7Jj-CG-xyy"/>
+                        <outlet property="overlayImageview" destination="9gt-eU-jTL" id="LRH-sF-7vI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="41l-nv-hTR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3589.5999999999999" y="-236.13193403298354"/>
+        </scene>
         <!--News View Controller-->
         <scene sceneID="8EP-4k-nhg">
             <objects>
@@ -366,6 +440,8 @@
     </scenes>
     <resources>
         <image name="ZooGoロゴ" width="500" height="500"/>
+        <image name="likeOverlayImage" width="500" height="500"/>
+        <image name="nopeyesOverlayImage" width="500" height="500"/>
         <image name="かわいい" width="757" height="800"/>
         <image name="イベント" width="800" height="800"/>
         <image name="カメラ" width="512" height="512"/>
