@@ -310,7 +310,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rfG-XE-Hzs"/>
-                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.87528306021690949" green="0.88532578945159912" blue="0.817835453385786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="UpC-GW-vjR" firstAttribute="centerX" secondItem="J6q-xZ-WJ9" secondAttribute="centerX" constant="-100" id="IiZ-eU-PgF"/>
                             <constraint firstItem="1SM-Eb-6pM" firstAttribute="centerX" secondItem="J6q-xZ-WJ9" secondAttribute="centerX" id="MQw-dh-O63"/>
@@ -341,17 +341,17 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jR-ID-Pea" customClass="KolodaView" customModule="Koloda">
                                 <rect key="frame" x="12.5" y="108.5" width="350" height="350"/>
-                                <color key="backgroundColor" red="0.99707120660000004" green="0.69061005119999996" blue="0.43523287770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="1Nb-2y-aFY"/>
                                     <constraint firstAttribute="width" constant="350" id="u9Z-bm-dUs"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9gt-eU-jTL">
-                                <rect key="frame" x="122.5" y="466" width="130" height="130"/>
+                                <rect key="frame" x="112.5" y="466" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="GOc-5H-465"/>
-                                    <constraint firstAttribute="height" constant="130" id="WyK-GP-b9c"/>
+                                    <constraint firstAttribute="height" constant="150" id="17u-XI-4Xg"/>
+                                    <constraint firstAttribute="width" constant="150" id="voR-CT-89l"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r7-5X-Ng8">
@@ -360,13 +360,16 @@
                                     <constraint firstAttribute="height" constant="110" id="v4l-px-xfK"/>
                                     <constraint firstAttribute="width" constant="110" id="vet-Hl-G25"/>
                                 </constraints>
-                                <state key="normal" image="nopeyesOverlayImage"/>
+                                <state key="normal" image="nopeButtonImage"/>
+                                <connections>
+                                    <action selector="nopeButton:" destination="3ds-zJ-LRb" eventType="touchUpInside" id="GGc-12-ayA"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="8vh-jN-yAw">
-                                <rect key="frame" x="122.5" y="-11" width="130" height="130"/>
+                                <rect key="frame" x="137.5" y="-2" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="DGC-WT-ovp"/>
-                                    <constraint firstAttribute="height" constant="130" id="YIh-8e-XbJ"/>
+                                    <constraint firstAttribute="width" constant="100" id="pW1-Ev-9hD"/>
+                                    <constraint firstAttribute="height" constant="100" id="x6f-Gl-yKc"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYN-9L-DJP">
@@ -375,7 +378,10 @@
                                     <constraint firstAttribute="width" constant="110" id="Y8T-Q0-CNu"/>
                                     <constraint firstAttribute="height" constant="110" id="bwM-ht-sVe"/>
                                 </constraints>
-                                <state key="normal" image="likeOverlayImage"/>
+                                <state key="normal" image="likeButtonImage"/>
+                                <connections>
+                                    <action selector="likeButton:" destination="3ds-zJ-LRb" eventType="touchUpInside" id="7uO-Hm-jcx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sTt-Bl-vlr"/>
@@ -388,9 +394,9 @@
                             <constraint firstItem="dYN-9L-DJP" firstAttribute="centerY" secondItem="oMh-1o-kr5" secondAttribute="centerY" constant="200" id="Pvw-pF-VL9"/>
                             <constraint firstItem="1r7-5X-Ng8" firstAttribute="centerY" secondItem="oMh-1o-kr5" secondAttribute="centerY" constant="200" id="SYM-M8-oLT"/>
                             <constraint firstItem="5jR-ID-Pea" firstAttribute="centerX" secondItem="oMh-1o-kr5" secondAttribute="centerX" id="UgH-5L-mwP"/>
-                            <constraint firstItem="8vh-jN-yAw" firstAttribute="top" secondItem="oMh-1o-kr5" secondAttribute="topMargin" constant="-11" id="gej-Uj-Qae"/>
-                            <constraint firstItem="8vh-jN-yAw" firstAttribute="centerX" secondItem="5jR-ID-Pea" secondAttribute="centerX" id="qtI-wr-rfa"/>
+                            <constraint firstItem="8vh-jN-yAw" firstAttribute="top" secondItem="oMh-1o-kr5" secondAttribute="topMargin" constant="-2" id="gej-Uj-Qae"/>
                             <constraint firstItem="9gt-eU-jTL" firstAttribute="centerX" secondItem="5jR-ID-Pea" secondAttribute="centerX" id="sU0-Ag-GGw"/>
+                            <constraint firstItem="8vh-jN-yAw" firstAttribute="centerX" secondItem="5jR-ID-Pea" secondAttribute="centerX" id="ts5-Wb-LbV"/>
                         </constraints>
                     </view>
                     <connections>
@@ -440,8 +446,8 @@
     </scenes>
     <resources>
         <image name="ZooGoロゴ" width="500" height="500"/>
-        <image name="likeOverlayImage" width="500" height="500"/>
-        <image name="nopeyesOverlayImage" width="500" height="500"/>
+        <image name="likeButtonImage" width="500" height="500"/>
+        <image name="nopeButtonImage" width="500" height="500"/>
         <image name="かわいい" width="757" height="800"/>
         <image name="イベント" width="800" height="800"/>
         <image name="カメラ" width="512" height="512"/>

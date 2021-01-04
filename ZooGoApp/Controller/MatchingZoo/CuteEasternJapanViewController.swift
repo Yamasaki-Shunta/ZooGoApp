@@ -21,13 +21,8 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
     
     @IBOutlet weak var overlayImageview: UIImageView!
     
-    
-    let overlayRightImageName = "likeOverlayImage"
-    let overlayLeftImageName = "nopeyesOverlayImage"
-    
-    var overlayView: OverlayView?
-    var contentView: UIView?
-    
+    let overlayRightImageName = "likeJudgeImage"
+    let overlayLeftImageName = "nopeJudgeImage"
     
     
     override func viewDidLoad() {
@@ -132,6 +127,7 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
         
     }
     
+    
 //    func byNavicationPush() {
 //
 //        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "navigationPushView") as!
@@ -140,6 +136,22 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
 //              self.navigationController?.pushViewController(nextVC, animated: true)
 //        }
 //
+    
+    
+    @IBAction func likeButton(_ sender: Any) {
+  
+    
+        kolodaView.swipe(.right)
+    }
+    
+    
+    
+    @IBAction func nopeButton(_ sender: Any) {
+   
+        kolodaView.swipe(.left)
+        
+    }
+    
     
     
 }
