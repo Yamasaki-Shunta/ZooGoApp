@@ -8,7 +8,7 @@
 import UIKit
 import Koloda
 
-class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaViewDelegate {
+class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaViewDelegate,UIGestureRecognizerDelegate {
 
     
     @IBOutlet weak var kolodaView: KolodaView!
@@ -61,13 +61,17 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
         
     }
     
+    //カードスワイプ終了
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-          print("Finish cards.")
+          
+        
+        print("Finish cards.")
+        
+        //シャッフル/拡張機能
+        //imageNameArray = imageNameArray.shuffled()
+        //リスタート
+        //koloda.resetCurrentCardIndex()
   
-     //シャッフル/拡張機能
-     //imageNameArray = imageNameArray.shuffled()
-     //リスタート/拡張機能
-     //koloda.resetCurrentCardIndex()
    }
         
     //カードをタップした時に呼ばれる/拡張機能
@@ -151,6 +155,16 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
         kolodaView.swipe(.left)
         
     }
+    
+    
+    
+    @IBAction func shuffleRestartButton(_ sender: Any) {
+  
+        kolodaView?.revertAction()
+        
+    }
+    
+    
     
     
     

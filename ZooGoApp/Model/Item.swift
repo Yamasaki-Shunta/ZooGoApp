@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 class NewsItems {
     
     var title:String?
@@ -14,3 +15,6 @@ class NewsItems {
     var pubDate:String?
 
 }
+
+
+

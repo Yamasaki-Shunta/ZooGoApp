@@ -384,7 +384,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ0-bP-AHJ">
                                 <rect key="frame" x="322" y="13" width="30" height="30"/>
-                                <state key="normal" title="Button" image="シャッフルアイコン"/>
+                                <state key="normal" title="Button" image="やり直しのアイコン"/>
+                                <connections>
+                                    <action selector="shuffleRestartButton:" destination="3ds-zJ-LRb" eventType="touchUpInside" id="vVZ-1Y-hDD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sTt-Bl-vlr"/>
@@ -469,10 +472,10 @@
         <image name="likeButtonImage" width="500" height="500"/>
         <image name="nopeButtonImage" width="500" height="500"/>
         <image name="かわいい" width="757" height="800"/>
+        <image name="やり直しのアイコン" width="256" height="256"/>
         <image name="イベント" width="800" height="800"/>
         <image name="カメラ" width="512" height="512"/>
         <image name="キリン背景" width="640" height="1280"/>
-        <image name="シャッフルアイコン" width="256" height="256"/>
         <image name="ニュース" width="512" height="512"/>
         <image name="フィーディング" width="574" height="572"/>
         <image name="吹き出し背景" width="542" height="547"/>
