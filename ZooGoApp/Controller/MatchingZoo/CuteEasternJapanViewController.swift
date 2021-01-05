@@ -21,8 +21,8 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
     
     @IBOutlet weak var overlayImageview: UIImageView!
     
-    let overlayRightImageName = "likeJudgeImage"
-    let overlayLeftImageName = "nopeJudgeImage"
+    let overlayRightImageName = "likeJudgedImage"
+    let overlayLeftImageName = "nopeJudgedImage"
     
     
     override func viewDidLoad() {
