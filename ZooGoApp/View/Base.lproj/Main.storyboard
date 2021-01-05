@@ -165,8 +165,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" イベント" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9n-sA-AMi">
-                                <rect key="frame" x="252" y="435" width="71" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" イベント" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9n-sA-AMi">
+                                <rect key="frame" x="255" y="434.5" width="65" height="18"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -206,8 +206,8 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="イベント"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="  絶滅危惧種" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-AB-dg6">
-                                <rect key="frame" x="44" y="435" width="86" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  絶滅危惧種" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-AB-dg6">
+                                <rect key="frame" x="48.5" y="435" width="78.5" height="17"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -269,18 +269,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="キリン背景" translatesAutoresizingMaskIntoConstraints="NO" id="1SM-Eb-6pM">
-                                <rect key="frame" x="-132.5" y="3.5" width="640" height="640"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="キリン背景" translatesAutoresizingMaskIntoConstraints="NO" id="Vqy-sH-tnp">
+                                <rect key="frame" x="0.0" y="8" width="375" height="639"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="640" id="VRw-jV-JEE"/>
+                                    <constraint firstAttribute="width" constant="375" id="m5u-pN-NXd"/>
+                                    <constraint firstAttribute="height" constant="639" id="rIW-Pf-ySc"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-GW-vjR">
+                                <rect key="frame" x="22.5" y="108.5" width="130" height="130"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nW3-cy-gcb">
+                                <rect key="frame" x="62.5" y="397.5" width="250" height="52"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ekx-k6-7hj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
+                                <state key="normal" title="西日本">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yr3-3g-hKf">
                                 <rect key="frame" x="62.5" y="247.5" width="250" height="52"/>
                                 <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="Ycq-ti-6Px"/>
-                                    <constraint firstAttribute="height" constant="52" id="dA4-1I-HfY"/>
+                                    <constraint firstAttribute="height" constant="52" id="mea-p7-81J"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
                                 <state key="normal" title="東日本">
@@ -290,36 +304,35 @@
                                     <segue destination="3ds-zJ-LRb" kind="presentation" id="a03-jy-IyS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nW3-cy-gcb">
-                                <rect key="frame" x="62.5" y="397.5" width="250" height="52"/>
-                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pL5-Fx-DIu">
+                                <rect key="frame" x="17.5" y="17" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="hdI-Pj-QPd"/>
+                                    <constraint firstAttribute="height" constant="40" id="2qp-mJ-YeU"/>
+                                    <constraint firstAttribute="width" constant="40" id="UEC-Et-ffJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
-                                <state key="normal" title="西日本">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <state key="normal" title="Button" image="太いバツのアイコン"/>
+                                <connections>
+                                    <action selector="dismissButton:" destination="nZr-hY-IaS" eventType="touchUpInside" id="Uee-3k-hoe"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-GW-vjR">
-                                <rect key="frame" x="22.5" y="108.5" width="130" height="130"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="Dt2-mp-9nL"/>
-                                    <constraint firstAttribute="width" constant="130" id="RmS-6V-9xS"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rfG-XE-Hzs"/>
                         <color key="backgroundColor" red="0.87528306021690949" green="0.88532578945159912" blue="0.817835453385786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="UpC-GW-vjR" firstAttribute="centerX" secondItem="J6q-xZ-WJ9" secondAttribute="centerX" constant="-100" id="IiZ-eU-PgF"/>
-                            <constraint firstItem="1SM-Eb-6pM" firstAttribute="centerX" secondItem="J6q-xZ-WJ9" secondAttribute="centerX" id="MQw-dh-O63"/>
-                            <constraint firstItem="UpC-GW-vjR" firstAttribute="centerY" secondItem="J6q-xZ-WJ9" secondAttribute="centerY" constant="-150" id="R7s-E2-UWv"/>
-                            <constraint firstItem="1SM-Eb-6pM" firstAttribute="centerY" secondItem="J6q-xZ-WJ9" secondAttribute="centerY" id="Uaf-ZD-hNh"/>
-                            <constraint firstItem="yr3-3g-hKf" firstAttribute="centerX" secondItem="J6q-xZ-WJ9" secondAttribute="centerX" id="fEf-UW-hqN"/>
-                            <constraint firstItem="yr3-3g-hKf" firstAttribute="centerY" secondItem="J6q-xZ-WJ9" secondAttribute="centerY" constant="-50" id="p7c-Xj-NsJ"/>
-                            <constraint firstItem="nW3-cy-gcb" firstAttribute="centerX" secondItem="J6q-xZ-WJ9" secondAttribute="centerX" id="xK5-Qy-Wws"/>
-                            <constraint firstItem="nW3-cy-gcb" firstAttribute="centerY" secondItem="J6q-xZ-WJ9" secondAttribute="centerY" constant="100" id="zdl-LS-i3C"/>
+                            <constraint firstItem="rfG-XE-Hzs" firstAttribute="trailing" secondItem="UpC-GW-vjR" secondAttribute="trailing" constant="222.5" id="3Dy-Zf-Pef"/>
+                            <constraint firstItem="yr3-3g-hKf" firstAttribute="centerX" secondItem="J6q-xZ-WJ9" secondAttribute="centerX" id="DuB-05-rjl"/>
+                            <constraint firstItem="yr3-3g-hKf" firstAttribute="top" secondItem="UpC-GW-vjR" secondAttribute="bottom" constant="9" id="EbR-p8-HLH"/>
+                            <constraint firstItem="nW3-cy-gcb" firstAttribute="top" secondItem="yr3-3g-hKf" secondAttribute="bottom" constant="98" id="Fsr-aM-zCr"/>
+                            <constraint firstItem="yr3-3g-hKf" firstAttribute="trailing" secondItem="nW3-cy-gcb" secondAttribute="trailing" id="Hgx-nK-Mq9"/>
+                            <constraint firstItem="Vqy-sH-tnp" firstAttribute="centerY" secondItem="J6q-xZ-WJ9" secondAttribute="centerY" constant="4" id="LVb-jX-gjk"/>
+                            <constraint firstItem="UpC-GW-vjR" firstAttribute="leading" secondItem="rfG-XE-Hzs" secondAttribute="leading" constant="22.5" id="LcM-57-bg0"/>
+                            <constraint firstItem="yr3-3g-hKf" firstAttribute="leading" secondItem="nW3-cy-gcb" secondAttribute="leading" id="SzH-Ei-4rk"/>
+                            <constraint firstItem="rfG-XE-Hzs" firstAttribute="bottom" secondItem="nW3-cy-gcb" secondAttribute="bottom" constant="197.5" id="VN0-AV-Pho"/>
+                            <constraint firstItem="yr3-3g-hKf" firstAttribute="leading" secondItem="rfG-XE-Hzs" secondAttribute="leading" constant="62.5" id="Y4T-Ti-1BI"/>
+                            <constraint firstItem="UpC-GW-vjR" firstAttribute="top" secondItem="rfG-XE-Hzs" secondAttribute="top" constant="108.5" id="adM-1k-51Y"/>
+                            <constraint firstItem="pL5-Fx-DIu" firstAttribute="centerY" secondItem="J6q-xZ-WJ9" secondAttribute="centerY" constant="-286.5" id="c2X-pn-g8l"/>
+                            <constraint firstItem="Vqy-sH-tnp" firstAttribute="centerX" secondItem="J6q-xZ-WJ9" secondAttribute="centerX" id="qKV-fS-WtT"/>
+                            <constraint firstItem="pL5-Fx-DIu" firstAttribute="centerX" secondItem="J6q-xZ-WJ9" secondAttribute="centerX" constant="-150" id="zGB-yk-AoB"/>
                         </constraints>
                     </view>
                     <connections>
@@ -381,6 +394,9 @@
                                     <constraint firstAttribute="height" constant="30" id="faI-Bh-sls"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="線の三角矢印のアイコン"/>
+                                <connections>
+                                    <action selector="backButton:" destination="3ds-zJ-LRb" eventType="touchUpInside" id="UOM-mF-M6x"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ0-bP-AHJ">
                                 <rect key="frame" x="322" y="13" width="30" height="30"/>
@@ -429,7 +445,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41l-nv-hTR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3589.5999999999999" y="-236.13193403298354"/>
+            <point key="canvasLocation" x="3758" y="-236"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="8EP-4k-nhg">
@@ -479,6 +495,7 @@
         <image name="ニュース" width="512" height="512"/>
         <image name="フィーディング" width="574" height="572"/>
         <image name="吹き出し背景" width="542" height="547"/>
+        <image name="太いバツのアイコン" width="256" height="256"/>
         <image name="絶滅危惧種" width="639" height="684"/>
         <image name="線の三角矢印のアイコン" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">

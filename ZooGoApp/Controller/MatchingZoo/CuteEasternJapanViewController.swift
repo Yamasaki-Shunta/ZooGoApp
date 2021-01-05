@@ -164,6 +164,13 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
         
     }
     
+    @IBAction func backButton(_ sender: Any) {
+   
+        self.dismiss(animated: true, completion: nil)
+
+
+    
+    }
     
     
     
