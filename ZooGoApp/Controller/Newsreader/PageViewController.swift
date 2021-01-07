@@ -133,6 +133,7 @@ class PageViewController: UITableViewController,SegementSlideContentScrollViewDe
             case "pubDate":
                 lastItem.pubDate = string
             default:break
+            
             }
             
         }

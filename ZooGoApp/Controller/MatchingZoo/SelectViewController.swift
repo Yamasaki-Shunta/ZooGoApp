@@ -16,6 +16,10 @@ class SelectViewController: UIViewController {
     @IBOutlet weak var westJapanButton: UIButton!
     
     
+    
+    @IBOutlet weak var coverView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

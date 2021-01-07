@@ -67,9 +67,10 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
         
         print("Finish cards.")
         
+        screenTransition()
         //シャッフル/拡張機能
         //imageNameArray = imageNameArray.shuffled()
-        //リスタート
+        //リスタート/拡張機能
         //koloda.resetCurrentCardIndex()
   
    }
@@ -132,14 +133,24 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
     }
     
     
-//    func byNavicationPush() {
-//
-//        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "navigationPushView") as!
-//
-//            nextVC.passedLikedArray = likedArray
-//              self.navigationController?.pushViewController(nextVC, animated: true)
-//        }
-//
+    func screenTransition() {
+        
+        performSegue(withIdentifier: "resultVC", sender: nil)
+
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      if segue.identifier == "resultVC" {
+        
+        let ResultVC = segue.destination as! ResultViewController
+
+       
+        ResultVC.passedAnimalNameArray = likedArray
+        
+      }
+        
+    }
     
     
     @IBAction func likeButton(_ sender: Any) {
@@ -161,16 +172,18 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
     @IBAction func shuffleRestartButton(_ sender: Any) {
   
         kolodaView?.revertAction()
+        likedArray.removeLast()
         
     }
     
-    @IBAction func backButton(_ sender: Any) {
+    @IBAction func dismissButton(_ sender: Any) {
    
         self.dismiss(animated: true, completion: nil)
 
 
     
     }
+    
     
     
     
