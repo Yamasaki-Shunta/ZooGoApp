@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E4F803925A779B50008A78B /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F803825A779B50008A78B /* DataBase.swift */; };
 		6E9097A6259DCA4600DFDFA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9097A5259DCA4600DFDFA4 /* AppDelegate.swift */; };
 		6E9097A8259DCA4600DFDFA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9097A7259DCA4600DFDFA4 /* SceneDelegate.swift */; };
 		6E9097AD259DCA4600DFDFA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9097AB259DCA4600DFDFA4 /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 		1067004DBB2C9D791E9541F1 /* Pods-ZooGoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooGoApp.debug.xcconfig"; path = "Target Support Files/Pods-ZooGoApp/Pods-ZooGoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		33EE8755C58CFC0795C8E984 /* Pods_ZooGoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZooGoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		652AD3155AF3F9D779E67D7F /* Pods-ZooGoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooGoApp.release.xcconfig"; path = "Target Support Files/Pods-ZooGoApp/Pods-ZooGoApp.release.xcconfig"; sourceTree = "<group>"; };
+		6E4F803825A779B50008A78B /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		6E9097A2259DCA4600DFDFA4 /* ZooGoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZooGoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9097A5259DCA4600DFDFA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E9097A7259DCA4600DFDFA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				6E90986225A0537500DFDFA4 /* Item.swift */,
 				6EE9E6C125A223C3008FDB33 /* BackSwipe.swift */,
+				6E4F803825A779B50008A78B /* DataBase.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 			files = (
 				6E9098A825A21D2400DFDFA4 /* SelectViewController.swift in Sources */,
 				6EE9E6CD25A2EE35008FDB33 /* CuteEasternJapanViewController.swift in Sources */,
+				6E4F803925A779B50008A78B /* DataBase.swift in Sources */,
 				6E9097A6259DCA4600DFDFA4 /* AppDelegate.swift in Sources */,
 				6E90983B259EE73400DFDFA4 /* BaseViewController.swift in Sources */,
 				6E9097A8259DCA4600DFDFA4 /* SceneDelegate.swift in Sources */,

@@ -146,7 +146,7 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
         let ResultVC = segue.destination as! ResultViewController
 
        
-        ResultVC.passedAnimalNameArray = likedArray
+        ResultVC.passedAnimalName = likedArray
         
       }
         

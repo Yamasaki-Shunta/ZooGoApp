@@ -20,7 +20,7 @@ class PageViewController: UITableViewController,SegementSlideContentScrollViewDe
     var currentElementName:String!
     
     var newsItems = [NewsItems]()
-    var sections = [String]()
+    //var sections = [String]()
 
     
     
