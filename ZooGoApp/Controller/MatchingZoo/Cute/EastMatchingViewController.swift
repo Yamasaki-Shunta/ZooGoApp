@@ -8,16 +8,16 @@
 import UIKit
 import Koloda
 
-class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaViewDelegate,UIGestureRecognizerDelegate {
+class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaViewDelegate,UIGestureRecognizerDelegate {
 
     
     @IBOutlet weak var kolodaView: KolodaView!
     
-    var imageNameArray = ["ホッキョクグマ","スナネコ", "レッサーパンダ","オウサマペンギン","ワオキツネザル","ベアードバク","シロサイ","アムールトラ","ゴリラ","カピバラ","タスマニアデビル","コアラ","エゾヒグマ","パンダ"]
+    var animalImageSet:[DataSet] = eastCuteData
+    
+    var animalImage:[String] = []
     
     var likedArray = [String]()
-    var nopedArray = [String]()
-    
     
     @IBOutlet weak var overlayImageview: UIImageView!
     
@@ -28,6 +28,8 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        dataSet()
+        
         kolodaView.dataSource = self
         kolodaView.delegate = self
        
@@ -35,10 +37,23 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
 
     }
     
+    func dataSet() {
+        
+        animalImageSet.forEach { element in
+            
+            animalImage.append(element.animalName)
+            
+        }
+        
+        
+    }
+    
+    
+    
     //カード枚数設定
     func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
     
-        return imageNameArray.count
+        return animalImage.count
     
     }
     
@@ -54,7 +69,7 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
         
         let imageView = UIImageView(frame: koloda.bounds)
         imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(named: imageNameArray[index])
+        imageView.image = UIImage(named: animalImage[index])
         koloda.addSubview(imageView)
         
         return imageView
@@ -98,8 +113,6 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
       
         case .left:
             overlayImageview.image = UIImage(named: overlayLeftImageName)
-                    
-            nopedArray.append(imageNameArray[index])
             
         
             return
@@ -108,7 +121,7 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
             
             overlayImageview.image = UIImage(named: overlayRightImageName)
 
-            likedArray.append((imageNameArray[index]as String?)!)
+            likedArray.append((animalImage[index]as String?)!)
             
             print(likedArray)
                     
@@ -143,7 +156,7 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       if segue.identifier == "resultVC" {
         
-        let ResultVC = segue.destination as! ResultViewController
+        let ResultVC = segue.destination as! EastResultViewController
 
        
         ResultVC.passedAnimalName = likedArray
@@ -170,9 +183,21 @@ class CuteEasternJapanController: UIViewController,KolodaViewDataSource,KolodaVi
     
     
     @IBAction func shuffleRestartButton(_ sender: Any) {
-  
-        kolodaView?.revertAction()
-        likedArray.removeLast()
+        
+        
+        
+        if likedArray.isEmpty == false {
+          
+            likedArray.removeLast()
+            kolodaView?.revertAction()
+            
+            print("delete")
+        
+        }else{
+            
+            return
+            
+        }
         
     }
     

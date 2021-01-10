@@ -323,7 +323,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rfG-XE-Hzs"/>
-                        <color key="backgroundColor" red="0.87528306021690949" green="0.88532578945159912" blue="0.817835453385786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sPZ-Mb-xqV" firstAttribute="trailing" secondItem="Vqy-sH-tnp" secondAttribute="trailing" id="0Kl-tA-VOh"/>
                             <constraint firstItem="Vqy-sH-tnp" firstAttribute="leading" secondItem="rfG-XE-Hzs" secondAttribute="leading" id="2Gt-Nd-P8e"/>
@@ -348,10 +348,10 @@
             </objects>
             <point key="canvasLocation" x="2668" y="91.304347826086968"/>
         </scene>
-        <!--Cute Eastern Japan Controller-->
+        <!--East Matching View Controller-->
         <scene sceneID="9ie-cs-Pvz">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="3ds-zJ-LRb" customClass="CuteEasternJapanController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="3ds-zJ-LRb" customClass="EastMatchingViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oMh-1o-kr5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -452,10 +452,10 @@
             </objects>
             <point key="canvasLocation" x="3772" y="93"/>
         </scene>
-        <!--Result View Controller-->
+        <!--East Result View Controller-->
         <scene sceneID="Xs0-6r-tBX">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="l1v-Rc-as3" customClass="ResultViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="l1v-Rc-as3" customClass="EastResultViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZAC-Aw-PD3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -467,56 +467,6 @@
                                     <constraint firstAttribute="width" constant="360" id="RkY-fx-I2v"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNU-bM-Oku">
-                                <rect key="frame" x="43" y="316" width="289" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="289" id="5Pp-pJ-Fmx"/>
-                                    <constraint firstAttribute="height" constant="35" id="hnJ-uT-UNf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odN-8N-vdI">
-                                <rect key="frame" x="43" y="366" width="289" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="D7C-OK-cm8"/>
-                                    <constraint firstAttribute="width" constant="289" id="Qxb-j5-0d9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBP-fL-YfE">
-                                <rect key="frame" x="43" y="266" width="289" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="hDV-ZO-mO6"/>
-                                    <constraint firstAttribute="width" constant="289" id="pQB-fr-HUg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ave-eF-dSx">
-                                <rect key="frame" x="43" y="216" width="289" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="289" id="hnr-6O-YwZ"/>
-                                    <constraint firstAttribute="height" constant="35" id="pJn-zZ-9qm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikL-mK-g2f">
-                                <rect key="frame" x="43" y="416" width="289" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="289" id="6wm-d0-ugs"/>
-                                    <constraint firstAttribute="height" constant="35" id="rJ2-0Q-BXh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="マッチングした動物園は？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddy-Jc-mx7">
                                 <rect key="frame" x="23.5" y="92" width="328" height="43"/>
                                 <color key="backgroundColor" red="0.47041243310000003" green="0.83515894410000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -546,31 +496,39 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="fLN-KK-ds2">
                                 <rect key="frame" x="137" y="-7" width="100" height="100"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zcr-Z5-RtE">
+                                <rect key="frame" x="56" y="201" width="303" height="265"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="EId-M9-uZM"/>
+                                    <constraint firstAttribute="width" constant="303" id="Zc0-HT-ZxU"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kamonohashi" translatesAutoresizingMaskIntoConstraints="NO" id="Pxr-ba-cih">
+                                <rect key="frame" x="222.5" y="408.5" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Shf-PW-ibA"/>
+                                    <constraint firstAttribute="height" constant="130" id="goi-3E-61e"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ha7-oJ-Hds"/>
                         <color key="backgroundColor" red="0.99718910459999999" green="0.8370327353" blue="0.47442835570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="ikL-mK-g2f" firstAttribute="centerY" secondItem="ZAC-Aw-PD3" secondAttribute="centerY" constant="100" id="2bW-y9-Cnq"/>
                             <constraint firstItem="dNM-Y9-buq" firstAttribute="centerY" secondItem="CE9-k7-pDQ" secondAttribute="centerY" id="BYI-uK-5rI"/>
                             <constraint firstItem="ddy-Jc-mx7" firstAttribute="top" secondItem="fLN-KK-ds2" secondAttribute="bottom" constant="-1" id="C1p-xk-swm"/>
-                            <constraint firstItem="Ave-eF-dSx" firstAttribute="centerX" secondItem="ZAC-Aw-PD3" secondAttribute="centerX" id="IT2-tV-ObC"/>
+                            <constraint firstItem="Pxr-ba-cih" firstAttribute="centerX" secondItem="ZAC-Aw-PD3" secondAttribute="centerX" constant="100" id="Hjk-4E-eMV"/>
                             <constraint firstItem="dNM-Y9-buq" firstAttribute="leading" secondItem="ha7-oJ-Hds" secondAttribute="leading" constant="25" id="Llt-M6-ETR"/>
-                            <constraint firstItem="odN-8N-vdI" firstAttribute="centerX" secondItem="ZAC-Aw-PD3" secondAttribute="centerX" id="Ova-uQ-icT"/>
-                            <constraint firstItem="Ave-eF-dSx" firstAttribute="centerX" secondItem="ZAC-Aw-PD3" secondAttribute="centerX" id="REK-nY-aQV"/>
+                            <constraint firstItem="Pxr-ba-cih" firstAttribute="centerY" secondItem="ZAC-Aw-PD3" secondAttribute="centerY" constant="140" id="QVo-fF-LhM"/>
                             <constraint firstItem="CE9-k7-pDQ" firstAttribute="leading" secondItem="ZAC-Aw-PD3" secondAttribute="leading" id="Suh-xY-x2V"/>
                             <constraint firstItem="fLN-KK-ds2" firstAttribute="top" secondItem="ZAC-Aw-PD3" secondAttribute="topMargin" constant="-7" id="UCd-rF-5gW"/>
-                            <constraint firstItem="UBP-fL-YfE" firstAttribute="centerX" secondItem="ZAC-Aw-PD3" secondAttribute="centerX" id="Utv-NW-AUJ"/>
                             <constraint firstItem="CE9-k7-pDQ" firstAttribute="top" secondItem="ha7-oJ-Hds" secondAttribute="top" constant="6" id="XUl-zo-aAv"/>
                             <constraint firstItem="Vsq-Jr-apN" firstAttribute="centerY" secondItem="ZAC-Aw-PD3" secondAttribute="centerY" id="XV1-Tz-Kt5"/>
-                            <constraint firstItem="oNU-bM-Oku" firstAttribute="centerX" secondItem="ZAC-Aw-PD3" secondAttribute="centerX" id="Xzt-fG-C0D"/>
-                            <constraint firstItem="oNU-bM-Oku" firstAttribute="centerY" secondItem="ZAC-Aw-PD3" secondAttribute="centerY" id="bzN-SD-8Be"/>
+                            <constraint firstItem="zcr-Z5-RtE" firstAttribute="centerX" secondItem="ZAC-Aw-PD3" secondAttribute="centerX" constant="20" id="caE-97-wcn"/>
                             <constraint firstItem="ddy-Jc-mx7" firstAttribute="centerX" secondItem="ZAC-Aw-PD3" secondAttribute="centerX" id="ewr-tM-D4Y"/>
                             <constraint firstItem="ddy-Jc-mx7" firstAttribute="centerY" secondItem="ZAC-Aw-PD3" secondAttribute="centerY" constant="-220" id="hch-5J-Rn1"/>
-                            <constraint firstItem="Ave-eF-dSx" firstAttribute="centerY" secondItem="ZAC-Aw-PD3" secondAttribute="centerY" constant="-100" id="iJb-Og-VCt"/>
                             <constraint firstItem="Vsq-Jr-apN" firstAttribute="centerX" secondItem="ZAC-Aw-PD3" secondAttribute="centerX" id="mxJ-bF-TJq"/>
-                            <constraint firstItem="ikL-mK-g2f" firstAttribute="leading" secondItem="odN-8N-vdI" secondAttribute="leading" id="sAE-uO-ih2"/>
-                            <constraint firstItem="UBP-fL-YfE" firstAttribute="centerY" secondItem="ZAC-Aw-PD3" secondAttribute="centerY" constant="-50" id="sBN-yH-gmS"/>
-                            <constraint firstItem="odN-8N-vdI" firstAttribute="centerY" secondItem="ZAC-Aw-PD3" secondAttribute="centerY" constant="50" id="sGT-F1-oYf"/>
+                            <constraint firstItem="zcr-Z5-RtE" firstAttribute="centerY" secondItem="ZAC-Aw-PD3" secondAttribute="centerY" id="qkM-Ko-t0M"/>
                             <constraint firstItem="CE9-k7-pDQ" firstAttribute="centerX" secondItem="ddy-Jc-mx7" secondAttribute="centerX" id="tXf-Zz-cFu"/>
                             <constraint firstItem="fLN-KK-ds2" firstAttribute="leading" secondItem="dNM-Y9-buq" secondAttribute="trailing" constant="82" id="uJn-0b-TdP"/>
                             <constraint firstItem="fLN-KK-ds2" firstAttribute="centerX" secondItem="CE9-k7-pDQ" secondAttribute="centerX" id="yIu-bR-zqi"/>
@@ -578,12 +536,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="3Ta-TM-rG4"/>
                     <connections>
+                        <outlet property="stackView" destination="zcr-Z5-RtE" id="BDu-RQ-3uq"/>
                         <outlet property="titleLabel" destination="ddy-Jc-mx7" id="G5A-JN-2VR"/>
-                        <outlet property="zooParkName1" destination="Ave-eF-dSx" id="wk6-ss-zgH"/>
-                        <outlet property="zooParkName2" destination="UBP-fL-YfE" id="zzC-QQ-hjC"/>
-                        <outlet property="zooParkName3" destination="oNU-bM-Oku" id="758-gg-3Q0"/>
-                        <outlet property="zooParkName4" destination="odN-8N-vdI" id="rmA-hN-Dgd"/>
-                        <outlet property="zooParkName5" destination="ikL-mK-g2f" id="vOm-nj-OHf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KqX-7c-aeV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -628,6 +582,7 @@
     </scenes>
     <resources>
         <image name="ZooGoロゴ" width="500" height="500"/>
+        <image name="kamonohashi" width="700" height="285"/>
         <image name="likeButtonImage" width="500" height="500"/>
         <image name="nopeButtonImage" width="500" height="500"/>
         <image name="かわいい" width="757" height="800"/>
