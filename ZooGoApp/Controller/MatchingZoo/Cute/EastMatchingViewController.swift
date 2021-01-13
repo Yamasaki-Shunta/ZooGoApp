@@ -37,6 +37,7 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
 
     }
     
+    
     func dataSet() {
         
         animalImageSet.forEach { element in
@@ -81,8 +82,8 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
           
         
         print("Finish cards.")
-        
         screenTransition()
+       
         //シャッフル/拡張機能
         //imageNameArray = imageNameArray.shuffled()
         //リスタート/拡張機能
@@ -100,7 +101,7 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
     func koloda(_ koloda: KolodaView, shouldDragCardAt index: Int) -> Bool {
         print(index, "drag")
         
-        overlayImageViewReset()
+        overlayImageview.image = nil
    
         return true
     }
@@ -113,15 +114,18 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
       
         case .left:
             overlayImageview.image = UIImage(named: overlayLeftImageName)
-            
-        
-            return
        
         case.right:
             
             overlayImageview.image = UIImage(named: overlayRightImageName)
 
             likedArray.append((animalImage[index]as String?)!)
+           
+            let orderedSet: NSOrderedSet = NSOrderedSet(array: likedArray)
+            
+            likedArray =  orderedSet.array as! [String]
+    
+            screenTransition()
             
             print(likedArray)
                     
@@ -129,32 +133,29 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
             
         default:
             
-            overlayImageview.image = nil
+            return
             
         }
         
-        overlayImageViewReset()
     
 }
     
-
-    func overlayImageViewReset(){
-        
-        overlayImageview.image = nil
-        
-        
-    }
-    
     
     func screenTransition() {
-        
-        performSegue(withIdentifier: "resultVC", sender: nil)
+    
+        if likedArray.count == 5 {
+            
+            performSegue(withIdentifier: "resultVC", sender: nil)
+
+            
+        }
 
     }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      if segue.identifier == "resultVC" {
+     
+        if segue.identifier == "resultVC" {
         
         let ResultVC = segue.destination as! EastResultViewController
 
@@ -182,22 +183,9 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
     
     
     
-    @IBAction func shuffleRestartButton(_ sender: Any) {
-        
-        
-        
-        if likedArray.isEmpty == false {
-          
-            likedArray.removeLast()
+    @IBAction func revertButton(_ sender: Any) {
+
             kolodaView?.revertAction()
-            
-            print("delete")
-        
-        }else{
-            
-            return
-            
-        }
         
     }
     

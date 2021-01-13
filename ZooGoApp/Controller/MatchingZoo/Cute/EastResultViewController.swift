@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EastResultViewController: UIViewController {
+class EastResultViewController: UIViewController,UIScrollViewDelegate{
 
     
     var passedAnimalName = [String]()
@@ -28,166 +28,86 @@ class EastResultViewController: UIViewController {
     
     let zooNameE = UILabel()
     
-    @IBOutlet weak var stackView: UIStackView!
+    //スクリーンショット入れる入れ物
+    var screenShotImage = UIImage()
+    
+    
+    @IBOutlet weak var coverView: UIView!
+    
+
     
     @IBOutlet weak var titleLabel: UILabel!
     
     
+    let img:[String] = ["パンダ","スナネコ","ゴリラ"]
+    
+    // Totalのページ数
+    var pageNum:Int!
+     
+    //スクリーンの幅
+    let screenWidth = Int( UIScreen.main.bounds.size.width)
+    //スクリーンの高さ
+    let screenHeight = Int(UIScreen.main.bounds.size.height)
+    
+    let scrollView = UIScrollView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //ページジングができるようになる
+        scrollView.isPagingEnabled = true
+        
+        setupScrollImages()
+        
+        let imageTop:UIImage = UIImage(named:img[0])!
+        pageNum = img.count
+        
+        for i in 0 ..< pageNum {
+        // UIImageViewのインスタンス
+        let image:UIImage = UIImage(named:img[i])!
+        let imageView = UIImageView(image:image)
+                    
+            imageView.frame = CGRect(x: CGFloat(i) * view.frame.size.width, y: 0, width: view.frame.size.width, height: view.frame.size.height)
+            
+            imageView.contentMode = .scaleAspectFit
+                    
+            imageView.tag = i + 1
+                    
+            // UIScrollViewのインスタンスに画像を貼付ける
+            scrollView.addSubview(imageView)
+                    
+                }
     
         //ラベルの背景の角を丸くする
-        self.titleLabel.layer.cornerRadius = 20.0
-        self.titleLabel.clipsToBounds = true
+        titleLabel.layer.cornerRadius = 20.0
+        titleLabel.clipsToBounds = true
         
+        coverView.frame = CGRect(x: 0, y: 0, width: screenWidth*pageNum, height: screenHeight)
+        coverView.backgroundColor = .clear
+        scrollView.addSubview(coverView)
+   
+        
+        
+    }
+    
+    func setupScrollImages(){
+           
+       
+        //scrollViewのdelegateを自分に持ってくる
+        scrollView.delegate = self
+        
+        //scrollViewの大きさを設定
+        scrollView.frame = self.view.frame
+        
+        //スクロール稼働の領域を決める
+        scrollView.contentSize = CGSize(width:screenWidth*3, height:screenHeight-50)
+        
+        self.view.addSubview(scrollView)
+        
+           
+       }
+   
 
-        zooNameA.text = ""
-        zooNameA.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-        self.stackView.addArrangedSubview(zooNameA)
-        
-        zooNameB.text = ""
-        zooNameB.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-        self.stackView.addArrangedSubview(zooNameB)
-        
-        zooNameC.text = ""
-        zooNameC.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-        self.stackView.addArrangedSubview(zooNameC)
-        
-        zooNameD.text = ""
-        zooNameD.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-        self.stackView.addArrangedSubview(zooNameD)
-        
-        zooNameE.text = ""
-        zooNameE.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-        self.stackView.addArrangedSubview(zooNameE)
-        
-        
-        
-        zooMatching(passedAnimalName: passedAnimalName)
-    
-        displaylabel(resultList: resultList)
-        
-        
-    }
-    
-    
-
-    func zooMatching(passedAnimalName:[String] ) {
-    
-        print(passedAnimalName)
-    
-    //animalNameとpassedAnimalNameに含まれる要素を抽出
-     
-    for filterWord in passedAnimalName {
-
-    conditions.append{$0.animalName.contains(filterWord)
-    
-        }
-     }
-    
-    let filteredData = dataset.filter { element in conditions.reduce(false){$0 != $1(element)}
-      
-    }
-        
-       print(filteredData)
-        
-        filteredData.forEach ({ element in
-            
-         resultList.append(element.parkName)
-            
-        
-        })
-    
-    }
-    
-    
-    func displaylabel(resultList:[String]) {
-        
-        print(resultList)
-        
-        if resultList.count == 0 {
-            
-            zooNameB.removeFromSuperview()
-            zooNameC.removeFromSuperview()
-            zooNameD.removeFromSuperview()
-            zooNameE.removeFromSuperview()
-        
-            zooNameA.font = UIFont(name: "HiraKakuProN-W6", size: 30)
-            zooNameA.text = "マッチングできません"
-            
-        } else if resultList.count == 1 {
-            
-            stackView.spacing = -3
-            
-            zooNameB.removeFromSuperview()
-            zooNameC.removeFromSuperview()
-            zooNameD.removeFromSuperview()
-            zooNameE.removeFromSuperview()
-        
-            zooNameA.font = UIFont(name: "HiraKakuProN-W6", size: 30)
-            
-            zooNameA.text = resultList[0]
-        
-        
-    }else if resultList.count == 2 {
-        
-        
-        zooNameC.removeFromSuperview()
-        zooNameD.removeFromSuperview()
-        zooNameE.removeFromSuperview()
-        
-        zooNameA.font = UIFont(name: "HiraKakuProN-W6", size: 30)
-        zooNameB.font = UIFont(name: "HiraKakuProN-W6", size: 30)
-      
-        zooNameA.text = "1." + resultList[0]
-        zooNameB.text = "2." + resultList[1]
-        
-    }else if resultList.count == 3 {
-        
-        zooNameD.removeFromSuperview()
-        zooNameE.removeFromSuperview()
-        
-        zooNameA.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-        zooNameB.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-        zooNameC.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-        
-        zooNameA.text = "1." + resultList[0]
-        zooNameB.text = "2." + resultList[1]
-        zooNameC.text = "3." + resultList[2]
-        
-    }else if resultList.count == 4 {
-        
-        zooNameE.removeFromSuperview()
-        
-        zooNameA.text = "1." + resultList[0]
-        zooNameB.text = "2." + resultList[1]
-        zooNameC.text = "3." + resultList[2]
-        zooNameD.text = "4." + resultList[3]
-        
-    } else if resultList.count >= 5 &&  resultList.count <= 10{
-        
-    let shuffledParkName = resultList.shuffled().prefix(5)
-        
-        print(shuffledParkName)
-        
-        zooNameA.text = "1." + resultList[0]
-        zooNameB.text = "2." + resultList[1]
-        zooNameC.text = "3." + resultList[2]
-        zooNameD.text = "4." + resultList[3]
-        zooNameE.text = "5." + resultList[4]
-            
-    }else{
-        
-        zooNameA.text = "1." + "旭山動物園"
-        zooNameB.text = "2." + "那須どうぶつ王国"
-        zooNameC.text = "3." + "多摩動物公園"
-        zooNameD.text = "4." + "京都動物園"
-        zooNameE.text = "5." + "よこはま動物園ズーラシア"
-    
-    }
-     
-    }
-     
     
     @IBAction func dismissButton(_ sender: Any) {
    
@@ -195,6 +115,40 @@ class EastResultViewController: UIViewController {
     self.presentingViewController?.presentingViewController?.dismiss(animated: false, completion: nil)
         
     }
-
+    
+    
+    @IBAction func share(_ sender: Any) {
+  
+    //スクリーンショットを撮る
+    takeScreenShot()
+          
+    //スクリーンショットイメージをAny型にキャスト
+    let items = [screenShotImage] as [Any]
+            
+    // アクティビティビューに乗っけて、シェアする
+    let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        
+     present(activityVC, animated: true, completion: nil)
+            
+        
+    
+    
+    }
+    
+func takeScreenShot() {
+ 
+    let width = CGFloat(UIScreen.main.bounds.size.width)
+    let height = CGFloat(UIScreen.main.bounds.size.height/1.3)
+    let size = CGSize(width: width, height: height)
+    
+        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+        
+        //viewに書き出す
+        self.view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+        screenShotImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
+    }
+    
     
 }
