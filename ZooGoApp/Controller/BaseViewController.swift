@@ -9,9 +9,7 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
-    
     @IBOutlet weak var questionLabel: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +22,21 @@ class BaseViewController: UIViewController {
         
         self.questionLabel.clipsToBounds = true
         
-       
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(animated)
+    
+        let ud = UserDefaults.standard
+        let firstLunchKey = "firstLunch"
+        if ud.bool(forKey: firstLunchKey) {
+        ud.set(false, forKey: firstLunchKey)
+        ud.synchronize()
+     
+        performSegue(withIdentifier: "introVC", sender: nil)
+  
+        }
+
     }
     
     //ナビゲーションバーを消す
@@ -34,7 +46,5 @@ class BaseViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
         
     }
-
-
 
 }

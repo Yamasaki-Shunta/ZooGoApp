@@ -10,7 +10,6 @@ import SegementSlide
 
 class NewsViewController: SegementSlideDefaultViewController{
     
-
     
     override func viewDidLoad() {
 
@@ -20,13 +19,8 @@ class NewsViewController: SegementSlideDefaultViewController{
 
     defaultSelectedIndex = 0
         
-        setSwipeBack()
-        
-        
-
+   
     }
-
-
 
     override func segementSlideHeaderView() -> UIView {
 
@@ -65,16 +59,11 @@ class NewsViewController: SegementSlideDefaultViewController{
         
     }
     
-    
-
     override func segementSlideContentViewController(at index: Int) -> SegementSlideContentScrollViewDelegate? {
         
             
         return PageViewController()
     
         }
-    
-    
-    
-    }
 
+    }

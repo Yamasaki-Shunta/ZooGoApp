@@ -1,13 +1,13 @@
 //
-//   backsystem.swift
+//  BackSwipe.swift
 //  ZooGoApp
 //
-//  Created by 山﨑隼汰 on 2021/01/03.
+//  Created by 山﨑隼汰 on 2021/01/04.
 //
 
 import UIKit
 
-extension UIViewController{
+   extension UIViewController {
    
    func setSwipeBack(){
    let target = self.navigationController?.value(forKey: "_cachedInteractionController")
@@ -17,3 +17,4 @@ extension UIViewController{
    }
    
 }
+

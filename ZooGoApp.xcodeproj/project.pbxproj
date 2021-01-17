@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E2F97D525B001C80013DE99 /* SetupJudgment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F97D425B001C80013DE99 /* SetupJudgment.swift */; };
+		6E2F97FF25B0047C0013DE99 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F97FE25B0047C0013DE99 /* 1.json */; };
+		6E2F980425B004820013DE99 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F980325B004820013DE99 /* 2.json */; };
+		6E2F981225B0075C0013DE99 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F981125B0075C0013DE99 /* 3.json */; };
+		6E3901D425B1F885009C7C07 /* EastSwipeAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3901D325B1F885009C7C07 /* EastSwipeAnimalViewController.swift */; };
+		6E4F803925A779B50008A78B /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F803825A779B50008A78B /* DataBase.swift */; };
 		6E9097A6259DCA4600DFDFA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9097A5259DCA4600DFDFA4 /* AppDelegate.swift */; };
 		6E9097A8259DCA4600DFDFA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9097A7259DCA4600DFDFA4 /* SceneDelegate.swift */; };
 		6E9097AD259DCA4600DFDFA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9097AB259DCA4600DFDFA4 /* Main.storyboard */; };
@@ -14,16 +20,16 @@
 		6E9097B2259DCA4700DFDFA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9097B0259DCA4700DFDFA4 /* LaunchScreen.storyboard */; };
 		6E9097BD259DCA4700DFDFA4 /* ZooGoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9097BC259DCA4700DFDFA4 /* ZooGoAppTests.swift */; };
 		6E9097C8259DCA4700DFDFA4 /* ZooGoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9097C7259DCA4700DFDFA4 /* ZooGoAppUITests.swift */; };
-		6E90981B259E081B00DFDFA4 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E90981A259E081B00DFDFA4 /* 1.json */; };
-		6E909820259E082300DFDFA4 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E90981F259E082300DFDFA4 /* 2.json */; };
-		6E909825259E082800DFDFA4 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E909824259E082800DFDFA4 /* 3.json */; };
 		6E909830259E0EBF00DFDFA4 /* IntoroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E90982F259E0EBF00DFDFA4 /* IntoroViewController.swift */; };
 		6E90983B259EE73400DFDFA4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E90983A259EE73400DFDFA4 /* BaseViewController.swift */; };
 		6E90986325A0537500DFDFA4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E90986225A0537500DFDFA4 /* Item.swift */; };
 		6E90987E25A0620800DFDFA4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E90987D25A0620800DFDFA4 /* NewsViewController.swift */; };
 		6E90988325A062DC00DFDFA4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E90988225A062DC00DFDFA4 /* PageViewController.swift */; };
 		6E90988B25A0643200DFDFA4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E90988A25A0643200DFDFA4 /* WebViewController.swift */; };
-		6E90989625A1A3D700DFDFA4 /*  backsystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E90989525A1A3D700DFDFA4 /*  backsystem.swift */; };
+		6E9098A825A21D2400DFDFA4 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9098A725A21D2400DFDFA4 /* SelectViewController.swift */; };
+		6EE9E6C225A223C3008FDB33 /* BackSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9E6C125A223C3008FDB33 /* BackSwipe.swift */; };
+		6EE9E6CD25A2EE35008FDB33 /* EastMatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9E6CC25A2EE35008FDB33 /* EastMatchingViewController.swift */; };
+		6EE9E6D525A5FB3D008FDB33 /* EastResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9E6D425A5FB3D008FDB33 /* EastResultViewController.swift */; };
 		9BD4DC279D0074BEC8515CB0 /* Pods_ZooGoApp_ZooGoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912CE5296352D55BFE60C7AC /* Pods_ZooGoApp_ZooGoAppUITests.framework */; };
 		B0913851DCA00EE84F80BA5A /* Pods_ZooGoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C1728321376BFF4000E295 /* Pods_ZooGoAppTests.framework */; };
 		D58D36B24AE8CAC4442DF8DB /* Pods_ZooGoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33EE8755C58CFC0795C8E984 /* Pods_ZooGoApp.framework */; };
@@ -50,6 +56,12 @@
 		1067004DBB2C9D791E9541F1 /* Pods-ZooGoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooGoApp.debug.xcconfig"; path = "Target Support Files/Pods-ZooGoApp/Pods-ZooGoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		33EE8755C58CFC0795C8E984 /* Pods_ZooGoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZooGoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		652AD3155AF3F9D779E67D7F /* Pods-ZooGoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooGoApp.release.xcconfig"; path = "Target Support Files/Pods-ZooGoApp/Pods-ZooGoApp.release.xcconfig"; sourceTree = "<group>"; };
+		6E2F97D425B001C80013DE99 /* SetupJudgment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupJudgment.swift; sourceTree = "<group>"; };
+		6E2F97FE25B0047C0013DE99 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		6E2F980325B004820013DE99 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
+		6E2F981125B0075C0013DE99 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
+		6E3901D325B1F885009C7C07 /* EastSwipeAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EastSwipeAnimalViewController.swift; sourceTree = "<group>"; };
+		6E4F803825A779B50008A78B /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		6E9097A2259DCA4600DFDFA4 /* ZooGoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZooGoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9097A5259DCA4600DFDFA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E9097A7259DCA4600DFDFA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,17 +75,17 @@
 		6E9097C3259DCA4700DFDFA4 /* ZooGoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZooGoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9097C7259DCA4700DFDFA4 /* ZooGoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooGoAppUITests.swift; sourceTree = "<group>"; };
 		6E9097C9259DCA4700DFDFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E90981A259E081B00DFDFA4 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
-		6E90981F259E082300DFDFA4 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
-		6E909824259E082800DFDFA4 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
 		6E90982F259E0EBF00DFDFA4 /* IntoroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntoroViewController.swift; sourceTree = "<group>"; };
 		6E90983A259EE73400DFDFA4 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		6E90986225A0537500DFDFA4 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6E90987D25A0620800DFDFA4 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		6E90988225A062DC00DFDFA4 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		6E90988A25A0643200DFDFA4 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		6E90989525A1A3D700DFDFA4 /*  backsystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " backsystem.swift"; sourceTree = "<group>"; };
+		6E9098A725A21D2400DFDFA4 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		6EB0D8C892C4F7E29661CFAF /* Pods-ZooGoApp-ZooGoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooGoApp-ZooGoAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ZooGoApp-ZooGoAppUITests/Pods-ZooGoApp-ZooGoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6EE9E6C125A223C3008FDB33 /* BackSwipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackSwipe.swift; sourceTree = "<group>"; };
+		6EE9E6CC25A2EE35008FDB33 /* EastMatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EastMatchingViewController.swift; sourceTree = "<group>"; };
+		6EE9E6D425A5FB3D008FDB33 /* EastResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EastResultViewController.swift; sourceTree = "<group>"; };
 		70C1728321376BFF4000E295 /* Pods_ZooGoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZooGoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		912CE5296352D55BFE60C7AC /* Pods_ZooGoApp_ZooGoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZooGoApp_ZooGoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AE8A63A2E9C086DE1B2720 /* Pods-ZooGoApp-ZooGoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooGoApp-ZooGoAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZooGoApp-ZooGoAppUITests/Pods-ZooGoApp-ZooGoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,7 +188,9 @@
 			isa = PBXGroup;
 			children = (
 				6E90986225A0537500DFDFA4 /* Item.swift */,
-				6E90989525A1A3D700DFDFA4 /*  backsystem.swift */,
+				6EE9E6C125A223C3008FDB33 /* BackSwipe.swift */,
+				6E4F803825A779B50008A78B /* DataBase.swift */,
+				6E2F97D425B001C80013DE99 /* SetupJudgment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +207,7 @@
 		6E909800259E045300DFDFA4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6E9098A325A2161900DFDFA4 /* MatchingZoo */,
 				6E90987C25A0612D00DFDFA4 /* Newsreader */,
 				6E90982F259E0EBF00DFDFA4 /* IntoroViewController.swift */,
 				6E90983A259EE73400DFDFA4 /* BaseViewController.swift */,
@@ -205,9 +220,9 @@
 		6E909819259E07F100DFDFA4 /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				6E90981A259E081B00DFDFA4 /* 1.json */,
-				6E90981F259E082300DFDFA4 /* 2.json */,
-				6E909824259E082800DFDFA4 /* 3.json */,
+				6E2F97FE25B0047C0013DE99 /* 1.json */,
+				6E2F980325B004820013DE99 /* 2.json */,
+				6E2F981125B0075C0013DE99 /* 3.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -220,6 +235,25 @@
 				6E90988A25A0643200DFDFA4 /* WebViewController.swift */,
 			);
 			path = Newsreader;
+			sourceTree = "<group>";
+		};
+		6E9098A325A2161900DFDFA4 /* MatchingZoo */ = {
+			isa = PBXGroup;
+			children = (
+				6EBC0E3825AB0007002B520E /* Cute */,
+			);
+			path = MatchingZoo;
+			sourceTree = "<group>";
+		};
+		6EBC0E3825AB0007002B520E /* Cute */ = {
+			isa = PBXGroup;
+			children = (
+				6E9098A725A21D2400DFDFA4 /* SelectViewController.swift */,
+				6EE9E6CC25A2EE35008FDB33 /* EastMatchingViewController.swift */,
+				6E3901D325B1F885009C7C07 /* EastSwipeAnimalViewController.swift */,
+				6EE9E6D425A5FB3D008FDB33 /* EastResultViewController.swift */,
+			);
+			path = Cute;
 			sourceTree = "<group>";
 		};
 		E39746387424395ED82D836F /* Pods */ = {
@@ -343,12 +377,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E909820259E082300DFDFA4 /* 2.json in Resources */,
+				6E2F980425B004820013DE99 /* 2.json in Resources */,
 				6E9097B2259DCA4700DFDFA4 /* LaunchScreen.storyboard in Resources */,
 				6E9097AF259DCA4700DFDFA4 /* Assets.xcassets in Resources */,
-				6E909825259E082800DFDFA4 /* 3.json in Resources */,
+				6E2F981225B0075C0013DE99 /* 3.json in Resources */,
 				6E9097AD259DCA4600DFDFA4 /* Main.storyboard in Resources */,
-				6E90981B259E081B00DFDFA4 /* 1.json in Resources */,
+				6E2F97FF25B0047C0013DE99 /* 1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,15 +510,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E90989625A1A3D700DFDFA4 /*  backsystem.swift in Sources */,
+				6E9098A825A21D2400DFDFA4 /* SelectViewController.swift in Sources */,
+				6EE9E6CD25A2EE35008FDB33 /* EastMatchingViewController.swift in Sources */,
+				6E4F803925A779B50008A78B /* DataBase.swift in Sources */,
 				6E9097A6259DCA4600DFDFA4 /* AppDelegate.swift in Sources */,
 				6E90983B259EE73400DFDFA4 /* BaseViewController.swift in Sources */,
 				6E9097A8259DCA4600DFDFA4 /* SceneDelegate.swift in Sources */,
 				6E90987E25A0620800DFDFA4 /* NewsViewController.swift in Sources */,
 				6E90988325A062DC00DFDFA4 /* PageViewController.swift in Sources */,
 				6E90986325A0537500DFDFA4 /* Item.swift in Sources */,
+				6E2F97D525B001C80013DE99 /* SetupJudgment.swift in Sources */,
 				6E909830259E0EBF00DFDFA4 /* IntoroViewController.swift in Sources */,
 				6E90988B25A0643200DFDFA4 /* WebViewController.swift in Sources */,
+				6EE9E6C225A223C3008FDB33 /* BackSwipe.swift in Sources */,
+				6EE9E6D525A5FB3D008FDB33 /* EastResultViewController.swift in Sources */,
+				6E3901D425B1F885009C7C07 /* EastSwipeAnimalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

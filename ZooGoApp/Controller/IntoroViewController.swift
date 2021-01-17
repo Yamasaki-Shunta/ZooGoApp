@@ -14,7 +14,7 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
     var onboardArray = ["1","2","3"]
     
     //テキストを用意する
-    var onboardStringArray = ["あなたの最適な動物園を見つけよう！","最新情報をチェックしよう!","動画を撮影してSNSにシェアしよう!"]
+    var onboardStringArray = ["お気に入りの動物をスワイプしよう！","動画を撮影してSNSにシェアしよう!","動物の最新情報を見よう！"]
     
     //スクリーンの幅
     let screenWidth = Int( UIScreen.main.bounds.size.width)
@@ -22,16 +22,19 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
     let screenHeight = Int(UIScreen.main.bounds.size.height)
     
     let scrollView = UIScrollView()
-
     
     @IBOutlet weak var coverView: UIView!
     
-  
+    @IBOutlet weak var pageContol: UIPageControl!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //ページジングができるようになる
         scrollView.isPagingEnabled = true
+        
+        self.scrollView.delegate = self
         
         setUpScroll()
             
@@ -40,6 +43,7 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
             
             let animationView = AnimationView()
             let animation = Animation.named(onboardArray[i])
+           
             animationView.frame = CGRect(x: CGFloat(i) * view.frame.size.width, y: 0, width: view.frame.size.width, height: view.frame.size.height)
             animationView.animation = animation
             //lottieの画面サイズを決める(変更可能)
@@ -56,10 +60,8 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
         
        
     }
-    
-    
     //ナビゲーションバーを消す
-    override func viewWillAppear(_ animated: Bool) {
+        override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         self.navigationController?.isNavigationBarHidden = true
@@ -70,7 +72,7 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
         
         //scrollViewのdelegateを自分に持ってくる
         scrollView.delegate = self
-        
+
         //scrollViewの大きさを設定
         scrollView.frame = self.view.frame
         
@@ -87,8 +89,10 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
             
     //フォントの大きさ
     onboardLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+    
     //テキストの配置
     onboardLabel.textAlignment =  .center
+
     //どのテキストをしようするのか
     onboardLabel.text = onboardStringArray[i]
 
@@ -99,7 +103,27 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
     }
     
     }
-
     
+    
+    @IBAction func tapPageControl(_ sender:UIPageControl) {
+   
+        scrollView.contentOffset.x = scrollView.frame.maxX * CGFloat(sender.currentPage)
+    
+    }
+    
+    
+    func scrollViewDidEndDecelerating (_ scrollView: UIScrollView) {
+     
+            //ページコントロールに現在のページ番号を設定する。
+        pageContol.currentPage = Int (scrollView.contentOffset.x / scrollView.frame.maxX)
+        
+        
+        }
+    
+    @IBAction func skipButton(_ sender: Any) {
+ 
+        self.dismiss(animated: true, completion: nil)
+    
+    }
 
 }
