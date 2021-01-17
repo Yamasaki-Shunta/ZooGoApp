@@ -9,9 +9,7 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
-    
     @IBOutlet weak var questionLabel: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +22,6 @@ class BaseViewController: UIViewController {
         
         self.questionLabel.clipsToBounds = true
         
-                
-        
-       
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -51,7 +46,5 @@ class BaseViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
         
     }
-
-
 
 }

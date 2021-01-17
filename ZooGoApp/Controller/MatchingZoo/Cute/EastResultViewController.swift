@@ -9,7 +9,6 @@ import UIKit
 
 class EastResultViewController: UIViewController,UIScrollViewDelegate{
 
-    
     var passedAnimalName = [String]()
     
     var conditions = [(DataSet) -> Bool]()
@@ -18,28 +17,14 @@ class EastResultViewController: UIViewController,UIScrollViewDelegate{
   
     var dataset: [DataSet] = eastCuteData
     
-    let zooNameA = UILabel()
-    
-    let zooNameB = UILabel()
-    
-    let zooNameC = UILabel()
-    
-    let zooNameD = UILabel()
-    
-    let zooNameE = UILabel()
-    
     //スクリーンショット入れる入れ物
     var screenShotImage = UIImage()
     
-    
     @IBOutlet weak var coverView: UIView!
-    
 
-    
     @IBOutlet weak var titleLabel: UILabel!
     
-    
-    let img:[String] = ["パンダ","スナネコ","ゴリラ"]
+    @IBOutlet weak var pageControl: UIPageControl!
     
     // Totalのページ数
     var pageNum:Int!
@@ -54,17 +39,22 @@ class EastResultViewController: UIViewController,UIScrollViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.scrollView.delegate = self
+        
         //ページジングができるようになる
         scrollView.isPagingEnabled = true
+    
+        zooMatching(passedAnimalName: passedAnimalName)
+        
+        pageNum = resultList.count
         
         setupScrollImages()
         
-        let imageTop:UIImage = UIImage(named:img[0])!
-        pageNum = img.count
+        let imageTop:UIImage = UIImage(named:resultList[0])!
         
         for i in 0 ..< pageNum {
         // UIImageViewのインスタンス
-        let image:UIImage = UIImage(named:img[i])!
+        let image:UIImage = UIImage(named:resultList[i])!
         let imageView = UIImageView(image:image)
                     
             imageView.frame = CGRect(x: CGFloat(i) * view.frame.size.width, y: 0, width: view.frame.size.width, height: view.frame.size.height)
@@ -76,23 +66,27 @@ class EastResultViewController: UIViewController,UIScrollViewDelegate{
             // UIScrollViewのインスタンスに画像を貼付ける
             scrollView.addSubview(imageView)
                     
-                }
-    
+        }
+        
         //ラベルの背景の角を丸くする
         titleLabel.layer.cornerRadius = 20.0
         titleLabel.clipsToBounds = true
         
-        coverView.frame = CGRect(x: 0, y: 0, width: screenWidth*pageNum, height: screenHeight)
-        coverView.backgroundColor = .clear
-        scrollView.addSubview(coverView)
-   
         
+        pageControl.numberOfPages = pageNum
+        
+        pageControl.currentPage = 0
+        
+        pageControl.isUserInteractionEnabled = false
+        
+        self.coverView.addSubview(pageControl)
+        
+        scrollView.addSubview(coverView)
         
     }
     
     func setupScrollImages(){
-           
-       
+
         //scrollViewのdelegateを自分に持ってくる
         scrollView.delegate = self
         
@@ -100,22 +94,18 @@ class EastResultViewController: UIViewController,UIScrollViewDelegate{
         scrollView.frame = self.view.frame
         
         //スクロール稼働の領域を決める
-        scrollView.contentSize = CGSize(width:screenWidth*3, height:screenHeight-50)
+        scrollView.contentSize = CGSize(width:screenWidth*pageNum, height:screenHeight-50)
         
         self.view.addSubview(scrollView)
-        
-           
-       }
-   
-
     
+       }
+
     @IBAction func dismissButton(_ sender: Any) {
    
        
-    self.presentingViewController?.presentingViewController?.dismiss(animated: false, completion: nil)
+        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: false, completion: nil)
         
     }
-    
     
     @IBAction func share(_ sender: Any) {
   
@@ -130,12 +120,41 @@ class EastResultViewController: UIViewController,UIScrollViewDelegate{
         
      present(activityVC, animated: true, completion: nil)
             
-        
-    
-    
     }
     
-func takeScreenShot() {
+    func zooMatching(passedAnimalName:[String] ) {
+    
+    //animalNameとpassedAnimalNameに含まれる要素を抽出
+     
+    for filterWord in passedAnimalName {
+
+    conditions.append{$0.animalName.contains(filterWord)
+        
+        }
+     }
+    
+     let filteredData = dataset.filter { element in conditions.reduce(false){$0 != $1(element)}
+      
+    }
+        
+    filteredData.forEach ({ element in
+            
+    resultList.append(element.parkName)
+            
+    })
+    
+    }
+
+func scrollViewDidEndDecelerating (_ scrollView: UIScrollView) {
+     
+    if fmod(scrollView.contentOffset.x, scrollView.frame.maxX) == 0 {
+    // ページの場所を切り替える.
+    pageControl.currentPage = Int(scrollView.contentOffset.x / scrollView.frame.maxX)
+        
+            }
+        }
+    
+  func takeScreenShot() {
  
     let width = CGFloat(UIScreen.main.bounds.size.width)
     let height = CGFloat(UIScreen.main.bounds.size.height/1.3)
@@ -149,6 +168,5 @@ func takeScreenShot() {
         UIGraphicsEndImageContext()
         
     }
-    
-    
+
 }

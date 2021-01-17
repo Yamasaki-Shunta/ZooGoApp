@@ -23,6 +23,7 @@ let eastCuteData = [
     DataSet(animalName: "レッサーパンダ", parkName:"八木山動物園"),
     DataSet(animalName: "オウサマペンギン", parkName:"旭山動物園"),
     DataSet(animalName: "ワオキツネザル", parkName:"東武動物公園"),
+    DataSet(animalName: "オカピ", parkName:"よこはま動物園ズーラシア"),
     DataSet(animalName: "ベアードバク", parkName:"金沢動物園"),
     DataSet(animalName: "シロサイ", parkName:"群馬サファリパーク"),
     DataSet(animalName: "アムールトラ", parkName:"宇都宮動物園"),
@@ -30,8 +31,7 @@ let eastCuteData = [
     DataSet(animalName: "カピバラ", parkName:"伊豆シャボテン動物公園"),
     DataSet(animalName: "タスマニアデビル", parkName:"多摩動物公園"),
     DataSet(animalName: "コアラ", parkName:"埼玉こども動物自然公園"),
-    DataSet(animalName: "エゾヒグマ", parkName:"日立市かみね動物園"),
+    DataSet(animalName: "エゾヒグマ", parkName:"かみね動物園"),
     DataSet(animalName: "パンダ", parkName:"上野動物園")
-
 
 ]

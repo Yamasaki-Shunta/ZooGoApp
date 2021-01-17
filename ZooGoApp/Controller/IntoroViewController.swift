@@ -14,7 +14,7 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
     var onboardArray = ["1","2","3"]
     
     //テキストを用意する
-    var onboardStringArray = ["あなたの最適な動物園を見つけよう！","最新情報をチェックしよう!","動画を撮影してSNSにシェアしよう!"]
+    var onboardStringArray = ["お気に入りの動物をスワイプしよう！","動画を撮影してSNSにシェアしよう!","動物の最新情報を見よう！"]
     
     //スクリーンの幅
     let screenWidth = Int( UIScreen.main.bounds.size.width)
@@ -22,8 +22,6 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
     let screenHeight = Int(UIScreen.main.bounds.size.height)
     
     let scrollView = UIScrollView()
-
-    var pageControll: UIPageControl!
     
     @IBOutlet weak var coverView: UIView!
     
@@ -32,8 +30,6 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
         //ページジングができるようになる
         scrollView.isPagingEnabled = true
@@ -64,10 +60,7 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
         
        
     }
-    
-    
     //ナビゲーションバーを消す
-        
         override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -96,8 +89,10 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
             
     //フォントの大きさ
     onboardLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+    
     //テキストの配置
     onboardLabel.textAlignment =  .center
+
     //どのテキストをしようするのか
     onboardLabel.text = onboardStringArray[i]
 
@@ -125,17 +120,10 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
         
         }
     
-    
-    
     @IBAction func skipButton(_ sender: Any) {
  
         self.dismiss(animated: true, completion: nil)
     
     }
-    
-    
-    
-    
-   
+
 }
-     

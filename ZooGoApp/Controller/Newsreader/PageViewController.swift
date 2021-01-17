@@ -12,7 +12,6 @@ import SegementSlide
 
 class PageViewController: UITableViewController,SegementSlideContentScrollViewDelegate,XMLParserDelegate {
     
-    
     //XMLParserのインスタンスを作成する
     var parser = XMLParser()
     
@@ -20,9 +19,7 @@ class PageViewController: UITableViewController,SegementSlideContentScrollViewDe
     var currentElementName:String!
     
     var newsItems = [NewsItems]()
-    //var sections = [String]()
 
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +33,6 @@ class PageViewController: UITableViewController,SegementSlideContentScrollViewDe
         parser.delegate = self
         parser.parse()
       
-        
     }
     
     //テーブルビューに返す
@@ -45,9 +41,6 @@ class PageViewController: UITableViewController,SegementSlideContentScrollViewDe
         return tableView
         
     }
-    
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -90,8 +83,6 @@ class PageViewController: UITableViewController,SegementSlideContentScrollViewDe
         
         return cell
     }
-    
-
 
     //XMLパース
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
@@ -102,18 +93,13 @@ class PageViewController: UITableViewController,SegementSlideContentScrollViewDe
             
             //itemのエレメントが見つかった場合、NewsItemsを用意する
             self.newsItems.append(NewsItems())
-            
-    
-            
+        
         }else{
             
             currentElementName = elementName
             
         }
-        
-        
     }
-    
     
     func parser(_ parser: XMLParser, foundCharacters string: String) {
         
@@ -163,11 +149,7 @@ class PageViewController: UITableViewController,SegementSlideContentScrollViewDe
         let newsItem = newsItems[indexPath.row]
         UserDefaults.standard.set(newsItem.url, forKey: "url")
         
-        
-        
-        
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

@@ -10,7 +10,6 @@ import SegementSlide
 
 class NewsViewController: SegementSlideDefaultViewController{
     
-
     
     override func viewDidLoad() {
 
@@ -22,8 +21,6 @@ class NewsViewController: SegementSlideDefaultViewController{
         
    
     }
-
-
 
     override func segementSlideHeaderView() -> UIView {
 
@@ -62,16 +59,11 @@ class NewsViewController: SegementSlideDefaultViewController{
         
     }
     
-    
-
     override func segementSlideContentViewController(at index: Int) -> SegementSlideContentScrollViewDelegate? {
         
             
         return PageViewController()
     
         }
-    
-    
-    
-    }
 
+    }

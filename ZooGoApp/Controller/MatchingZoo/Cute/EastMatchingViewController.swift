@@ -11,19 +11,23 @@ import Koloda
 class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaViewDelegate,UIGestureRecognizerDelegate {
 
     
-    @IBOutlet weak var kolodaView: KolodaView!
-    
     var animalImageSet:[DataSet] = eastCuteData
     
     var animalImage:[String] = []
     
     var likedArray = [String]()
     
-    @IBOutlet weak var overlayImageview: UIImageView!
+    var nopedArray = [String]()
     
     let overlayRightImageName = "likeJudgedImage"
+    
     let overlayLeftImageName = "nopeJudgedImage"
     
+    @IBOutlet weak var overlayImageview: UIImageView!
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var kolodaView: KolodaView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +41,6 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
 
     }
     
-    
     func dataSet() {
         
         animalImageSet.forEach { element in
@@ -46,10 +49,9 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
             
         }
         
+        animalImage = animalImage.shuffled()
         
     }
-    
-    
     
     //カード枚数設定
     func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
@@ -80,16 +82,11 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
     //カードスワイプ終了
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
           
-        
         print("Finish cards.")
-        screenTransition()
-       
-        //シャッフル/拡張機能
-        //imageNameArray = imageNameArray.shuffled()
-        //リスタート/拡張機能
-        //koloda.resetCurrentCardIndex()
+        
+        DidSwipeCardsScreenTransition(koloda)
   
-   }
+  }
         
     //カードをタップした時に呼ばれる/拡張機能
     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
@@ -100,7 +97,7 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
     //darag中に呼ばれる
     func koloda(_ koloda: KolodaView, shouldDragCardAt index: Int) -> Bool {
         print(index, "drag")
-        
+    
         overlayImageview.image = nil
    
         return true
@@ -113,23 +110,33 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
         switch direction {
       
         case .left:
+          
             overlayImageview.image = UIImage(named: overlayLeftImageName)
+           
+            nopedArray.append((animalImage[index]as String?)!)
+            
+            print(nopedArray)
        
+     
         case.right:
             
             overlayImageview.image = UIImage(named: overlayRightImageName)
 
             likedArray.append((animalImage[index]as String?)!)
            
+            //重複している要素の削除
+            
             let orderedSet: NSOrderedSet = NSOrderedSet(array: likedArray)
             
             likedArray =  orderedSet.array as! [String]
-    
-            screenTransition()
             
+            nopedArray.removeAll()
+    
             print(likedArray)
+            
+            screenTransition()
                     
-                    return
+            return
             
         default:
             
@@ -137,43 +144,49 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
             
         }
         
-    
-}
-    
+        }
     
     func screenTransition() {
     
         if likedArray.count == 5 {
             
-            performSegue(withIdentifier: "resultVC", sender: nil)
+            performSegue(withIdentifier: "swipeAnimalVC", sender: nil)
 
+        }
+    }
+    
+    func DidSwipeCardsScreenTransition(_ koloda: KolodaView) {
+    
+        if likedArray.count > 0 {
+        
+        performSegue(withIdentifier: "swipeAnimalVC", sender: nil)
+            
+        }else{
+        
+        koloda.resetCurrentCardIndex()
+        
             
         }
 
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      
-        if segue.identifier == "resultVC" {
+        if segue.identifier == "swipeAnimalVC" {
         
-        let ResultVC = segue.destination as! EastResultViewController
-
+        let swipeAnimalVC = segue.destination as! EastSwipeAnimalViewController
        
-        ResultVC.passedAnimalName = likedArray
+            swipeAnimalVC.swipedAnimalName = likedArray
         
       }
         
     }
     
-    
     @IBAction func likeButton(_ sender: Any) {
   
-    
         kolodaView.swipe(.right)
+        
     }
-    
-    
     
     @IBAction func nopeButton(_ sender: Any) {
    
@@ -181,24 +194,22 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
         
     }
     
-    
-    
+    //カードを一つ戻す
     @IBAction func revertButton(_ sender: Any) {
 
-            kolodaView?.revertAction()
+        if  nopedArray == [] {
+            
+            likedArray.removeLast()
+            
+        }
+        
+        kolodaView?.revertAction()
         
     }
     
     @IBAction func dismissButton(_ sender: Any) {
    
         self.dismiss(animated: true, completion: nil)
-
-
-    
+        
     }
-    
-    
-    
-    
-    
 }

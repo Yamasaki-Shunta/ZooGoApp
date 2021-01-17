@@ -21,9 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                 let firstLunchKey = "firstLunch"
                 let firstLunch = [firstLunchKey: true]
                 ud.register(defaults: firstLunch)
-
-        
-        
         
         return true
     }

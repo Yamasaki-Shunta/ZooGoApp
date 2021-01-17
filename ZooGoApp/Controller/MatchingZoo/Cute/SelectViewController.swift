@@ -9,13 +9,10 @@ import UIKit
 
 class SelectViewController: UIViewController {
 
-  
+    
     @IBOutlet weak var eastJapanButton: UIButton!
     
-    
     @IBOutlet weak var westJapanButton: UIButton!
-    
-    
     
     @IBOutlet weak var coverView: UIView!
     
@@ -27,19 +24,13 @@ class SelectViewController: UIViewController {
         self.eastJapanButton.layer.cornerRadius = 20.0
         self.westJapanButton.layer.cornerRadius = 20.0
         
-        // Do any additional setup after loading the view.
+       
     }
-    
- 
     
     @IBAction func dismissButton(_ sender: Any) {
    
-        self.dismiss(animated: true, completion: nil)
-    
+    self.dismiss(animated: true, completion: nil)
     
     }
-    
-    
-   
 
 }

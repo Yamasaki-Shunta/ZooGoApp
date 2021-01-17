@@ -30,7 +30,5 @@ class WebViewController: UIViewController,WKUIDelegate {
         
     
     }
-         
-    
     
 }
