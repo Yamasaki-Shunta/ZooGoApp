@@ -24,7 +24,6 @@ class SelectViewController: UIViewController {
         self.eastJapanButton.layer.cornerRadius = 20.0
         self.westJapanButton.layer.cornerRadius = 20.0
         
-       
     }
     
     @IBAction func dismissButton(_ sender: Any) {
