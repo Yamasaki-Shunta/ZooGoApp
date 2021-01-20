@@ -1,17 +1,16 @@
 //
-//  CuteViewController.swift
+//  WestMatchingViewController.swift
 //  ZooGoApp
 //
-//  Created by 山﨑隼汰 on 2021/01/04.
+//  Created by 山﨑隼汰 on 2021/01/17.
 //
 
 import UIKit
 import Koloda
 
-class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaViewDelegate,UIGestureRecognizerDelegate {
-
+class WestMatchingViewController:UIViewController,KolodaViewDataSource,KolodaViewDelegate,UIGestureRecognizerDelegate {
     
-    var animalImageSet:[DataSet] = eastCuteData
+    var animalImageSet:[DataSet] = westCuteDate
     
     var animalImage:[String] = []
     

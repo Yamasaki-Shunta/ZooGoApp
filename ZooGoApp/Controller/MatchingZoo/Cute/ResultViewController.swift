@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EastResultViewController: UIViewController,UIScrollViewDelegate{
+class ResultViewController: UIViewController,UIScrollViewDelegate{
 
     var passedAnimalName = [String]()
     
@@ -15,7 +15,7 @@ class EastResultViewController: UIViewController,UIScrollViewDelegate{
    
     var resultList: [String] = []
   
-    var dataset: [DataSet] = eastCuteData
+    var passedDataSet: [DataSet] = []
     
     //スクリーンショット入れる入れ物
     var screenShotImage = UIImage()
@@ -38,6 +38,8 @@ class EastResultViewController: UIViewController,UIScrollViewDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(passedDataSet)
         
         self.scrollView.delegate = self
         
@@ -133,7 +135,7 @@ class EastResultViewController: UIViewController,UIScrollViewDelegate{
         }
      }
     
-     let filteredData = dataset.filter { element in conditions.reduce(false){$0 != $1(element)}
+     let filteredData = passedDataSet.filter { element in conditions.reduce(false){$0 != $1(element)}
       
     }
         
