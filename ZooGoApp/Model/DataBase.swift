@@ -16,11 +16,11 @@ struct DataSet {
     
 }
 
-let eastCuteData = [
+let eastCuteData = [ 
 
     DataSet(animalName: "ホッキョクグマ", parkName:"円山動物園"),
     DataSet(animalName: "スナネコ", parkName:"那須どうぶつ王国"),
-    DataSet(animalName: "レッサーパンダ", parkName:"八木山動物園"),
+    DataSet(animalName: "レッサーパンダ", parkName:"八木山動物園"),
     DataSet(animalName: "オウサマペンギン", parkName:"旭山動物園"),
     DataSet(animalName: "ワオキツネザル", parkName:"東武動物公園"),
     DataSet(animalName: "オカピ", parkName:"よこはま動物園ズーラシア"),
@@ -32,6 +32,25 @@ let eastCuteData = [
     DataSet(animalName: "タスマニアデビル", parkName:"多摩動物公園"),
     DataSet(animalName: "コアラ", parkName:"埼玉こども動物自然公園"),
     DataSet(animalName: "エゾヒグマ", parkName:"かみね動物園"),
-    DataSet(animalName: "パンダ", parkName:"上野動物園")
+    DataSet(animalName: "ジャイアントパンダ", parkName:"上野動物園")
+
+]
+
+let westCuteDate = [
+
+    DataSet(animalName: "ジャガー", parkName:"京都動物園"),
+    DataSet(animalName: "ジャイアントパンダ", parkName:"アドベンチャーワールド"),
+    DataSet(animalName: "カバ", parkName:"天王寺動物園"),
+    DataSet(animalName: "ウォンバット", parkName:"五月山動物園"),
+    DataSet(animalName: "マヌルネコ", parkName:"王子動物園"),
+    DataSet(animalName: "ハシビロコウ", parkName:"神戸どうぶつ王国"),
+    DataSet(animalName: "オオサンショウウオ", parkName:"安佐動物園"),
+    DataSet(animalName: "シロテテナガザル", parkName:"ときわ動物園"),
+    DataSet(animalName: "オランウータン", parkName:"とべ動物園"),
+    DataSet(animalName: "コツメカワウソ", parkName:"のいち動物公園"),
+    DataSet(animalName: "キリン", parkName:"大牟田動物園"),
+    DataSet(animalName: "チンパンジー", parkName:"フェニックス自然動物園"),
+    DataSet(animalName: "シンリンオオカミ", parkName:"平川動物公園"),
+    DataSet(animalName: "キンカジュー", parkName:"ネオパーク沖縄"),
 
 ]

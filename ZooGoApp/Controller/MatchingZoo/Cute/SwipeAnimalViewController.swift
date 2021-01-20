@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EastSwipeAnimalViewController: UIViewController {
+class SwipeAnimalViewController: UIViewController {
 
     
     var swipedAnimalName = [String]()
@@ -22,11 +22,15 @@ class EastSwipeAnimalViewController: UIViewController {
     
     let zooNameE = UILabel()
     
+    var selectData:[DataSet] = []
+    
     @IBOutlet weak var stackView: UIStackView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(swipedAnimalName)
         
         displaylabel(animalName:swipedAnimalName)
         
@@ -34,9 +38,10 @@ class EastSwipeAnimalViewController: UIViewController {
     
     func displaylabel(animalName:[String]) {
     
-    zooNameA.font = UIFont(name: "HiraKakuProN-W6", size: 25)
-    zooNameB.font = UIFont(name: "HiraKakuProN-W6", size: 25)
-    zooNameC.font = UIFont(name: "HiraKakuProN-W6", size: 25)
+    zooNameA.font = UIFont(name: "HiraKakuProN-W6", size: 20)
+    zooNameB.font = UIFont(name: "HiraKakuProN-W6", size: 20)
+    zooNameC.font = UIFont(name: "HiraKakuProN-W6", size: 20)
+    zooNameD.font = UIFont(name: "HiraKakuProN-W6", size: 20)
         
     if animalName.count == 1 {
             
@@ -65,11 +70,7 @@ class EastSwipeAnimalViewController: UIViewController {
         
     }else if animalName.count == 4 {
     
-        zooNameA.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-        zooNameB.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-        zooNameC.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-        zooNameD.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-        
+       
         zooNameA.text = "1." + animalName[0]
         zooNameB.text = "2." + animalName[1]
         zooNameC.text = "3." + animalName[2]
@@ -117,9 +118,11 @@ class EastSwipeAnimalViewController: UIViewController {
      
         if segue.identifier == "resultVC" {
         
-        let ResultVC = segue.destination as! EastResultViewController
+        let ResultVC = segue.destination as! ResultViewController
        
         ResultVC.passedAnimalName = swipedAnimalName
+       
+        ResultVC.passedDataSet = selectData
         
       }
         

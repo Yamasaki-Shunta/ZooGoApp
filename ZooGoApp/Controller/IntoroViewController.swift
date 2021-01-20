@@ -14,7 +14,7 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
     var onboardArray = ["1","2","3"]
     
     //テキストを用意する
-    var onboardStringArray = ["お気に入りの動物をスワイプしよう！","動画を撮影してSNSにシェアしよう!","動物の最新情報を見よう！"]
+    var onboardStringArray = ["お気に入りの動物をスワイプしよう！","動画と音楽を合成しよう","動物の最新情報を見よう！"]
     
     //スクリーンの幅
     let screenWidth = Int( UIScreen.main.bounds.size.width)

@@ -148,8 +148,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カメラを撮ろう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYo-hI-aVb">
-                                <rect key="frame" x="44.5" y="641" width="86" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="動画を撮ろう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYo-hI-aVb">
+                                <rect key="frame" x="50.5" y="641" width="74" height="15"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -278,6 +278,9 @@
                                         <state key="normal" title="西日本">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="UfJ-wT-0Ix" kind="presentation" id="iA6-R0-CKY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yr3-3g-hKf">
                                         <rect key="frame" x="62" y="274" width="251" height="52"/>
@@ -487,12 +490,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41l-nv-hTR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4708" y="33.733133433283363"/>
+            <point key="canvasLocation" x="4817" y="-258"/>
         </scene>
-        <!--East Result View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="Xs0-6r-tBX">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="l1v-Rc-as3" customClass="EastResultViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="l1v-Rc-as3" customClass="ResultViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZAC-Aw-PD3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -592,7 +595,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KqX-7c-aeV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6294" y="34"/>
+            <point key="canvasLocation" x="6678" y="81"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="8EP-4k-nhg">
@@ -611,7 +614,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqE-41-h1m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2831" y="887"/>
+            <point key="canvasLocation" x="2830" y="1786"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="P8e-XC-KED">
@@ -627,7 +630,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZCQ-ae-Sci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3820" y="887"/>
+            <point key="canvasLocation" x="3882" y="1785"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c9g-YD-1WY">
@@ -647,10 +650,10 @@
             </objects>
             <point key="canvasLocation" x="1890" y="56"/>
         </scene>
-        <!--East Swipe Animal View Controller-->
+        <!--Swipe Animal View Controller-->
         <scene sceneID="NC3-mz-EP8">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Mtr-E6-gYR" customClass="EastSwipeAnimalViewController" customModule="ZooGoApp" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Mtr-E6-gYR" customClass="SwipeAnimalViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2HH-7M-93L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -761,9 +764,154 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coK-ZK-tNk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5496.8000000000002" y="33.733133433283363"/>
+            <point key="canvasLocation" x="5772" y="82"/>
+        </scene>
+        <!--West Matching View Controller-->
+        <scene sceneID="Cxm-ko-qDI">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="UfJ-wT-0Ix" customClass="WestMatchingViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dsp-04-lkI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfX-kC-B5B" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="14" y="179" width="347" height="309"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l8u-M5-yzo">
+                                <rect key="frame" x="128" y="506" width="126" height="99"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3S-Qb-ylX">
+                                <rect key="frame" x="11.5" y="506" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="BeU-s9-tuD"/>
+                                    <constraint firstAttribute="height" constant="110" id="RqG-6r-2YO"/>
+                                </constraints>
+                                <state key="normal" image="nopeButtonImage"/>
+                                <connections>
+                                    <action selector="nopeButton:" destination="UfJ-wT-0Ix" eventType="touchUpInside" id="Q5S-rd-xZO"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOJ-DK-FS4">
+                                <rect key="frame" x="0.0" y="6" width="375" height="44"/>
+                                <items/>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYX-Zx-IyR">
+                                <rect key="frame" x="252.5" y="506" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="M6G-Dr-2Um"/>
+                                </constraints>
+                                <state key="normal" image="likeButtonImage"/>
+                                <connections>
+                                    <action selector="likeButton:" destination="UfJ-wT-0Ix" eventType="touchUpInside" id="V2r-nM-0gf"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="MKY-J6-dWN">
+                                <rect key="frame" x="137.5" y="-12" width="100" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wI6-Gb-wfb">
+                                <rect key="frame" x="22.5" y="14.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AWp-rU-cyO"/>
+                                    <constraint firstAttribute="width" constant="30" id="aer-Ax-Qnr"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="線の三角矢印のアイコン"/>
+                                <connections>
+                                    <action selector="dismissButton:" destination="UfJ-wT-0Ix" eventType="touchUpInside" id="Kxa-BY-4P2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIG-HR-o0i">
+                                <rect key="frame" x="322" y="13" width="30" height="30"/>
+                                <state key="normal" title="Button" image="やり直しのアイコン"/>
+                                <connections>
+                                    <action selector="revertButton:" destination="UfJ-wT-0Ix" eventType="touchUpInside" id="Iy1-cH-1an"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1〜5枚のカードを選んでね" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5K7-JP-47C">
+                                <rect key="frame" x="39" y="78" width="297" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Zor-6i-jmr"/>
+                                    <constraint firstAttribute="width" constant="297" id="ym1-tn-Cef"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="すき→" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlT-fg-U8W">
+                                <rect key="frame" x="293" y="136" width="93" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="EXN-Cm-xJa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="←いいえ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFe-Up-NnD">
+                                <rect key="frame" x="0.0" y="136" width="93" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="mkJ-9k-XSa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.04853696398" green="0.47551801760000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8ef-Fk-S9q"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PIG-HR-o0i" firstAttribute="top" secondItem="8ef-Fk-S9q" secondAttribute="top" constant="13" id="10U-bf-Bce"/>
+                            <constraint firstItem="l3S-Qb-ylX" firstAttribute="top" secondItem="XYX-Zx-IyR" secondAttribute="top" id="45X-zy-efV"/>
+                            <constraint firstItem="gOJ-DK-FS4" firstAttribute="top" secondItem="8ef-Fk-S9q" secondAttribute="top" constant="6" id="6Gy-DY-y3K"/>
+                            <constraint firstItem="gOJ-DK-FS4" firstAttribute="centerX" secondItem="cfX-kC-B5B" secondAttribute="centerX" id="6NT-EZ-0nd"/>
+                            <constraint firstItem="gOJ-DK-FS4" firstAttribute="centerY" secondItem="PIG-HR-o0i" secondAttribute="centerY" id="DBL-RA-tOT"/>
+                            <constraint firstItem="8ef-Fk-S9q" firstAttribute="trailing" secondItem="PIG-HR-o0i" secondAttribute="trailing" constant="23" id="Dyk-3s-Svi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UlT-fg-U8W" secondAttribute="trailing" constant="-27" id="EsX-IV-0pg"/>
+                            <constraint firstItem="cfX-kC-B5B" firstAttribute="leading" secondItem="l3S-Qb-ylX" secondAttribute="leading" constant="2.5" id="IjC-dj-R3v"/>
+                            <constraint firstItem="cfX-kC-B5B" firstAttribute="top" secondItem="gOJ-DK-FS4" secondAttribute="bottom" constant="129" id="KjP-fE-c5T"/>
+                            <constraint firstItem="l3S-Qb-ylX" firstAttribute="top" secondItem="cfX-kC-B5B" secondAttribute="bottom" constant="18" id="Mf2-fT-Lxu"/>
+                            <constraint firstItem="gOJ-DK-FS4" firstAttribute="centerX" secondItem="dsp-04-lkI" secondAttribute="centerX" id="NzB-i7-k9S"/>
+                            <constraint firstItem="cfX-kC-B5B" firstAttribute="leading" secondItem="8ef-Fk-S9q" secondAttribute="leading" constant="14" id="O4t-G9-HcZ"/>
+                            <constraint firstItem="MKY-J6-dWN" firstAttribute="leading" secondItem="wI6-Gb-wfb" secondAttribute="trailing" constant="85" id="P4a-C4-b4C"/>
+                            <constraint firstItem="cfX-kC-B5B" firstAttribute="centerX" secondItem="l8u-M5-yzo" secondAttribute="centerX" constant="-3.5" id="Pac-iE-Oqz"/>
+                            <constraint firstItem="gOJ-DK-FS4" firstAttribute="leading" secondItem="8ef-Fk-S9q" secondAttribute="leading" id="Ph2-IO-V8W"/>
+                            <constraint firstItem="5K7-JP-47C" firstAttribute="centerX" secondItem="gOJ-DK-FS4" secondAttribute="centerX" id="QB0-G9-ZSm"/>
+                            <constraint firstItem="wI6-Gb-wfb" firstAttribute="leading" secondItem="8ef-Fk-S9q" secondAttribute="leading" constant="22.5" id="SUi-wQ-EgC"/>
+                            <constraint firstItem="l8u-M5-yzo" firstAttribute="top" secondItem="cfX-kC-B5B" secondAttribute="bottom" constant="18" id="TpK-uX-Og6"/>
+                            <constraint firstItem="cfX-kC-B5B" firstAttribute="top" secondItem="wI6-Gb-wfb" secondAttribute="bottom" constant="134.5" id="Trp-xo-Beq"/>
+                            <constraint firstItem="l8u-M5-yzo" firstAttribute="leading" secondItem="8ef-Fk-S9q" secondAttribute="leading" constant="128" id="Zog-Cw-SgU"/>
+                            <constraint firstItem="PIG-HR-o0i" firstAttribute="leading" secondItem="MKY-J6-dWN" secondAttribute="trailing" constant="84.5" id="a6M-HW-mKa"/>
+                            <constraint firstItem="HFe-Up-NnD" firstAttribute="leading" secondItem="gOJ-DK-FS4" secondAttribute="leading" id="aHZ-RH-J24"/>
+                            <constraint firstItem="wI6-Gb-wfb" firstAttribute="top" secondItem="8ef-Fk-S9q" secondAttribute="top" constant="14.5" id="em4-cm-Uip"/>
+                            <constraint firstItem="5K7-JP-47C" firstAttribute="top" secondItem="gOJ-DK-FS4" secondAttribute="bottom" constant="28" id="kCt-eN-5MI"/>
+                            <constraint firstItem="l3S-Qb-ylX" firstAttribute="bottom" secondItem="XYX-Zx-IyR" secondAttribute="bottom" id="lbh-Ki-8te"/>
+                            <constraint firstItem="8ef-Fk-S9q" firstAttribute="bottom" secondItem="l8u-M5-yzo" secondAttribute="bottom" constant="62" id="lez-dP-J0F"/>
+                            <constraint firstItem="HFe-Up-NnD" firstAttribute="baseline" secondItem="UlT-fg-U8W" secondAttribute="baseline" id="m36-I6-R0h"/>
+                            <constraint firstItem="cfX-kC-B5B" firstAttribute="trailing" secondItem="XYX-Zx-IyR" secondAttribute="trailing" constant="-1.5" id="oKr-NY-2to"/>
+                            <constraint firstItem="cfX-kC-B5B" firstAttribute="top" secondItem="MKY-J6-dWN" secondAttribute="bottom" constant="91" id="pI3-MN-y3j"/>
+                            <constraint firstItem="MKY-J6-dWN" firstAttribute="centerX" secondItem="gOJ-DK-FS4" secondAttribute="centerX" id="pze-AI-d3M"/>
+                            <constraint firstItem="HFe-Up-NnD" firstAttribute="top" secondItem="5K7-JP-47C" secondAttribute="bottom" constant="15" id="xFC-iB-fmu"/>
+                            <constraint firstItem="MKY-J6-dWN" firstAttribute="top" secondItem="dsp-04-lkI" secondAttribute="topMargin" constant="-12" id="yhB-o4-CVE"/>
+                            <constraint firstItem="8ef-Fk-S9q" firstAttribute="bottom" secondItem="l3S-Qb-ylX" secondAttribute="bottom" constant="51" id="zfJ-sN-Mxy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="kolodaView" destination="cfX-kC-B5B" id="17r-q1-dCd"/>
+                        <outlet property="overlayImageview" destination="l8u-M5-yzo" id="51Y-d5-Bfa"/>
+                        <outlet property="titleLabel" destination="5K7-JP-47C" id="Tjt-aB-20D"/>
+                        <segue destination="Mtr-E6-gYR" kind="presentation" identifier="swipeAnimalVC" id="hS1-EK-iG0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KWX-Ql-Ftr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4817" y="476"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hS1-EK-iG0"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="ZooGoロゴ" width="500" height="500"/>
         <image name="likeButtonImage" width="500" height="500"/>
