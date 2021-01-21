@@ -36,7 +36,7 @@ let eastCuteData = [
 
 ]
 
-let westCuteDate = [
+let westCuteData = [
 
     DataSet(animalName: "ジャガー", parkName:"京都動物園"),
     DataSet(animalName: "ジャイアントパンダ", parkName:"アドベンチャーワールド"),
@@ -52,5 +52,20 @@ let westCuteDate = [
     DataSet(animalName: "チンパンジー", parkName:"フェニックス自然動物園"),
     DataSet(animalName: "シンリンオオカミ", parkName:"平川動物公園"),
     DataSet(animalName: "キンカジュー", parkName:"ネオパーク沖縄"),
+
+]
+
+let feedingData = [
+
+    DataSet(animalName: "オオカミの餌やり", parkName:"富士市ファミリーパーク(餌やり)"),
+    DataSet(animalName: "オニオオハシの餌やり", parkName:"神戸どうぶつ王国(餌やり)"),
+    DataSet(animalName: "カワウソの餌やり", parkName:"伊豆シャボテン動物公園(餌やり)"),
+    DataSet(animalName: "キリンの餌やり", parkName:"かみね動物園(餌やり)"),
+    DataSet(animalName: "チンパンジーの餌やり", parkName:"池田動物園(餌やり)"),
+    DataSet(animalName: "ペンギンの餌やり", parkName:"埼玉こども動物自然公園(餌やり)"),
+    DataSet(animalName: "ホワイトタイガーの餌やり", parkName:"宇都宮動物園(餌やり)"),
+    DataSet(animalName: "ワオキツネザルの餌やり", parkName:"東武動物公園(餌やり)"),
+    DataSet(animalName: "レッサーパンダの餌やり", parkName:"那須どうぶつ王国(餌やり)"),
+    DataSet(animalName: "カバの餌やり", parkName:"アドベンチャーワールド(餌やり)"),
 
 ]

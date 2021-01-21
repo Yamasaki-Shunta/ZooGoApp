@@ -38,10 +38,11 @@ class SwipeAnimalViewController: UIViewController {
     
     func displaylabel(animalName:[String]) {
     
-    zooNameA.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-    zooNameB.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-    zooNameC.font = UIFont(name: "HiraKakuProN-W6", size: 20)
-    zooNameD.font = UIFont(name: "HiraKakuProN-W6", size: 20)
+    zooNameA.font = UIFont(name: "HiraKakuProN-W6", size: 18)
+    zooNameB.font = UIFont(name: "HiraKakuProN-W6", size: 18)
+    zooNameC.font = UIFont(name: "HiraKakuProN-W6", size: 18)
+    zooNameD.font = UIFont(name: "HiraKakuProN-W6", size: 18)
+    zooNameE.font = UIFont(name: "HiraKakuProN-W6", size: 18)
         
     if animalName.count == 1 {
             
@@ -83,12 +84,6 @@ class SwipeAnimalViewController: UIViewController {
         
         
     } else if animalName.count == 5 {
-        
-        zooNameA.font = UIFont(name: "HiraKakuProN-W6", size: 18)
-        zooNameB.font = UIFont(name: "HiraKakuProN-W6", size: 18)
-        zooNameC.font = UIFont(name: "HiraKakuProN-W6", size: 18)
-        zooNameD.font = UIFont(name: "HiraKakuProN-W6", size: 18)
-        zooNameE.font = UIFont(name: "HiraKakuProN-W6", size: 18)
         
         zooNameA.text = "1." + animalName[0]
         zooNameB.text = "2." + animalName[1]
