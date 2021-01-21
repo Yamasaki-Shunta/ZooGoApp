@@ -44,19 +44,22 @@ class EditViewController: UIViewController {
         
         //メモリを確保する
         playerController = AVPlayerViewController()
-        //[ここのサイズを変えて試してみる]
-        //
-        //
+        
         playerController?.videoGravity = .resizeAspectFill
+        
         //playerController.viewのフレームを決める
         playerController?.view.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height - 100)
+       
         //
+        //
+        //ここをtureにしてみる
         playerController?.showsPlaybackControls = false
+       
         //player = nilにしたものをはめ込む
         playerController?.player = player!
-        //
+
         self.addChild(playerController!)
-        //
+        
         self.view.addSubview((playerController?.view)!)
        
         //プレイが終わったら呼ばれるメソッド
@@ -95,9 +98,9 @@ class EditViewController: UIViewController {
             
             //seek(探し求める)動画を0秒まで戻す
             self.player?.seek(to: CMTime.zero)
-            //ボリューム0を1.0に設定。(.0〜1.0まである)
+    
             self.player?.volume = 1
-            //プレイをする
+        
             self.player?.play()
             
         }
