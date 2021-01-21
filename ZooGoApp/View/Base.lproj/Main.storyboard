@@ -68,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2830" y="-719"/>
+            <point key="canvasLocation" x="2830" y="-725"/>
         </scene>
         <!--Base View Controller-->
         <scene sceneID="rWj-bU-8X2">
@@ -124,6 +124,9 @@
                                     <constraint firstAttribute="height" constant="80" id="JWE-lW-wnQ"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="フィーディング"/>
+                                <connections>
+                                    <segue destination="5P4-gF-YT4" kind="presentation" id="kr9-hX-N3V"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P70-ci-RLn">
                                 <rect key="frame" x="247.5" y="138.5" width="80" height="80"/>
@@ -299,12 +302,12 @@
                                             <constraint firstAttribute="width" constant="30" id="P8e-o9-mnM"/>
                                             <constraint firstAttribute="height" constant="30" id="W8m-pV-Os9"/>
                                         </constraints>
-                                        <state key="normal" image="太いバツのアイコン"/>
+                                        <state key="normal" image="太いバツのアイコン"/>
                                         <connections>
                                             <action selector="dismissButton:" destination="nZr-hY-IaS" eventType="touchUpInside" id="wIt-bS-t3c"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-GW-vjR">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-GW-vjR">
                                         <rect key="frame" x="38" y="111" width="130" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="130" id="Icw-AG-qMa"/>
@@ -348,7 +351,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zXw-yW-efg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3794" y="34"/>
+            <point key="canvasLocation" x="3652" y="12"/>
         </scene>
         <!--East Matching View Controller-->
         <scene sceneID="9ie-cs-Pvz">
@@ -390,7 +393,7 @@
                                     <action selector="likeButton:" destination="3ds-zJ-LRb" eventType="touchUpInside" id="7uO-Hm-jcx"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="8vh-jN-yAw">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="8vh-jN-yAw">
                                 <rect key="frame" x="137.5" y="-12" width="100" height="100"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W78-PR-GYv">
@@ -490,7 +493,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41l-nv-hTR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4817" y="-258"/>
+            <point key="canvasLocation" x="4450" y="-471"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Xs0-6r-tBX">
@@ -543,7 +546,7 @@
                                             <action selector="dismissButton:" destination="l1v-Rc-as3" eventType="touchUpInside" id="hAZ-Em-B0L"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="fLN-KK-ds2">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="fLN-KK-ds2">
                                         <rect key="frame" x="137.5" y="-5" width="100" height="100"/>
                                     </imageView>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="56C-oE-v0g">
@@ -595,7 +598,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KqX-7c-aeV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6678" y="81"/>
+            <point key="canvasLocation" x="6484" y="-106"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="8EP-4k-nhg">
@@ -683,18 +686,18 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqb-dw-A5r">
                                         <rect key="frame" x="21" y="26" width="30" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="S5k-Av-btp"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="S5k-Av-btp"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="線の三角矢印のアイコン"/>
                                         <connections>
                                             <action selector="dismissButton:" destination="Mtr-E6-gYR" eventType="touchUpInside" id="wsm-NK-tpJ"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-X9-81I">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-X9-81I">
                                         <rect key="frame" x="139.5" y="-5" width="100" height="100"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="マッチング背景" translatesAutoresizingMaskIntoConstraints="NO" id="40l-5X-7EN">
-                                        <rect key="frame" x="25" y="173" width="326" height="331"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="マッチング背景" translatesAutoresizingMaskIntoConstraints="NO" id="40l-5X-7EN">
+                                        <rect key="frame" x="25" y="173" width="325" height="331"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gB-SK-WoR">
                                         <rect key="frame" x="88" y="206" width="234" height="265"/>
@@ -764,7 +767,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coK-ZK-tNk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5772" y="82"/>
+            <point key="canvasLocation" x="5426" y="-105"/>
         </scene>
         <!--West Matching View Controller-->
         <scene sceneID="Cxm-ko-qDI">
@@ -806,7 +809,7 @@
                                     <action selector="likeButton:" destination="UfJ-wT-0Ix" eventType="touchUpInside" id="V2r-nM-0gf"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="MKY-J6-dWN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="MKY-J6-dWN">
                                 <rect key="frame" x="137.5" y="-12" width="100" height="100"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wI6-Gb-wfb">
@@ -906,14 +909,156 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KWX-Ql-Ftr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4817" y="476"/>
+            <point key="canvasLocation" x="4449" y="213"/>
+        </scene>
+        <!--Feeding Matching View Controller-->
+        <scene sceneID="Hav-l0-Ffm">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="5P4-gF-YT4" customClass="FeedingMatchingViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1bX-V6-UIm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txg-tU-cwz" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="14" y="179" width="347" height="309"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UT5-hj-WUB">
+                                <rect key="frame" x="128" y="506" width="126" height="99"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1k-ft-gdk">
+                                <rect key="frame" x="11.5" y="506" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="1z6-TX-Gi5"/>
+                                    <constraint firstAttribute="width" constant="110" id="VtE-4b-6qw"/>
+                                </constraints>
+                                <state key="normal" image="nopeButtonImage"/>
+                                <connections>
+                                    <action selector="nopeButton:" destination="5P4-gF-YT4" eventType="touchUpInside" id="GWZ-c9-fad"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yDV-Ff-rzk">
+                                <rect key="frame" x="0.0" y="6" width="375" height="44"/>
+                                <items/>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I63-5p-in5">
+                                <rect key="frame" x="252.5" y="506" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="Lqj-4M-VqY"/>
+                                </constraints>
+                                <state key="normal" image="likeButtonImage"/>
+                                <connections>
+                                    <action selector="likeButton:" destination="5P4-gF-YT4" eventType="touchUpInside" id="5i1-UV-b9N"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="oU5-1m-mGl">
+                                <rect key="frame" x="137.5" y="-12" width="100" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he3-Yn-6U9">
+                                <rect key="frame" x="22.5" y="14.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="3Ia-06-6ZB"/>
+                                    <constraint firstAttribute="height" constant="30" id="Th9-9Y-DUM"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="線の三角矢印のアイコン"/>
+                                <connections>
+                                    <action selector="dismissButton:" destination="5P4-gF-YT4" eventType="touchUpInside" id="c6O-6s-UFM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vL2-ak-TdK">
+                                <rect key="frame" x="322" y="13" width="30" height="30"/>
+                                <state key="normal" title="Button" image="やり直しのアイコン"/>
+                                <connections>
+                                    <action selector="revertButton:" destination="5P4-gF-YT4" eventType="touchUpInside" id="REe-RL-P5g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1〜3枚のカードを選んでね" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ma7-lf-Cz4">
+                                <rect key="frame" x="39" y="78" width="297" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297" id="HMd-cz-0g8"/>
+                                    <constraint firstAttribute="height" constant="43" id="X0Y-9G-b3u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="すき→" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bt2-l8-b31">
+                                <rect key="frame" x="293" y="136" width="93" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="Abe-bE-eCP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="←いいえ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQk-4H-yN9">
+                                <rect key="frame" x="0.0" y="136" width="93" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="SkG-zS-Zw9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.04853696398" green="0.47551801760000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cjb-FO-BNy"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yDV-Ff-rzk" firstAttribute="centerX" secondItem="1bX-V6-UIm" secondAttribute="centerX" id="2yL-bb-dVM"/>
+                            <constraint firstItem="UT5-hj-WUB" firstAttribute="top" secondItem="txg-tU-cwz" secondAttribute="bottom" constant="18" id="4O3-Pz-79Z"/>
+                            <constraint firstItem="W1k-ft-gdk" firstAttribute="top" secondItem="I63-5p-in5" secondAttribute="top" id="4yV-6L-0j6"/>
+                            <constraint firstItem="txg-tU-cwz" firstAttribute="top" secondItem="he3-Yn-6U9" secondAttribute="bottom" constant="134.5" id="9Vy-hw-PoG"/>
+                            <constraint firstItem="txg-tU-cwz" firstAttribute="top" secondItem="yDV-Ff-rzk" secondAttribute="bottom" constant="129" id="DfT-Vh-qNO"/>
+                            <constraint firstItem="YQk-4H-yN9" firstAttribute="baseline" secondItem="Bt2-l8-b31" secondAttribute="baseline" id="EM6-BA-yf0"/>
+                            <constraint firstItem="W1k-ft-gdk" firstAttribute="bottom" secondItem="I63-5p-in5" secondAttribute="bottom" id="FOg-KC-u1F"/>
+                            <constraint firstItem="yDV-Ff-rzk" firstAttribute="centerY" secondItem="vL2-ak-TdK" secondAttribute="centerY" id="I8X-nt-akA"/>
+                            <constraint firstItem="vL2-ak-TdK" firstAttribute="top" secondItem="cjb-FO-BNy" secondAttribute="top" constant="13" id="NR1-F1-ujf"/>
+                            <constraint firstItem="cjb-FO-BNy" firstAttribute="bottom" secondItem="W1k-ft-gdk" secondAttribute="bottom" constant="51" id="OBQ-hn-S9c"/>
+                            <constraint firstItem="vL2-ak-TdK" firstAttribute="leading" secondItem="oU5-1m-mGl" secondAttribute="trailing" constant="84.5" id="PcK-aY-Pr4"/>
+                            <constraint firstItem="YQk-4H-yN9" firstAttribute="top" secondItem="Ma7-lf-Cz4" secondAttribute="bottom" constant="15" id="UYH-0P-c3U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bt2-l8-b31" secondAttribute="trailing" constant="-27" id="VZ0-C2-Hfb"/>
+                            <constraint firstItem="yDV-Ff-rzk" firstAttribute="centerX" secondItem="txg-tU-cwz" secondAttribute="centerX" id="Vr5-H6-9u5"/>
+                            <constraint firstItem="oU5-1m-mGl" firstAttribute="centerX" secondItem="yDV-Ff-rzk" secondAttribute="centerX" id="Ykh-Dn-hii"/>
+                            <constraint firstItem="txg-tU-cwz" firstAttribute="trailing" secondItem="I63-5p-in5" secondAttribute="trailing" constant="-1.5" id="Yvx-oM-jIV"/>
+                            <constraint firstItem="he3-Yn-6U9" firstAttribute="top" secondItem="cjb-FO-BNy" secondAttribute="top" constant="14.5" id="an6-7v-tNF"/>
+                            <constraint firstItem="Ma7-lf-Cz4" firstAttribute="top" secondItem="yDV-Ff-rzk" secondAttribute="bottom" constant="28" id="cSf-Bf-ouc"/>
+                            <constraint firstItem="Ma7-lf-Cz4" firstAttribute="centerX" secondItem="yDV-Ff-rzk" secondAttribute="centerX" id="esI-hg-jfl"/>
+                            <constraint firstItem="he3-Yn-6U9" firstAttribute="leading" secondItem="cjb-FO-BNy" secondAttribute="leading" constant="22.5" id="gNc-9X-D2l"/>
+                            <constraint firstItem="UT5-hj-WUB" firstAttribute="leading" secondItem="cjb-FO-BNy" secondAttribute="leading" constant="128" id="kE5-VQ-rhw"/>
+                            <constraint firstItem="W1k-ft-gdk" firstAttribute="top" secondItem="txg-tU-cwz" secondAttribute="bottom" constant="18" id="lbj-By-gzA"/>
+                            <constraint firstItem="YQk-4H-yN9" firstAttribute="leading" secondItem="yDV-Ff-rzk" secondAttribute="leading" id="mVV-vb-zaQ"/>
+                            <constraint firstItem="txg-tU-cwz" firstAttribute="leading" secondItem="cjb-FO-BNy" secondAttribute="leading" constant="14" id="oyq-8B-7xO"/>
+                            <constraint firstItem="txg-tU-cwz" firstAttribute="leading" secondItem="W1k-ft-gdk" secondAttribute="leading" constant="2.5" id="ptb-I6-MRd"/>
+                            <constraint firstItem="oU5-1m-mGl" firstAttribute="top" secondItem="1bX-V6-UIm" secondAttribute="topMargin" constant="-12" id="rV4-pK-6Nn"/>
+                            <constraint firstItem="yDV-Ff-rzk" firstAttribute="top" secondItem="cjb-FO-BNy" secondAttribute="top" constant="6" id="rXP-2l-uxu"/>
+                            <constraint firstItem="oU5-1m-mGl" firstAttribute="leading" secondItem="he3-Yn-6U9" secondAttribute="trailing" constant="85" id="rel-Tj-oli"/>
+                            <constraint firstItem="txg-tU-cwz" firstAttribute="top" secondItem="oU5-1m-mGl" secondAttribute="bottom" constant="91" id="vgJ-qh-jch"/>
+                            <constraint firstItem="cjb-FO-BNy" firstAttribute="bottom" secondItem="UT5-hj-WUB" secondAttribute="bottom" constant="62" id="w9d-8O-0T8"/>
+                            <constraint firstItem="cjb-FO-BNy" firstAttribute="trailing" secondItem="vL2-ak-TdK" secondAttribute="trailing" constant="23" id="xFa-zH-kaC"/>
+                            <constraint firstItem="txg-tU-cwz" firstAttribute="centerX" secondItem="UT5-hj-WUB" secondAttribute="centerX" constant="-3.5" id="y4X-wL-Y3p"/>
+                            <constraint firstItem="yDV-Ff-rzk" firstAttribute="leading" secondItem="cjb-FO-BNy" secondAttribute="leading" id="zn2-03-cWX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="kolodaView" destination="txg-tU-cwz" id="Gda-Ao-Aoq"/>
+                        <outlet property="overlayImageview" destination="UT5-hj-WUB" id="vGe-jQ-396"/>
+                        <outlet property="titleLabel" destination="Ma7-lf-Cz4" id="Lfa-YH-Acd"/>
+                        <segue destination="Mtr-E6-gYR" kind="presentation" identifier="swipeAnimalVC" id="1OP-aA-y3S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eqC-zs-0Ku" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3652" y="-883"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="hS1-EK-iG0"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="ZooGoロゴ" width="500" height="500"/>
+        <image name="ZooGoロゴ" width="500" height="500"/>
         <image name="likeButtonImage" width="500" height="500"/>
         <image name="nopeButtonImage" width="500" height="500"/>
         <image name="かわいい" width="757" height="800"/>
@@ -923,9 +1068,10 @@
         <image name="キリン背景" width="640" height="1280"/>
         <image name="ニュース" width="512" height="512"/>
         <image name="フィーディング" width="574" height="572"/>
-        <image name="マッチング背景" width="1500" height="1500"/>
+        <image name="マッチング背景" width="1500" height="1500"/>
         <image name="吹き出し背景" width="542" height="547"/>
         <image name="太いバツのアイコン" width="256" height="256"/>
+        <image name="太いバツのアイコン" width="256" height="256"/>
         <image name="絶滅危惧種" width="639" height="684"/>
         <image name="線の三角矢印のアイコン" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">

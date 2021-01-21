@@ -1,16 +1,17 @@
 //
-//  WestMatchingViewController.swift
+//  FeedingMatchingViewController.swift
 //  ZooGoApp
 //
-//  Created by 山﨑隼汰 on 2021/01/17.
+//  Created by 山﨑隼汰 on 2021/01/21.
 //
 
 import UIKit
 import Koloda
 
-class WestMatchingViewController:UIViewController,KolodaViewDataSource,KolodaViewDelegate,UIGestureRecognizerDelegate {
+class FeedingMatchingViewController: UIViewController,KolodaViewDataSource,KolodaViewDelegate,UIGestureRecognizerDelegate {
     
-    var animalImageSet:[DataSet] = westCuteData
+    
+    var animalImageSet:[DataSet] = feedingData
     
     var animalImage:[String] = []
     
@@ -147,7 +148,7 @@ class WestMatchingViewController:UIViewController,KolodaViewDataSource,KolodaVie
     
     func screenTransition() {
     
-        if likedArray.count == 5 {
+        if likedArray.count == 3 {
             
             performSegue(withIdentifier: "swipeAnimalVC", sender: nil)
 
