@@ -603,23 +603,30 @@
             </objects>
             <point key="canvasLocation" x="6484" y="-106"/>
         </scene>
-        <!--View Controller-->
+        <!--Set Up View Controller-->
         <scene sceneID="Aeh-i7-m0J">
             <objects>
-                <viewController id="mKi-Bw-kVr" sceneMemberID="viewController">
+                <viewController id="mKi-Bw-kVr" customClass="SetUpViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R8J-T2-9no">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDL-ZD-sLq">
-                                <rect key="frame" x="16" y="572" width="74" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="2-removebg-preview"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCp-EX-86N">
-                                <rect key="frame" x="291" y="580" width="50" height="50"/>
+                                <rect key="frame" x="306" y="580" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="35424"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDL-ZD-sLq">
+                                <rect key="frame" x="16" y="568" width="74" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="2-removebg-preview"/>
+                                <connections>
+                                    <action selector="openAlbum:" destination="mKi-Bw-kVr" eventType="touchUpInside" id="gXL-oN-WZL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="851-ep-Od9" customClass="SwiftyRecordButton" customModule="ZooGoApp" customModuleProvider="target">
+                                <rect key="frame" x="152" y="550" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Gn-cL-BId"/>
@@ -627,6 +634,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="BPu-1J-i6p"/>
                     <connections>
+                        <outlet property="captureButton" destination="851-ep-Od9" id="XBT-Bs-8Vo"/>
+                        <outlet property="flipCameraButton" destination="bCp-EX-86N" id="Jr2-3I-Yq0"/>
                         <segue destination="YZs-fw-G9J" kind="show" id="eEy-eF-YX4"/>
                     </connections>
                 </viewController>
@@ -1087,10 +1096,10 @@
             </objects>
             <point key="canvasLocation" x="3652" y="-883"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit View Controller-->
         <scene sceneID="nOt-Kq-RbL">
             <objects>
-                <viewController id="YZs-fw-G9J" sceneMemberID="viewController">
+                <viewController id="YZs-fw-G9J" customClass="EditViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XyV-9S-Ya0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1209,8 +1218,8 @@
         <image name="フィーディング" width="574" height="572"/>
         <image name="マッチング背景" width="1500" height="1500"/>
         <image name="吹き出し背景" width="542" height="547"/>
-        <image name="太いバツのアイコン" width="256" height="256"/>
         <image name="太いバツのアイコン" width="256" height="256"/>
+        <image name="太いバツのアイコン" width="256" height="256"/>
         <image name="絶滅危惧種" width="639" height="684"/>
         <image name="線の三角矢印のアイコン" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
