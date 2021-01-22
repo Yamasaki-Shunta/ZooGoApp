@@ -164,6 +164,7 @@ class EditViewController: UIViewController {
             
             player?.pause()
             performSegue(withIdentifier: "shareVC", sender: nil)
+      
         }else{
             
             print("楽曲を選択してください。")

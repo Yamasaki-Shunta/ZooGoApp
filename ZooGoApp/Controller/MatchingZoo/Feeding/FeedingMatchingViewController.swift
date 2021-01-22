@@ -1,9 +1,4 @@
-//
-//  FeedingMatchingViewController.swift
-//  ZooGoApp
-//
-//  Created by 山﨑隼汰 on 2021/01/21.
-//
+
 
 import UIKit
 import Koloda

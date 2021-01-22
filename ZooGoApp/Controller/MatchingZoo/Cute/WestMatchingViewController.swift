@@ -1,9 +1,3 @@
-//
-//  WestMatchingViewController.swift
-//  ZooGoApp
-//
-//  Created by 山﨑隼汰 on 2021/01/17.
-//
 
 import UIKit
 import Koloda

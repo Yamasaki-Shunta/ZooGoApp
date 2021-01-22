@@ -1,9 +1,4 @@
-//
-//  SetUpViewController.swift
-//  MovieMargeTest
-//
-//  Created by 山﨑隼汰 on 2020/12/03.
-//
+
 
 
 import UIKit

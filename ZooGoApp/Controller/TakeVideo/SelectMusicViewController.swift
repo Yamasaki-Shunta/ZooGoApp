@@ -184,7 +184,7 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         dowloadTask = URLSession.shared.downloadTask(with: url, completionHandler: { (url, response, error) in
             
             
-            print(response)
+            print(response!)
             self.play(url: url!)
             
             

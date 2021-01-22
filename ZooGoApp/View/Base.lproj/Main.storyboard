@@ -1112,6 +1112,9 @@
                                 <state key="normal" title="次へ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="next:" destination="YZs-fw-G9J" eventType="touchUpInside" id="QzS-hm-cay"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqy-4X-z7q">
                                 <rect key="frame" x="47" y="581" width="97" height="30"/>
@@ -1121,6 +1124,9 @@
                                 <state key="normal" title="楽曲♪">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="showSelectVC:" destination="YZs-fw-G9J" eventType="touchUpInside" id="IZA-bU-qz3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X70-tI-i6b"/>
@@ -1128,12 +1134,47 @@
                     </view>
                     <navigationItem key="navigationItem" id="YKM-mS-OhM"/>
                     <connections>
-                        <segue destination="btG-7s-hKR" kind="presentation" id="OFV-hk-Zd9"/>
+                        <segue destination="btG-7s-hKR" kind="presentation" identifier="selectVC" id="OFV-hk-Zd9"/>
+                        <segue destination="Z7w-Lt-bX2" kind="show" identifier="shareVC" id="Jbk-kQ-tcm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzZ-BA-jeE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3773.5999999999999" y="1949.7751124437782"/>
+        </scene>
+        <!--Share View Controller-->
+        <scene sceneID="78N-hD-Il6">
+            <objects>
+                <viewController id="Z7w-Lt-bX2" customClass="ShareViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Rk-w6-LZE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfU-Gw-g7l">
+                                <rect key="frame" x="0.0" y="426" width="375" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7ZF-qY-R83">
+                                <rect key="frame" x="14" y="433" width="284" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89820855860000004" green="0.89759176969999999" blue="0.91765093799999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NzZ-wA-SIZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uuR-YN-7oP"/>
+                    <connections>
+                        <outlet property="textView" destination="7ZF-qY-R83" id="c9H-Bc-LZw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S8z-zi-EfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3773.5999999999999" y="2741.3793103448279"/>
         </scene>
         <!--Select Music View Controller-->
         <scene sceneID="bhW-Qk-uYJ">
@@ -1188,6 +1229,9 @@
                                 <rect key="frame" x="303" y="27" width="61" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="magnifyingglass" catalog="system"/>
+                                <connections>
+                                    <action selector="searchAction:" destination="btG-7s-hKR" eventType="touchUpInside" id="XEP-kw-O7f"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OVB-g1-FiG"/>
@@ -1204,7 +1248,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hS1-EK-iG0"/>
+        <segue reference="IcC-pR-Au9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2-removebg-preview" width="500" height="500"/>
@@ -1226,8 +1270,14 @@
         <image name="太いバツのアイコン" width="256" height="256"/>
         <image name="絶滅危惧種" width="639" height="684"/>
         <image name="線の三角矢印のアイコン" width="256" height="256"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
