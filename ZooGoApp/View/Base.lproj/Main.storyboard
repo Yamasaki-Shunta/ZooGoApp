@@ -614,14 +614,17 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCp-EX-86N">
                                 <rect key="frame" x="306" y="580" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="35424"/>
+                                <state key="normal" title="Button" image="switch_camera_13385"/>
+                                <connections>
+                                    <action selector="cameraSwitchTapped:" destination="mKi-Bw-kVr" eventType="touchUpInside" id="PzG-lZ-6pK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDL-ZD-sLq">
                                 <rect key="frame" x="16" y="568" width="74" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="2-removebg-preview"/>
                                 <connections>
-                                    <action selector="openAlbum:" destination="mKi-Bw-kVr" eventType="touchUpInside" id="gXL-oN-WZL"/>
+                                    <action selector="openAlbum:" destination="mKi-Bw-kVr" eventType="touchUpInside" id="Pzc-Rn-DOw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="851-ep-Od9" customClass="SwiftyRecordButton" customModule="ZooGoApp" customModuleProvider="target">
@@ -1276,13 +1279,13 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="2-removebg-preview" width="500" height="500"/>
-        <image name="35424" width="2771" height="1669"/>
         <image name="ZooGoロゴ" width="500" height="500"/>
         <image name="likeButtonImage" width="500" height="500"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="nopeButtonImage" width="500" height="500"/>
         <image name="save" width="128" height="128"/>
         <image name="share" width="129" height="128"/>
+        <image name="switch_camera_13385" width="72" height="72"/>
         <image name="かわいい" width="757" height="800"/>
         <image name="やり直しのアイコン" width="256" height="256"/>
         <image name="イベント" width="800" height="800"/>

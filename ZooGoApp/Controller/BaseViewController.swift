@@ -13,10 +13,7 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //ダークモード回避
-        self.overrideUserInterfaceStyle = .light
-
+    
         //ラベルの背景の角を丸くする
         self.questionLabel.layer.cornerRadius = 20.0
         

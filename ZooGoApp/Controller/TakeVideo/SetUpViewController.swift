@@ -51,21 +51,6 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
         
     }
     
-    @IBAction func openAlbum(_ sender: Any) {
-    
-        //アルバムの設定[動画のみが閲覧できるアルバムを起動]
-        //インスタンス化
-        let imagePickerController = UIImagePickerController()
-        imagePickerController.delegate = self
-        imagePickerController.sourceType = .savedPhotosAlbum
-        //動画だけ抽出する
-        imagePickerController.mediaTypes = ["public.movie"]
-        //編集させない
-        imagePickerController.allowsEditing = false
-        //この設定内容を表示させる
-        present(imagePickerController, animated: true, completion: nil)
-   
-    }
         
     //アルバムの許可画面を出して、キャンセルされた場合の設定
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
@@ -174,11 +159,6 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
         print(error)
     }
     
-    @IBAction func cameraSwitchTapped(_ sender: Any) {
-        switchCamera()
-    }
-    
-    
     func hideButtons() {
         UIView.animate(withDuration: 0.25) {
             self.flipCameraButton.alpha = 0.0
@@ -193,6 +173,7 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
     
     //ズーム
     func focusAnimationAt(_ point: CGPoint) {
+       
         let focusView = UIImageView(image: #imageLiteral(resourceName: "focus"))
         focusView.center = point
         focusView.alpha = 0.0
@@ -211,5 +192,29 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
             }
         }
     }
+    
+    @IBAction func openAlbum(_ sender: Any) {
+    
+        //アルバムの設定[動画のみが閲覧できるアルバムを起動]
+        //インスタンス化
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .savedPhotosAlbum
+        //動画だけ抽出する
+        imagePickerController.mediaTypes = ["public.movie"]
+        //編集させない
+        imagePickerController.allowsEditing = false
+        //この設定内容を表示させる
+        present(imagePickerController, animated: true, completion: nil)
+   
+    }
+    
+    @IBAction func cameraSwitchTapped(_ sender: Any) {
+        switchCamera()
+    
+    }
+    
+    
+    
 }
 
