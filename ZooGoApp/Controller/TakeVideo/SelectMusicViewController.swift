@@ -217,9 +217,11 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
     
     
     func catchData(count: Int) {
+        
         if count == 1{
             
             tableView.reloadData()
+      
         }
     }
     
@@ -236,7 +238,7 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
             //コンピューターが日本語を読めるようにしてあげる
             let encodeUrlString:String = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
             
-            //musicModelのメソッドを使う(MusicModel)
+            
             musicModel.musicDelegate = self
             //50件取得する
             musicModel.setData(resultCount: 50, encodeUrlString: encodeUrlString)
@@ -255,16 +257,6 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         
     }
     
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

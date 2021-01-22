@@ -25,7 +25,7 @@
                                             <constraint firstAttribute="height" constant="30" id="YIB-HK-hvu"/>
                                             <constraint firstAttribute="width" constant="30" id="aVk-8M-RKv"/>
                                         </constraints>
-                                        <state key="normal" image="太いバツのアイコン"/>
+                                        <state key="normal" image="太いバツのアイコン"/>
                                         <connections>
                                             <action selector="skipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyr-qH-9Mf"/>
                                         </connections>
@@ -625,7 +625,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="851-ep-Od9" customClass="SwiftyRecordButton" customModule="ZooGoApp" customModuleProvider="target">
-                                <rect key="frame" x="152" y="550" width="70" height="70"/>
+                                <rect key="frame" x="152" y="550" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                         </subviews>
@@ -1099,7 +1099,7 @@
         <!--Edit View Controller-->
         <scene sceneID="nOt-Kq-RbL">
             <objects>
-                <viewController id="YZs-fw-G9J" customClass="EditViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditVC" id="YZs-fw-G9J" customClass="EditViewController" customModule="ZooGoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XyV-9S-Ya0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1163,9 +1163,33 @@
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gs5-aU-AMG">
+                                <rect key="frame" x="47" y="579" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="save"/>
+                                <connections>
+                                    <action selector="savePhotoLibrary:" destination="Z7w-Lt-bX2" eventType="touchUpInside" id="8yZ-W9-q9B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVr-Ms-ui4">
+                                <rect key="frame" x="281" y="579" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="share"/>
+                                <connections>
+                                    <action selector="share:" destination="Z7w-Lt-bX2" eventType="touchUpInside" id="XSl-8u-FTj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0s-wv-Td5">
+                                <rect key="frame" x="163" y="578" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ホームのフリーアイコン素材"/>
+                                <connections>
+                                    <action selector="home:" destination="Z7w-Lt-bX2" eventType="touchUpInside" id="kWE-yc-x7c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NzZ-wA-SIZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99718910459999999" green="0.8370327353" blue="0.47442835570000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="uuR-YN-7oP"/>
                     <connections>
@@ -1257,6 +1281,8 @@
         <image name="likeButtonImage" width="500" height="500"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="nopeButtonImage" width="500" height="500"/>
+        <image name="save" width="128" height="128"/>
+        <image name="share" width="129" height="128"/>
         <image name="かわいい" width="757" height="800"/>
         <image name="やり直しのアイコン" width="256" height="256"/>
         <image name="イベント" width="800" height="800"/>
@@ -1264,10 +1290,10 @@
         <image name="キリン背景" width="640" height="1280"/>
         <image name="ニュース" width="512" height="512"/>
         <image name="フィーディング" width="574" height="572"/>
+        <image name="ホームのフリーアイコン素材" width="128" height="128"/>
         <image name="マッチング背景" width="1500" height="1500"/>
         <image name="吹き出し背景" width="542" height="547"/>
         <image name="太いバツのアイコン" width="256" height="256"/>
-        <image name="太いバツのアイコン" width="256" height="256"/>
         <image name="絶滅危惧種" width="639" height="684"/>
         <image name="線の三角矢印のアイコン" width="256" height="256"/>
         <systemColor name="labelColor">

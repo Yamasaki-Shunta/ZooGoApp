@@ -72,6 +72,7 @@ class MusicModel{
                     }
                     
                     //全てのデータが取得完了している状態
+                    //テーブルビューの更新する
                     self.musicDelegate?.catchData(count: 1)
                     
                 } catch  {
@@ -83,8 +84,7 @@ class MusicModel{
             }
             
         }
-       
-        //ここに出る
+    
         
     }
     

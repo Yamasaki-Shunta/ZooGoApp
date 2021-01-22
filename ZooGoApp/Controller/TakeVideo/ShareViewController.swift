@@ -105,9 +105,8 @@ class ShareViewController: UIViewController {
             }
             
             if result{
-                
+                //アラート
                print("動画を保存しました！")
-                //アラートを出しても良い
                 
             }
             
@@ -116,12 +115,13 @@ class ShareViewController: UIViewController {
      }
     
     
-    @IBAction func back(_ sender: Any) {
+    
+    @IBAction func home(_ sender: Any) {
     
         player?.pause()
         player = nil
         
-        //popToRootViewController一番最初の画面に戻るという意味
+        //一番最初の画面に戻る
         self.navigationController?.popToRootViewController(animated: true)
         
     }
@@ -130,11 +130,8 @@ class ShareViewController: UIViewController {
     @IBAction func share(_ sender: Any) {
         
         //アクティビティーViewにItemを掲載する、Share
-        let activityItems = [URL(string: passedURL) as Any,"\(textView.text!)\n\(captionString)\n#ZOO GO!!"] as [Any]
+        let activityItems = [URL(string: passedURL) as Any,"\(textView.text!)\n\(captionString)\n#ZooGo"] as [Any]
         let activityController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
-        
-        
-        
         
         activityController.popoverPresentationController?.sourceView = self.view
         activityController.popoverPresentationController?.sourceRect = self.view.frame
