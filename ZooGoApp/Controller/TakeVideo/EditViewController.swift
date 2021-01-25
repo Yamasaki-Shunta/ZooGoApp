@@ -68,7 +68,7 @@ class EditViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachEnd), name: Notification.Name.AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem)
         
         //キャンセルボタンを設定する
-        let cancelButton = UIButton(frame: CGRect(x: 10.0, y: 10.0, width: 30.0, height: 30.0))
+        let cancelButton = UIButton(frame: CGRect(x: 10, y: 20, width: 30, height: 30))
         //キャンセルボタンに画像をつける
         cancelButton.setImage(UIImage(named: "cancel"), for: UIControl.State())
         //キャンセルボタンが押された時、touchUpInside(ボタンをタッチして、離した時)
@@ -84,6 +84,7 @@ class EditViewController: UIViewController {
     
     @objc func cancel(){
         
+        player?.pause()
         //画面をpopViewControllerで1つ戻る
         self.navigationController?.popViewController(animated: true)
         
@@ -170,20 +171,8 @@ class EditViewController: UIViewController {
             print("楽曲を選択してください。")
             
         }
-     
-        
-        
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

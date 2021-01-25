@@ -11,21 +11,25 @@ class ShareViewController: UIViewController {
     var player:AVPlayer?
     var playerController:AVPlayerViewController?
     
-    @IBOutlet weak var textView: UITextView!
+    
+    
+    @IBOutlet weak var textView: PlaceHolderTextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
        //キーボードの高さの調節
         let notification = NotificationCenter.default
         
         notification.addObserver(self, selector: #selector(self.keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         
         notification.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-        
     
     }
     
+    override func didReceiveMemoryWarning() {
+            super.didReceiveMemoryWarning()
+        }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -45,14 +49,13 @@ class ShareViewController: UIViewController {
     
     func setUPVideoPlayer(url:URL){
            
-           
            self.view.backgroundColor = UIColor.black
            playerController?.removeFromParent()
            player = AVPlayer(url: url)
            self.player?.volume = 1
           
            playerController = AVPlayerViewController()
-           playerController!.view.frame = CGRect(x: 29, y: 88, width: 317, height: 455)
+           playerController!.view.frame = CGRect(x: 0, y: 45, width: 390, height: 447)
            playerController?.videoGravity = .resizeAspectFill
            playerController!.showsPlaybackControls = false
            playerController!.player = player!
@@ -62,7 +65,6 @@ class ShareViewController: UIViewController {
 
            NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachEnd), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.player!.currentItem)
 
-           
            player?.play()
 
        }
@@ -139,9 +141,6 @@ class ShareViewController: UIViewController {
         self.present(activityController, animated: true, completion: nil)
         
     }
-    
-    
-    
     
     //キーボードの高さの調節
     @objc func keyboardWillShow(notification: Notification?) {

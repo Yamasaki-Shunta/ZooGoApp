@@ -14,6 +14,8 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
     
     var videoURL:URL?
     
+    var soundFile = SoundFile()
+    
     @IBOutlet weak var captureButton: SwiftyRecordButton!
     
     @IBOutlet weak var flipCameraButton: UIButton!
@@ -38,7 +40,7 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
         captureButton.buttonEnabled = true
         //デリゲートメソッドを自分に設定する
         captureButton.delegate = self
-        //スワイプズームを有効にします
+        //スワイプズームを有効にする
         swipeToZoomInverted = true
     
     }
@@ -107,6 +109,7 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
        
         print("Did Begin Recording")
         captureButton.growButton()
+        soundFile.playSound(fileName: "録画ボタン", extensionName: "mp3")
         hideButtons()
     }
     
@@ -134,7 +137,7 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
     
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didFocusAtPoint point: CGPoint) {
         print("Did focus at point: \(point)")
-        focusAnimationAt(point)
+  
     }
     
     func swiftyCamDidFailToConfigure(_ swiftyCam: SwiftyCamViewController) {
@@ -173,7 +176,7 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
     
     //ズーム
     func focusAnimationAt(_ point: CGPoint) {
-       
+        
         let focusView = UIImageView(image: #imageLiteral(resourceName: "focus"))
         focusView.center = point
         focusView.alpha = 0.0
@@ -214,6 +217,11 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
     
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        
+    self.navigationController?.popViewController(animated: true)
+    
+    }
     
     
 }
