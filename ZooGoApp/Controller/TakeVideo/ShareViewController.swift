@@ -107,13 +107,25 @@ class ShareViewController: UIViewController {
             }
             
             if result{
-                //アラート
-               print("動画を保存しました！")
-                
+               
+                print("保存されました")
             }
             
         }
 
+        let alert: UIAlertController = UIAlertController(title: "動画が保存されました", message: "素敵な動画ができましたね", preferredStyle: UIAlertController.Style.actionSheet)
+       
+        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style:
+                                                            
+            UIAlertAction.Style.default, handler:{
+               // ボタンが押された時の処理を書く（クロージャ実装）
+               (action: UIAlertAction!) -> Void in
+               print("OKが押されました")
+        })
+        
+        alert.addAction(defaultAction)
+        self.present(alert, animated: true, completion: nil)
+        
      }
     
     
