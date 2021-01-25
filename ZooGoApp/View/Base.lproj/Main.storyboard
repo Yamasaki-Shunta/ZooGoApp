@@ -615,9 +615,8 @@
                                 <rect key="frame" x="297.5" y="576" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5Ix-QB-2TI"/>
-                                    <constraint firstAttribute="width" constant="40" id="Wza-lY-TjK"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="switch_camera_13385"/>
+                                <state key="normal" title="Button" image="switchcamera"/>
                                 <connections>
                                     <action selector="cameraSwitchTapped:" destination="mKi-Bw-kVr" eventType="touchUpInside" id="PzG-lZ-6pK"/>
                                 </connections>
@@ -630,35 +629,41 @@
                                     <constraint firstAttribute="height" constant="80" id="e6i-iF-OXq"/>
                                 </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohN-3p-ebx">
-                                <rect key="frame" x="13" y="25" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDL-ZD-sLq">
+                                <rect key="frame" x="37.5" y="573" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Fbe-pw-xh7"/>
+                                    <constraint firstAttribute="height" constant="40" id="lJI-VC-2Mn"/>
+                                </constraints>
+                                <state key="normal" image="動画フォルダ"/>
+                                <connections>
+                                    <action selector="openAlbum:" destination="mKi-Bw-kVr" eventType="touchUpInside" id="Pzc-Rn-DOw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohN-3p-ebx">
+                                <rect key="frame" x="16" y="49" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="99T-4N-6Gc"/>
+                                    <constraint firstAttribute="height" constant="35" id="bPD-yX-6sQ"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="cancel"/>
                                 <connections>
                                     <action selector="backButton:" destination="mKi-Bw-kVr" eventType="touchUpInside" id="AKU-rb-18N"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDL-ZD-sLq">
-                                <rect key="frame" x="20" y="565" width="75" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="BOI-xz-CKv"/>
-                                    <constraint firstAttribute="height" constant="75" id="SnY-kI-B1H"/>
-                                </constraints>
-                                <state key="normal" image="2-removebg-preview"/>
-                                <connections>
-                                    <action selector="openAlbum:" destination="mKi-Bw-kVr" eventType="touchUpInside" id="Pzc-Rn-DOw"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Gn-cL-BId"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ohN-3p-ebx" firstAttribute="top" secondItem="R8J-T2-9no" secondAttribute="topMargin" constant="5" id="4k3-EL-jHb"/>
                             <constraint firstItem="851-ep-Od9" firstAttribute="centerX" secondItem="R8J-T2-9no" secondAttribute="centerX" id="5TA-fx-7Sy"/>
-                            <constraint firstItem="8Gn-cL-BId" firstAttribute="bottom" secondItem="bCp-EX-86N" secondAttribute="bottom" constant="51" id="6mt-mR-Y07"/>
+                            <constraint firstItem="bCp-EX-86N" firstAttribute="leading" secondItem="851-ep-Od9" secondAttribute="trailing" constant="70" id="Ewn-77-gro"/>
                             <constraint firstItem="dDL-ZD-sLq" firstAttribute="centerX" secondItem="R8J-T2-9no" secondAttribute="centerX" constant="-130" id="Kst-Sl-STs"/>
-                            <constraint firstItem="8Gn-cL-BId" firstAttribute="bottom" secondItem="dDL-ZD-sLq" secondAttribute="bottom" constant="27" id="TxN-eZ-bRK"/>
+                            <constraint firstItem="8Gn-cL-BId" firstAttribute="bottom" secondItem="dDL-ZD-sLq" secondAttribute="bottom" constant="54" id="TxN-eZ-bRK"/>
                             <constraint firstItem="bCp-EX-86N" firstAttribute="centerX" secondItem="R8J-T2-9no" secondAttribute="centerX" constant="130" id="XRg-pO-h44"/>
+                            <constraint firstItem="8Gn-cL-BId" firstAttribute="bottom" secondItem="bCp-EX-86N" secondAttribute="bottom" constant="51" id="ZrA-En-6ES"/>
                             <constraint firstItem="8Gn-cL-BId" firstAttribute="bottom" secondItem="851-ep-Od9" secondAttribute="bottom" constant="43.5" id="cEd-mg-PYg"/>
+                            <constraint firstItem="ohN-3p-ebx" firstAttribute="leading" secondItem="R8J-T2-9no" secondAttribute="leadingMargin" id="uBw-0A-tMB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BPu-1J-i6p"/>
@@ -1375,7 +1380,6 @@
         <segue reference="IcC-pR-Au9"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="2-removebg-preview" width="500" height="500"/>
         <image name="ZooGoロゴ" width="500" height="500"/>
         <image name="cancel" width="64" height="64"/>
         <image name="home" width="513" height="494"/>
@@ -1384,7 +1388,7 @@
         <image name="nopeButtonImage" width="500" height="500"/>
         <image name="save" width="128" height="128"/>
         <image name="share" width="129" height="128"/>
-        <image name="switch_camera_13385" width="72" height="72"/>
+        <image name="switchcamera" width="72" height="72"/>
         <image name="かわいい" width="757" height="800"/>
         <image name="やり直しのアイコン" width="256" height="256"/>
         <image name="イベント" width="800" height="800"/>
@@ -1393,6 +1397,7 @@
         <image name="ニュース" width="512" height="512"/>
         <image name="フィーディング" width="574" height="572"/>
         <image name="マッチング背景" width="1500" height="1500"/>
+        <image name="動画フォルダ" width="2771" height="2199"/>
         <image name="吹き出し背景" width="542" height="547"/>
         <image name="太いバツのアイコン" width="256" height="256"/>
         <image name="絶滅危惧種" width="639" height="684"/>
