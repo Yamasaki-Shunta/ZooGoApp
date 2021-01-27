@@ -43,5 +43,28 @@ class BaseViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
         
     }
+    
+    
+
+    @IBAction func feedingScreenTransition(_ sender: Any) {
+   
+        performSegue(withIdentifier: "feedingMatchingVC", sender: nil)
+    
+    
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     
+        if segue.identifier == "feedingMatchingVC" {
+        
+            let eastmatchingVC = segue.destination as! MatchingViewController
+        
+            eastmatchingVC.animalImageSet = feedingData
+            eastmatchingVC.passedtitleLabel = "1〜3枚のカードを選んでね"
+            eastmatchingVC.swipeCount = 3
+            
+        }
+        
+    }
 
 }

@@ -3,16 +3,20 @@
 import UIKit
 import Koloda
 
-class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaViewDelegate,UIGestureRecognizerDelegate {
+class MatchingViewController: UIViewController,KolodaViewDataSource,KolodaViewDelegate,UIGestureRecognizerDelegate {
 
     
-    var animalImageSet:[DataSet] = eastCuteData
+    var animalImageSet:[DataSet] = []
     
     var animalImage:[String] = []
     
     var likedArray = [String]()
     
     var nopedArray = [String]()
+    
+    var passedtitleLabel = String()
+    
+    var swipeCount = Int()
     
     let overlayRightImageName = "likeJudgedImage"
     
@@ -26,6 +30,8 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLabel.text = passedtitleLabel
         
         dataSet()
         
@@ -143,7 +149,7 @@ class EastMatchingViewController: UIViewController,KolodaViewDataSource,KolodaVi
     
     func screenTransition() {
     
-        if likedArray.count == 5 {
+        if likedArray.count == swipeCount {
             
             performSegue(withIdentifier: "swipeAnimalVC", sender: nil)
 

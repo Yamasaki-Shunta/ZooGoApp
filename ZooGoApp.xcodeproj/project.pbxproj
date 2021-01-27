@@ -12,7 +12,6 @@
 		6E2F980425B004820013DE99 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F980325B004820013DE99 /* 2.json */; };
 		6E2F981225B0075C0013DE99 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F981125B0075C0013DE99 /* 3.json */; };
 		6E3901D425B1F885009C7C07 /* SwipeAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3901D325B1F885009C7C07 /* SwipeAnimalViewController.swift */; };
-		6E3901E225B40F91009C7C07 /* WestMatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3901E125B40F91009C7C07 /* WestMatchingViewController.swift */; };
 		6E4F803925A779B50008A78B /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F803825A779B50008A78B /* DataBase.swift */; };
 		6E8D4CC525B950D100E40F70 /* FeedingMatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D4CC425B950D100E40F70 /* FeedingMatchingViewController.swift */; };
 		6E8D4CDE25B9B23400E40F70 /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D4CDD25B9B23400E40F70 /* SetUpViewController.swift */; };
@@ -41,7 +40,7 @@
 		6E90988B25A0643200DFDFA4 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E90988A25A0643200DFDFA4 /* WebViewController.swift */; };
 		6E9098A825A21D2400DFDFA4 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9098A725A21D2400DFDFA4 /* SelectViewController.swift */; };
 		6EE9E6C225A223C3008FDB33 /* BackSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9E6C125A223C3008FDB33 /* BackSwipe.swift */; };
-		6EE9E6CD25A2EE35008FDB33 /* EastMatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9E6CC25A2EE35008FDB33 /* EastMatchingViewController.swift */; };
+		6EE9E6CD25A2EE35008FDB33 /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9E6CC25A2EE35008FDB33 /* MatchingViewController.swift */; };
 		6EE9E6D525A5FB3D008FDB33 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9E6D425A5FB3D008FDB33 /* ResultViewController.swift */; };
 		9BD4DC279D0074BEC8515CB0 /* Pods_ZooGoApp_ZooGoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912CE5296352D55BFE60C7AC /* Pods_ZooGoApp_ZooGoAppUITests.framework */; };
 		B0913851DCA00EE84F80BA5A /* Pods_ZooGoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C1728321376BFF4000E295 /* Pods_ZooGoAppTests.framework */; };
@@ -74,7 +73,6 @@
 		6E2F980325B004820013DE99 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
 		6E2F981125B0075C0013DE99 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
 		6E3901D325B1F885009C7C07 /* SwipeAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAnimalViewController.swift; sourceTree = "<group>"; };
-		6E3901E125B40F91009C7C07 /* WestMatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WestMatchingViewController.swift; sourceTree = "<group>"; };
 		6E4F803825A779B50008A78B /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		6E8D4CC425B950D100E40F70 /* FeedingMatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingMatchingViewController.swift; sourceTree = "<group>"; };
 		6E8D4CDD25B9B23400E40F70 /* SetUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +108,7 @@
 		6E9098A725A21D2400DFDFA4 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		6EB0D8C892C4F7E29661CFAF /* Pods-ZooGoApp-ZooGoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooGoApp-ZooGoAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ZooGoApp-ZooGoAppUITests/Pods-ZooGoApp-ZooGoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6EE9E6C125A223C3008FDB33 /* BackSwipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackSwipe.swift; sourceTree = "<group>"; };
-		6EE9E6CC25A2EE35008FDB33 /* EastMatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EastMatchingViewController.swift; sourceTree = "<group>"; };
+		6EE9E6CC25A2EE35008FDB33 /* MatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
 		6EE9E6D425A5FB3D008FDB33 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		70C1728321376BFF4000E295 /* Pods_ZooGoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZooGoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		912CE5296352D55BFE60C7AC /* Pods_ZooGoApp_ZooGoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZooGoApp_ZooGoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -303,8 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				6E9098A725A21D2400DFDFA4 /* SelectViewController.swift */,
-				6EE9E6CC25A2EE35008FDB33 /* EastMatchingViewController.swift */,
-				6E3901E125B40F91009C7C07 /* WestMatchingViewController.swift */,
+				6EE9E6CC25A2EE35008FDB33 /* MatchingViewController.swift */,
 				6E3901D325B1F885009C7C07 /* SwipeAnimalViewController.swift */,
 				6EE9E6D425A5FB3D008FDB33 /* ResultViewController.swift */,
 			);
@@ -568,9 +565,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E8D4CDE25B9B23400E40F70 /* SetUpViewController.swift in Sources */,
-				6E3901E225B40F91009C7C07 /* WestMatchingViewController.swift in Sources */,
 				6E9098A825A21D2400DFDFA4 /* SelectViewController.swift in Sources */,
-				6EE9E6CD25A2EE35008FDB33 /* EastMatchingViewController.swift in Sources */,
+				6EE9E6CD25A2EE35008FDB33 /* MatchingViewController.swift in Sources */,
 				6E8D4D0C25B9D4A700E40F70 /* MusicModel.swift in Sources */,
 				6E8D4D2B25BD684900E40F70 /* PlaceHolderTextView.swift in Sources */,
 				6E4F803925A779B50008A78B /* DataBase.swift in Sources */,

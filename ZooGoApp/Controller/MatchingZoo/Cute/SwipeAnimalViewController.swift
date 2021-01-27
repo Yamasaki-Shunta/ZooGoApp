@@ -112,7 +112,7 @@ class SwipeAnimalViewController: UIViewController {
        
         ResultVC.passedAnimalName = swipedAnimalName
        
-        ResultVC.passedDataSet = selectData
+        ResultVC.parkNameDataSet = selectData
         
       }
         

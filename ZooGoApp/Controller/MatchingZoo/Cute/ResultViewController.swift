@@ -10,7 +10,7 @@ class ResultViewController: UIViewController,UIScrollViewDelegate{
    
     var resultList: [String] = []
   
-    var passedDataSet: [DataSet] = []
+    var parkNameDataSet: [DataSet] = []
     
     //スクリーンショット入れる入れ物
     var screenShotImage = UIImage()
@@ -34,7 +34,7 @@ class ResultViewController: UIViewController,UIScrollViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(passedDataSet)
+        //print(passedDataSet)
         
         self.scrollView.delegate = self
         
@@ -130,7 +130,7 @@ class ResultViewController: UIViewController,UIScrollViewDelegate{
         }
      }
     
-     let filteredData = passedDataSet.filter { element in conditions.reduce(false){$0 != $1(element)}
+     let filteredData = parkNameDataSet.filter { element in conditions.reduce(false){$0 != $1(element)}
       
     }
         

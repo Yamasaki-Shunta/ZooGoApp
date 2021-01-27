@@ -112,7 +112,8 @@ class ShareViewController: UIViewController {
             }
             
         }
-
+        
+        
         let alert: UIAlertController = UIAlertController(title: "動画が保存されました", message: "素敵な動画ができましたね", preferredStyle: UIAlertController.Style.actionSheet)
        
         let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style:
