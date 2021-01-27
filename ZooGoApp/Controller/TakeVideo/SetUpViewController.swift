@@ -109,7 +109,7 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
        
         print("Did Begin Recording")
         captureButton.growButton()
-        soundFile.playSound(fileName: "録画ボタン", extensionName: "mp3")
+        soundFile.playSound(fileName: "録画音声", extensionName: "mp3")
         hideButtons()
     }
     

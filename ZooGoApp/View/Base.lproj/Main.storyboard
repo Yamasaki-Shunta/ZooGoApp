@@ -25,7 +25,7 @@
                                             <constraint firstAttribute="height" constant="30" id="YIB-HK-hvu"/>
                                             <constraint firstAttribute="width" constant="30" id="aVk-8M-RKv"/>
                                         </constraints>
-                                        <state key="normal" image="太いバツのアイコン"/>
+                                        <state key="normal" image="太いバツのアイコン"/>
                                         <connections>
                                             <action selector="skipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyr-qH-9Mf"/>
                                         </connections>
@@ -137,6 +137,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="かわいい"/>
                                 <connections>
+                                    <action selector="cuteTransition:" destination="t7x-w4-Sb9" eventType="touchUpInside" id="WYR-hc-gVw"/>
                                     <segue destination="nZr-hY-IaS" kind="presentation" id="qJg-0N-Unp"/>
                                 </connections>
                             </button>
@@ -177,6 +178,10 @@
                                     <constraint firstAttribute="width" constant="80" id="k8G-WZ-d32"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="絶滅危惧種"/>
+                                <connections>
+                                    <action selector="endangeredSpeciesScreenTransition:" destination="t7x-w4-Sb9" eventType="touchUpInside" id="HXO-jf-N9l"/>
+                                    <segue destination="3ds-zJ-LRb" kind="presentation" identifier="endangeredSpeciesMatchingVC" id="AoH-k6-QS5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zG-Ym-OH9">
                                 <rect key="frame" x="37.5" y="533.5" width="100" height="100"/>
@@ -207,6 +212,10 @@
                                     <constraint firstAttribute="width" constant="80" id="bAE-yQ-3a5"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="イベント"/>
+                                <connections>
+                                    <action selector="eventScreenTransition:" destination="t7x-w4-Sb9" eventType="touchUpInside" id="TbR-n6-Inw"/>
+                                    <segue destination="3ds-zJ-LRb" kind="presentation" identifier="eventMatchingVC" id="5aQ-2Q-5oe"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  絶滅危惧種" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-AB-dg6">
                                 <rect key="frame" x="48" y="435" width="79" height="17"/>
@@ -357,7 +366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zXw-yW-efg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4758" y="-1033"/>
+            <point key="canvasLocation" x="4025" y="-847"/>
         </scene>
         <!--Matching View Controller-->
         <scene sceneID="9ie-cs-Pvz">
@@ -499,7 +508,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41l-nv-hTR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4758" y="54"/>
+            <point key="canvasLocation" x="4025" y="54"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Xs0-6r-tBX">
@@ -516,16 +525,6 @@
                                         <rect key="frame" x="-8" y="19" width="383" height="44"/>
                                         <items/>
                                     </toolbar>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="おすすめの動物園は？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddy-Jc-mx7">
-                                        <rect key="frame" x="23.5" y="92" width="328" height="43"/>
-                                        <color key="backgroundColor" red="0.99717861409999997" green="0.49496132139999999" blue="0.47449052330000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="43" id="QjQ-tx-Dlq"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9s-Jp-wdk">
                                         <rect key="frame" x="109.5" y="581" width="156" height="36"/>
                                         <color key="backgroundColor" red="0.32736480239999999" green="0.84318631889999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -563,6 +562,16 @@
                                         <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="currentPageIndicatorTintColor" systemColor="systemTealColor"/>
                                     </pageControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="おすすめの動物園は？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddy-Jc-mx7">
+                                        <rect key="frame" x="50" y="92" width="275" height="43"/>
+                                        <color key="backgroundColor" red="0.99717861409999997" green="0.49496132139999999" blue="0.47449052330000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="QjQ-tx-Dlq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -581,7 +590,7 @@
                                     <constraint firstItem="fLN-KK-ds2" firstAttribute="leading" secondItem="dNM-Y9-buq" secondAttribute="trailing" constant="86.5" id="f6E-mC-Q21"/>
                                     <constraint firstItem="9lZ-L5-gXl" firstAttribute="top" secondItem="ox7-qH-Hrp" secondAttribute="top" constant="19" id="j36-7K-uhf"/>
                                     <constraint firstItem="9lZ-L5-gXl" firstAttribute="centerY" secondItem="fLN-KK-ds2" secondAttribute="centerY" constant="-4" id="myE-iP-jhP"/>
-                                    <constraint firstItem="ddy-Jc-mx7" firstAttribute="leading" secondItem="ox7-qH-Hrp" secondAttribute="leading" constant="23.5" id="rF6-wR-94f"/>
+                                    <constraint firstItem="ddy-Jc-mx7" firstAttribute="leading" secondItem="ox7-qH-Hrp" secondAttribute="leading" constant="50" id="rF6-wR-94f"/>
                                     <constraint firstItem="ddy-Jc-mx7" firstAttribute="centerX" secondItem="V9s-Jp-wdk" secondAttribute="centerX" id="so8-Pa-9am"/>
                                 </constraints>
                             </view>
@@ -604,7 +613,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KqX-7c-aeV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6657" y="55"/>
+            <point key="canvasLocation" x="5980" y="54"/>
         </scene>
         <!--Set Up View Controller-->
         <scene sceneID="Aeh-i7-m0J">
@@ -678,7 +687,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tvx-8M-weM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2750" y="1950"/>
+            <point key="canvasLocation" x="2793" y="1598"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="8EP-4k-nhg">
@@ -697,7 +706,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqE-41-h1m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2830" y="1189"/>
+            <point key="canvasLocation" x="3377" y="831"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="P8e-XC-KED">
@@ -713,7 +722,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZCQ-ae-Sci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4391" y="1189"/>
+            <point key="canvasLocation" x="4380" y="831"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c9g-YD-1WY">
@@ -842,12 +851,13 @@
                     <navigationItem key="navigationItem" id="sHd-5Q-mER"/>
                     <connections>
                         <outlet property="stackView" destination="2gB-SK-WoR" id="AAk-OU-0Ds"/>
+                        <outlet property="titleLabel" destination="sxJ-d6-GgG" id="1DU-iM-rNT"/>
                         <segue destination="l1v-Rc-as3" kind="presentation" identifier="resultVC" id="iV7-kK-8kT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coK-ZK-tNk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5670" y="55"/>
+            <point key="canvasLocation" x="4981.6000000000004" y="53.523238380809602"/>
         </scene>
         <!--Edit View Controller-->
         <scene sceneID="nOt-Kq-RbL">
@@ -905,7 +915,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzZ-BA-jeE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3773.5999999999999" y="1949.7751124437782"/>
+            <point key="canvasLocation" x="3772" y="1597"/>
         </scene>
         <!--Share View Controller-->
         <scene sceneID="78N-hD-Il6">
@@ -993,7 +1003,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S8z-zi-EfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3772" y="2740.4797601199402"/>
+            <point key="canvasLocation" x="3772" y="2415"/>
         </scene>
         <!--Select Music View Controller-->
         <scene sceneID="bhW-Qk-uYJ">
@@ -1092,11 +1102,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nzF-ba-ckI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4624.8000000000002" y="1949.7751124437782"/>
+            <point key="canvasLocation" x="4892" y="1596"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QKs-rb-KgV"/>
+        <segue reference="5aQ-2Q-5oe"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ZooGoロゴ１" width="500" height="500"/>
@@ -1118,7 +1128,6 @@
         <image name="マッチング背景" width="1500" height="1500"/>
         <image name="動画フォルダ" width="2771" height="2199"/>
         <image name="吹き出し背景" width="542" height="547"/>
-        <image name="太いバツのアイコン" width="256" height="256"/>
         <image name="太いバツのアイコン" width="256" height="256"/>
         <image name="絶滅危惧種" width="639" height="684"/>
         <image name="線の三角矢印のアイコン" width="256" height="256"/>

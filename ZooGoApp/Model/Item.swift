@@ -15,4 +15,3 @@ class NewsItems {
     var pubDate:String?
 
 }
-

@@ -11,6 +11,8 @@ class BaseViewController: UIViewController {
 
     @IBOutlet weak var questionLabel: UILabel!
     
+    var soundFile = SoundFile()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -48,23 +50,65 @@ class BaseViewController: UIViewController {
 
     @IBAction func feedingScreenTransition(_ sender: Any) {
    
+        soundFile.playSound(fileName: "決定音声", extensionName: "mp3")
         performSegue(withIdentifier: "feedingMatchingVC", sender: nil)
     
     
     }
     
+    
+    @IBAction func eventScreenTransition(_ sender: Any) {
+    
+        soundFile.playSound(fileName: "決定音声", extensionName: "mp3")
+        performSegue(withIdentifier: "eventMatchingVC", sender: nil)
+    
+  
+    }
+    
+    @IBAction func endangeredSpeciesScreenTransition(_ sender: Any) {
+        
+        soundFile.playSound(fileName: "決定音声", extensionName: "mp3")
+        performSegue(withIdentifier: "endangeredSpeciesMatchingVC", sender: nil)
+    
+    }
+    
+    
+    @IBAction func cuteTransition(_ sender: Any) {
+   
+        soundFile.playSound(fileName: "決定音声", extensionName: "mp3")
+
+    }
+    
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      
         if segue.identifier == "feedingMatchingVC" {
         
-            let eastmatchingVC = segue.destination as! MatchingViewController
+            let feedingMatchingVC = segue.destination as! MatchingViewController
         
-            eastmatchingVC.animalImageSet = feedingData
-            eastmatchingVC.passedtitleLabel = "1〜3枚のカードを選んでね"
-            eastmatchingVC.swipeCount = 3
+            feedingMatchingVC.animalImageSet = feedingData
+            feedingMatchingVC.passedtitleLabel = "1〜3枚のカードを選んでね"
+            feedingMatchingVC.swipeCount = 3
             
-        }
+        }else if segue.identifier == "eventMatchingVC" {
+            
+            let eventMatchingVC = segue.destination as! MatchingViewController
+        
+            eventMatchingVC.animalImageSet = eventData
+            eventMatchingVC.passedtitleLabel = "1〜3枚のカードを選んでね"
+            eventMatchingVC.setLabel = "選択したイベント一覧"
+            eventMatchingVC.swipeCount = 3
+        
+    }else if segue.identifier == "endangeredSpeciesMatchingVC" {
+        
+        let endangeredSpeciesMatchingVC = segue.destination as! MatchingViewController
+    
+        endangeredSpeciesMatchingVC.animalImageSet = endangeredSpeciesData
+        endangeredSpeciesMatchingVC.passedtitleLabel = "1〜5枚のカードを選んでね"
+        endangeredSpeciesMatchingVC.swipeCount = 5
         
     }
 
+}
 }
