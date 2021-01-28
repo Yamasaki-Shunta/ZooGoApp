@@ -3,16 +3,17 @@
 import Foundation
 import SwiftyJSON
 import Alamofire
+import UIKit
 
 
 protocol MusicProtocol {
     
-    //規則
+    
     func catchData(count:Int)
     
 }
 
-class MusicModel{
+class MusicModel: UIViewController{
     
 
     //アーティスト名
@@ -58,8 +59,11 @@ class MusicModel{
                         
                         //検索がヒットしないと下に行かないのようにする
                         if json["results"][i]["artistName"].string == nil{
-                            print("ヒットしませんでした。")
+                
+                            print("ヒットしませんでした")
+                            
                             return
+                            
                             
                         }
                         
@@ -76,10 +80,12 @@ class MusicModel{
                     self.musicDelegate?.catchData(count: 1)
                     
                 } catch  {
+            
                 }
              
                 break
-              case .failure(_): break
+              
+            case .failure(_): break
                 
             }
             

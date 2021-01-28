@@ -17,7 +17,7 @@ class ShareViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
        //キーボードの高さの調節
         let notification = NotificationCenter.default
         
@@ -107,25 +107,16 @@ class ShareViewController: UIViewController {
             }
             
             if result{
-               
+             
+                DispatchQueue.main.async {
+                    Alert.okAlert(vc: self, title: "動画を保存しました", message: "素敵な動画ができましたね")
+                        }
+                
                 print("保存されました")
             }
             
         }
-        
-        
-        let alert: UIAlertController = UIAlertController(title: "動画が保存されました", message: "素敵な動画ができましたね", preferredStyle: UIAlertController.Style.actionSheet)
-       
-        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style:
-                                                            
-            UIAlertAction.Style.default, handler:{
-               // ボタンが押された時の処理を書く（クロージャ実装）
-               (action: UIAlertAction!) -> Void in
-               print("OKが押されました")
-        })
-        
-        alert.addAction(defaultAction)
-        self.present(alert, animated: true, completion: nil)
+    
         
      }
     
