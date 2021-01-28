@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		6E0F746F25C17D320000B7E1 /* 決定音声.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E0F746E25C17D320000B7E1 /* 決定音声.mp3 */; };
 		6E2F97D525B001C80013DE99 /* SetupJudgment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F97D425B001C80013DE99 /* SetupJudgment.swift */; };
-		6E2F97FF25B0047C0013DE99 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F97FE25B0047C0013DE99 /* 1.json */; };
-		6E2F980425B004820013DE99 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F980325B004820013DE99 /* 2.json */; };
-		6E2F981225B0075C0013DE99 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F981125B0075C0013DE99 /* 3.json */; };
 		6E3901D425B1F885009C7C07 /* SwipeAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3901D325B1F885009C7C07 /* SwipeAnimalViewController.swift */; };
 		6E4F803925A779B50008A78B /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F803825A779B50008A78B /* DataBase.swift */; };
+		6E6A075B25C2FCEF00362DC9 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E6A075A25C2FCEF00362DC9 /* 1.json */; };
 		6E8D4CDE25B9B23400E40F70 /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D4CDD25B9B23400E40F70 /* SetUpViewController.swift */; };
 		6E8D4CE725B9B57800E40F70 /* SwiftyRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D4CE625B9B57800E40F70 /* SwiftyRecordButton.swift */; };
 		6E8D4CEC25B9B59800E40F70 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8D4CEB25B9B59800E40F70 /* LoadingView.swift */; };
@@ -42,6 +40,9 @@
 		6EE9E6C225A223C3008FDB33 /* BackSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9E6C125A223C3008FDB33 /* BackSwipe.swift */; };
 		6EE9E6CD25A2EE35008FDB33 /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9E6CC25A2EE35008FDB33 /* MatchingViewController.swift */; };
 		6EE9E6D525A5FB3D008FDB33 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9E6D425A5FB3D008FDB33 /* ResultViewController.swift */; };
+		6EEBE30725C2F43F002FBCB3 /* 4.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EEBE30325C2F43E002FBCB3 /* 4.json */; };
+		6EEBE30825C2F43F002FBCB3 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EEBE30425C2F43F002FBCB3 /* 3.json */; };
+		6EEBE30925C2F43F002FBCB3 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EEBE30525C2F43F002FBCB3 /* 2.json */; };
 		9BD4DC279D0074BEC8515CB0 /* Pods_ZooGoApp_ZooGoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912CE5296352D55BFE60C7AC /* Pods_ZooGoApp_ZooGoAppUITests.framework */; };
 		B0913851DCA00EE84F80BA5A /* Pods_ZooGoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C1728321376BFF4000E295 /* Pods_ZooGoAppTests.framework */; };
 		D58D36B24AE8CAC4442DF8DB /* Pods_ZooGoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33EE8755C58CFC0795C8E984 /* Pods_ZooGoApp.framework */; };
@@ -70,11 +71,9 @@
 		652AD3155AF3F9D779E67D7F /* Pods-ZooGoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooGoApp.release.xcconfig"; path = "Target Support Files/Pods-ZooGoApp/Pods-ZooGoApp.release.xcconfig"; sourceTree = "<group>"; };
 		6E0F746E25C17D320000B7E1 /* 決定音声.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "決定音声.mp3"; sourceTree = "<group>"; };
 		6E2F97D425B001C80013DE99 /* SetupJudgment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupJudgment.swift; sourceTree = "<group>"; };
-		6E2F97FE25B0047C0013DE99 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
-		6E2F980325B004820013DE99 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
-		6E2F981125B0075C0013DE99 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
 		6E3901D325B1F885009C7C07 /* SwipeAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAnimalViewController.swift; sourceTree = "<group>"; };
 		6E4F803825A779B50008A78B /* DataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		6E6A075A25C2FCEF00362DC9 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
 		6E8D4CDD25B9B23400E40F70 /* SetUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
 		6E8D4CE625B9B57800E40F70 /* SwiftyRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyRecordButton.swift; sourceTree = "<group>"; };
 		6E8D4CEB25B9B59800E40F70 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -110,6 +109,9 @@
 		6EE9E6C125A223C3008FDB33 /* BackSwipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackSwipe.swift; sourceTree = "<group>"; };
 		6EE9E6CC25A2EE35008FDB33 /* MatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
 		6EE9E6D425A5FB3D008FDB33 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		6EEBE30325C2F43E002FBCB3 /* 4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 4.json; sourceTree = "<group>"; };
+		6EEBE30425C2F43F002FBCB3 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
+		6EEBE30525C2F43F002FBCB3 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
 		70C1728321376BFF4000E295 /* Pods_ZooGoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZooGoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		912CE5296352D55BFE60C7AC /* Pods_ZooGoApp_ZooGoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZooGoApp_ZooGoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AE8A63A2E9C086DE1B2720 /* Pods-ZooGoApp-ZooGoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooGoApp-ZooGoAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZooGoApp-ZooGoAppUITests/Pods-ZooGoApp-ZooGoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -263,9 +265,10 @@
 		6E909819259E07F100DFDFA4 /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				6E2F97FE25B0047C0013DE99 /* 1.json */,
-				6E2F980325B004820013DE99 /* 2.json */,
-				6E2F981125B0075C0013DE99 /* 3.json */,
+				6E6A075A25C2FCEF00362DC9 /* 1.json */,
+				6EEBE30525C2F43F002FBCB3 /* 2.json */,
+				6EEBE30425C2F43F002FBCB3 /* 3.json */,
+				6EEBE30325C2F43E002FBCB3 /* 4.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -421,14 +424,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E2F980425B004820013DE99 /* 2.json in Resources */,
+				6EEBE30925C2F43F002FBCB3 /* 2.json in Resources */,
 				6E9097B2259DCA4700DFDFA4 /* LaunchScreen.storyboard in Resources */,
 				6E8D4D2625BB39F500E40F70 /* 録画音声.mp3 in Resources */,
 				6E9097AF259DCA4700DFDFA4 /* Assets.xcassets in Resources */,
-				6E2F981225B0075C0013DE99 /* 3.json in Resources */,
+				6EEBE30825C2F43F002FBCB3 /* 3.json in Resources */,
 				6E9097AD259DCA4600DFDFA4 /* Main.storyboard in Resources */,
+				6EEBE30725C2F43F002FBCB3 /* 4.json in Resources */,
+				6E6A075B25C2FCEF00362DC9 /* 1.json in Resources */,
 				6E0F746F25C17D320000B7E1 /* 決定音声.mp3 in Resources */,
-				6E2F97FF25B0047C0013DE99 /* 1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

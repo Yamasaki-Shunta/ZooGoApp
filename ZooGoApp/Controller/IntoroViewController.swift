@@ -11,10 +11,10 @@ import Lottie
 class IntoroViewController: UIViewController,UIScrollViewDelegate{
 
     //jsonを入れる箱と表示させる
-    var onboardArray = ["1","2","3"]
+    var onboardArray = ["1","2","3","4"]
     
     //テキストを用意する
-    var onboardStringArray = ["お気に入りの動物をスワイプしよう！","動画と音楽を合成しよう","動物の最新情報を見よう！"]
+    var onboardStringArray = ["休止している場合がございます","お気に入りの動物をスワイプしよう！","動画と音楽を合成しよう","動物の最新情報を見よう！"]
     
     //スクリーンの幅
     let screenWidth = Int( UIScreen.main.bounds.size.width)
@@ -39,7 +39,7 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
         setUpScroll()
             
         //lottieAnimationを使用できるようにする
-        for i in 0...2{
+        for i in 0...3{
             
             let animationView = AnimationView()
             let animation = Animation.named(onboardArray[i])
@@ -77,28 +77,48 @@ class IntoroViewController: UIViewController,UIScrollViewDelegate{
         scrollView.frame = self.view.frame
         
         //スクロール稼働の領域を決める
-        scrollView.contentSize = CGSize(width:screenWidth*3, height:screenHeight-50)
+        scrollView.contentSize = CGSize(width:screenWidth*4, height:screenHeight-50)
         
         self.view.addSubview(scrollView)
         
         //テキスト反映
-        for i in 0...2{
+        for i in 0...3{
             
             let onboardLabel = UILabel(frame: CGRect(x:CGFloat(i)*view.frame.size.width, y: -225, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
             
+            let onboardLabel2 = UILabel(frame: CGRect(x:CGFloat(i)*view.frame.size.width, y: -250, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
             
-    //フォントの大きさ
-    onboardLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
-    
-    //テキストの配置
-    onboardLabel.textAlignment =  .center
+            
+            let onboardLabel3 = UILabel(frame: CGRect(x:CGFloat(i)*view.frame.size.width, y: -200, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
+            
+            onboardLabel.text = onboardStringArray[i]
+     
+            onboardLabel.textAlignment =  .center
+            
+        if i == 0 {
+            
+            onboardLabel2.text = "COVID‑19の影響で動物の展示やイベントが"
+            onboardLabel2.textAlignment =  .center
+            onboardLabel2.font = UIFont.boldSystemFont(ofSize: 15.0)
+            
+            onboardLabel3.text = "予めご了承下さい"
+            onboardLabel3.textAlignment =  .center
+            onboardLabel3.font = UIFont.boldSystemFont(ofSize: 15.0)
+            
+            onboardLabel.textColor = .red
+            onboardLabel.font = UIFont.boldSystemFont(ofSize: 15.0)
+            
+            scrollView.addSubview(onboardLabel2)
+            scrollView.addSubview(onboardLabel3)
+                
+        }else{
+            
+            onboardLabel.font = UIFont.boldSystemFont(ofSize: 20)
 
-    //どのテキストをしようするのか
-    onboardLabel.text = onboardStringArray[i]
-
-    //スクロールビューに加える
-    scrollView.addSubview(onboardLabel)
     
+        }
+            
+            scrollView.addSubview(onboardLabel)
             
     }
     
