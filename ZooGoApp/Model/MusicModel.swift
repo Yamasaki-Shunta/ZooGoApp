@@ -27,6 +27,7 @@ class MusicModel: UIViewController{
     
     var musicDelegate:MusicProtocol?
     
+    
   
     //通信Alamofire
     //JSON解析
@@ -60,6 +61,13 @@ class MusicModel: UIViewController{
                         //検索がヒットしないと下に行かないのようにする
                         if json["results"][i]["artistName"].string == nil{
                 
+                            
+                            let dialog = UIAlertController(title: "タイトル", message: "サブタイトル", preferredStyle: .alert)
+                            
+                            dialog.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                          
+                            self.present(dialog, animated: true, completion: nil)
+                            
                             print("ヒットしませんでした")
                             
                             return

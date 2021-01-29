@@ -5,11 +5,11 @@
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>動画と音楽を合成するため。</string>
+	<string>動画と音楽を合成するために使用します</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>保存されている動画を使用するため。</string>
+	<string>動画を保存するために使用します</string>
 	<key>NSCameraUsageDescription</key>
-	<string>動画を撮影し、音楽と合成するため。</string>
+	<string>動画を撮影し、音楽と合成するために使用します</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
