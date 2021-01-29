@@ -11,7 +11,10 @@ protocol MusicProtocol {
     
     func catchData(count:Int)
     
+    func searchData(count:Int)
+    
 }
+
 
 class MusicModel: UIViewController{
     
@@ -60,14 +63,9 @@ class MusicModel: UIViewController{
                         
                         //検索がヒットしないと下に行かないのようにする
                         if json["results"][i]["artistName"].string == nil{
-                
                             
-                            let dialog = UIAlertController(title: "タイトル", message: "サブタイトル", preferredStyle: .alert)
                             
-                            dialog.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                          
-                            self.present(dialog, animated: true, completion: nil)
-                            
+                            self.musicDelegate?.searchData(count: 1)
                             print("ヒットしませんでした")
                             
                             return

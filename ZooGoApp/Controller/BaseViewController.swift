@@ -21,6 +21,7 @@ class BaseViewController: UIViewController {
         
         self.questionLabel.clipsToBounds = true
         
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -33,6 +34,8 @@ class BaseViewController: UIViewController {
         ud.synchronize()
      
         performSegue(withIdentifier: "introVC", sender: nil)
+            
+                
   
         }
 

@@ -7,7 +7,8 @@ import SwiftVideoGenerator
 //SwiftVideoGenerator:音声と動画を合成させるライブラリ
 
 class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,UIAdaptivePresentationControllerDelegate,MusicProtocol {
-    
+
+        
     var musicModel = MusicModel()
     var player:AVAudioPlayer?
     var videoPath = String()
@@ -222,6 +223,16 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
     }
     
     
+    func searchData(count: Int) {
+        
+        if count == 1{
+            
+            Alert.okAlert(vc: self, title: "ヒットしませんでした", message: "別のキーワードで検索して下さい")
+            
+        }
+        
+    }
+    
     func refleshData(){
         
         //サーチテキストがからでないのであれば
@@ -252,6 +263,7 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         refleshData()
         
     }
+    
     
     
     @IBAction func dismissButton(_ sender: Any) {
