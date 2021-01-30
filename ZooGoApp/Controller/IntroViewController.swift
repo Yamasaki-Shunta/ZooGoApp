@@ -1,5 +1,5 @@
 //
-//  IntoroViewController.swift
+//  IntroViewController.swift
 //  NewsTest
 //
 //  Created by 山﨑隼汰 on 2020/11/24.
@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-class IntoroViewController: UIViewController,UIScrollViewDelegate{
+class IntroViewController: UIViewController,UIScrollViewDelegate{
 
     //jsonを入れる箱と表示させる
     var onboardArray = ["1","2","3","4"]

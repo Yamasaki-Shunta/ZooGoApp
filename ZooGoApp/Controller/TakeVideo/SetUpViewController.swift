@@ -3,9 +3,6 @@
 
 import UIKit
 import SwiftyCam
-import AVFoundation
-import MobileCoreServices
-
 
 //ライブラリの画面を使っていく(SwiftyCamViewController)
 //UINavigationControllerDelegate→ カメラを使用する
