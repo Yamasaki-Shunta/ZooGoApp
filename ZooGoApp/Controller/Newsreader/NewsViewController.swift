@@ -37,15 +37,7 @@ class NewsViewController: SegementSlideDefaultViewController{
 
     let headerHeight: CGFloat
     
-    if #available(iOS 11.0, *) {
-
     headerHeight = view.bounds.height/5+view.safeAreaInsets.top
-
-    } else {
-
-    headerHeight = view.bounds.height/5+topLayoutGuide.length
-
-   }
 
     headerView.heightAnchor.constraint(equalToConstant: headerHeight).isActive = true
 
@@ -61,7 +53,6 @@ class NewsViewController: SegementSlideDefaultViewController{
     
     override func segementSlideContentViewController(at index: Int) -> SegementSlideContentScrollViewDelegate? {
         
-            
         return PageViewController()
     
         }

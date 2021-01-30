@@ -4,7 +4,7 @@ import UIKit
 import AVKit
 
 
-class EditViewController: UIViewController {
+class EditViewController: UIViewController, UIAdaptivePresentationControllerDelegate {
 
     
     var url:URL?
@@ -16,12 +16,13 @@ class EditViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
     //ナビゲーションバーを消す
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         self.navigationController?.isNavigationBarHidden = true
     }
     
@@ -50,8 +51,6 @@ class EditViewController: UIViewController {
         //playerController.viewのフレームを決める
         playerController?.view.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height - 100)
        
-        //
-        //
         //ここをtureにしてみる
         playerController?.showsPlaybackControls = false
        
@@ -134,6 +133,7 @@ class EditViewController: UIViewController {
                 
             }
             //ここ
+            selectVC.presentationController?.delegate = self
             
         }
         
@@ -168,11 +168,11 @@ class EditViewController: UIViewController {
       
         }else{
             
+        Alert.okAlert(vc: self, title: "楽曲を選択してください", message: "")
+                
             print("楽曲を選択してください。")
             
         }
         
     }
-    
-
 }

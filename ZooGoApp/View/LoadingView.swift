@@ -37,15 +37,20 @@ class LoadingView: UIView {
       
       let indicator = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
       indicator.center = loadingView.center
-      indicator.tintColor = .white
+      indicator.color = .white
       
-      if UI_USER_INTERFACE_IDIOM() == .pad {
-        indicator.style = .whiteLarge
+      if UIDevice.current.userInterfaceIdiom == .pad {
+       
+        indicator.style = .large
+      
       } else {
-        indicator.style = .white
+        
+        indicator.style = .medium
       }
+        
       indicator.startAnimating()
       loadingView.addSubview(indicator)
+        
     }
   }
   

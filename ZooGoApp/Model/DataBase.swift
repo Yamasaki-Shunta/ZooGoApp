@@ -69,3 +69,38 @@ let feedingData = [
     DataSet(animalName: "カバの餌やり", parkName:"アドベンチャーワールド(餌やり)"),
 
 ]
+
+let eventData = [
+
+    DataSet(animalName: "ペンギンのお散歩", parkName:"旭山動物園(イベント)"),
+    DataSet(animalName: "ワラビーのふれあい", parkName:"宇都宮動物園(イベント)"),
+    DataSet(animalName: "サファリツアー", parkName:"群馬サファリパーク(イベント)"),
+    DataSet(animalName: "アシカショー", parkName:"アドベンチャーワールド(イベント)"),
+    DataSet(animalName: "バードショー", parkName:"ネオパーク沖縄(イベント)"),
+    DataSet(animalName: "ワオキツネザルの解説", parkName:"神戸どうぶつ王国(イベント)"),
+    DataSet(animalName: "キャットショー", parkName:"那須どうぶつ王国(イベント)"),
+    DataSet(animalName: "チンパンジーの解説", parkName:"かみね動物園(イベント)"),
+    DataSet(animalName: "カワウソの解説", parkName:"のいち動物公園(イベント)"),
+    DataSet(animalName: "フラミンゴショー", parkName:"フェニックス自然動物園(イベント)"),
+
+]
+
+let endangeredSpeciesData = [
+
+    DataSet(animalName: "ミミセンザンコウ", parkName:"上野動物園(絶滅)"),
+    DataSet(animalName: "ゴールデンライオンタマリン", parkName:"浜松市動物園(絶滅)"),
+    DataSet(animalName: "ヒクイドリ", parkName:"東武動物公園(絶滅)"),
+    DataSet(animalName: "ラッコ", parkName:"アドベンチャーワールド(絶滅)"),
+    DataSet(animalName: "リカオン", parkName:"よこはま動物園ズーラシア(絶滅)"),
+    DataSet(animalName: "ユキヒョウ", parkName:"旭山動物園(絶滅)"),
+    DataSet(animalName: "パフィン", parkName:"那須どうぶつ王国(絶滅)"),
+    DataSet(animalName: "ツシマヤマネコ", parkName:"福岡市動物園(絶滅)"),
+    DataSet(animalName: "ニホンライチョウ", parkName:"富士市ファミリーパーク(絶滅)"),
+    DataSet(animalName: "アムールヒョウ", parkName:"王子動物園(絶滅)"),
+    DataSet(animalName: "キーウィ", parkName:"天王寺動物園(絶滅)"),
+    DataSet(animalName: "ウンピョウ", parkName:"のいち動物公園(絶滅)"),
+    DataSet(animalName: "コウノトリ", parkName:"多摩動物公園(絶滅)"),
+    DataSet(animalName: "キンシコウ", parkName:"熊本市動植園(絶滅)"),
+    DataSet(animalName: "クアッカワラビー", parkName:"埼玉こども動物自然公園(絶滅)"),
+
+]

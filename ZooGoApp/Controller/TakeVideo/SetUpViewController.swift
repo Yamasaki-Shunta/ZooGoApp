@@ -3,9 +3,6 @@
 
 import UIKit
 import SwiftyCam
-import AVFoundation
-import MobileCoreServices
-
 
 //ライブラリの画面を使っていく(SwiftyCamViewController)
 //UINavigationControllerDelegate→ カメラを使用する
@@ -109,7 +106,7 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
        
         print("Did Begin Recording")
         captureButton.growButton()
-        soundFile.playSound(fileName: "録画ボタン", extensionName: "mp3")
+        soundFile.playSound(fileName: "録画音声", extensionName: "mp3")
         hideButtons()
     }
     

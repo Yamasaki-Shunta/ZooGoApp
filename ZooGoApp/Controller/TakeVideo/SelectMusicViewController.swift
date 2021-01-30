@@ -6,17 +6,17 @@ import AVFoundation
 import SwiftVideoGenerator
 //SwiftVideoGenerator:音声と動画を合成させるライブラリ
 
+class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,UIAdaptivePresentationControllerDelegate,MusicProtocol {
 
-class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,MusicProtocol {
-    
+        
     var musicModel = MusicModel()
     var player:AVAudioPlayer?
     var videoPath = String()
     var passedURL:URL?
     
     @IBOutlet weak var tableView: UITableView!
+   
     @IBOutlet weak var searchTextField: UITextField!
-    
     
     //遷移元から処理を受け取るクロージャーのプロパティーを用意
     var resultHandler:((String,String,String)->Void)?
@@ -29,7 +29,8 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         tableView.dataSource = self
         searchTextField.delegate = self
         
-        // Do any additional setup after loading the view.
+        isModalInPresentation = true
+        
     }
     
     
@@ -151,17 +152,14 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
             }
             
         }
-        
-        
-        
         //合成ができたら値を渡しながら画面を戻る
         
     }
     
     
     @objc func playButtonTap(_ sender:UIButton){
-        print(sender.tag)
-        print(sender.debugDescription)
+        //print(sender.tag)
+        //print(sender.debugDescription)
         
         //音楽を止める
         
@@ -172,7 +170,7 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         
         
         let url = URL(string: musicModel.preViewUrlArray[sender.tag])
-        print(url?.debugDescription)
+        //print(url?.debugDescription)
         downLoadMusicURL(url: url!)
         
     }
@@ -192,7 +190,6 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         
         dowloadTask.resume()
         
-        
     }
     
     
@@ -200,7 +197,7 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         
         do {
             self.player = try AVAudioPlayer(contentsOf: url)
-            //prepareToPlayというのは、playための準備のこと
+            
             player?.prepareToPlay()
             player?.volume = 1.0
             player?.play()
@@ -225,6 +222,16 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         }
     }
     
+    
+    func searchData(count: Int) {
+        
+        if count == 1{
+            
+            Alert.okAlert(vc: self, title: "ヒットしませんでした", message: "別のキーワードで検索して下さい")
+            
+        }
+        
+    }
     
     func refleshData(){
         
@@ -257,6 +264,18 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         
     }
     
-
+    
+    
+    @IBAction func dismissButton(_ sender: Any) {
+    
+        self.dismiss(animated: true, completion: nil)
+        
+        if player?.isPlaying == true{
+            
+            player!.stop()
+     
+        }
+    
+    }
 
 }
