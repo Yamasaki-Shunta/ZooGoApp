@@ -10,6 +10,7 @@ import WebKit
 
 class WebViewController: UIViewController,WKUIDelegate {
 
+    
     var webView = WKWebView()
     
     override func viewDidLoad() {
@@ -17,7 +18,6 @@ class WebViewController: UIViewController,WKUIDelegate {
         
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
 
-        
         webView.frame = CGRect(x: 0, y:0 , width: view.frame.size.width, height: view.frame.size.height)
         view.addSubview(webView)
         
@@ -28,7 +28,6 @@ class WebViewController: UIViewController,WKUIDelegate {
         
         setSwipeBack()
         
-    
     }
     
 }

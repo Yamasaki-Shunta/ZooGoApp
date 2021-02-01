@@ -4,6 +4,7 @@ import UIKit
 
 class ResultViewController: UIViewController,UIScrollViewDelegate{
 
+    
     var passedAnimalName = [String]()
     
     var conditions = [(DataSet) -> Bool]()
@@ -47,7 +48,7 @@ class ResultViewController: UIViewController,UIScrollViewDelegate{
         
         setupScrollImages()
         
-        let imageTop:UIImage = UIImage(named:resultList[0])!
+        let _ :UIImage = UIImage(named:resultList[0])!
         
         for i in 0 ..< pageNum {
         // UIImageViewのインスタンス
@@ -94,7 +95,6 @@ class ResultViewController: UIViewController,UIScrollViewDelegate{
 
     @IBAction func dismissButton(_ sender: Any) {
    
-       
         self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: false, completion: nil)
         
     }
@@ -110,7 +110,7 @@ class ResultViewController: UIViewController,UIScrollViewDelegate{
     // アクティビティビューに乗っけて、シェアする
     let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
         
-     present(activityVC, animated: true, completion: nil)
+    present(activityVC, animated: true, completion: nil)
             
     }
     

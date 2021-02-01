@@ -57,8 +57,7 @@ class IntroViewController: UIViewController,UIScrollViewDelegate{
         coverView.frame = CGRect(x: 0, y: 0, width: screenWidth*3, height: screenHeight)
         coverView.backgroundColor = .clear
         scrollView.addSubview(coverView)
-        
-       
+
     }
     //ナビゲーションバーを消す
         override func viewWillAppear(_ animated: Bool) {
@@ -87,7 +86,6 @@ class IntroViewController: UIViewController,UIScrollViewDelegate{
             let onboardLabel = UILabel(frame: CGRect(x:CGFloat(i)*view.frame.size.width, y: -225, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
             
             let onboardLabel2 = UILabel(frame: CGRect(x:CGFloat(i)*view.frame.size.width, y: -250, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
-            
             
             let onboardLabel3 = UILabel(frame: CGRect(x:CGFloat(i)*view.frame.size.width, y: -200, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
             

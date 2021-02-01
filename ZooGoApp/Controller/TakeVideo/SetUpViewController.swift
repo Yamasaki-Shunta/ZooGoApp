@@ -50,14 +50,12 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
         
     }
     
-        
     //アルバムの許可画面を出して、キャンセルされた場合の設定
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         
         picker.dismiss(animated: true, completion: nil)
         
     }
-    
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
@@ -80,34 +78,44 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
     
     //ステータスバーを表示するかしないか
     override var prefersStatusBarHidden: Bool {
-           return true
+           
+        return true
+   
     }
 
     //キャプチャーボタンでデリゲートメソッドを使用するのか？
     override func viewDidAppear(_ animated: Bool) {
+        
         super.viewDidAppear(animated)
         captureButton.delegate = self
+   
     }
     
     //キャプチャーボタンをずっと使えるようにする
     func swiftyCamSessionDidStartRunning(_ swiftyCam: SwiftyCamViewController) {
+        
         print("Session did start running")
         captureButton.buttonEnabled = true
+    
     }
     
     //終わったらキャプチャーボタンを使えないようにする
     func swiftyCamSessionDidStopRunning(_ swiftyCam: SwiftyCamViewController) {
+        
         print("Session did stop running")
         captureButton.buttonEnabled = false
+    
     }
     
     //ビデオのレコーディングが始まったら呼ばれる
-    func swiftyCam(_ swiftyCam: SwiftyCamViewController, didBeginRecordingVideo camera: SwiftyCamViewController.CameraSelection) {
+    func swiftyCam(_ swiftyCam: SwiftyCamViewController, didBeginRecordingVideo camera:
+        SwiftyCamViewController.CameraSelection) {
        
         print("Did Begin Recording")
         captureButton.growButton()
         soundFile.playSound(fileName: "録画音声", extensionName: "mp3")
         hideButtons()
+    
     }
     
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didFinishRecordingVideo camera: SwiftyCamViewController.CameraSelection) {
@@ -133,41 +141,55 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
     }
     
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didFocusAtPoint point: CGPoint) {
+        
         print("Did focus at point: \(point)")
   
     }
     
     func swiftyCamDidFailToConfigure(_ swiftyCam: SwiftyCamViewController) {
+      
         let message = NSLocalizedString("Unable to capture media", comment: "Alert message when something goes wrong during capture session configuration")
+       
         let alertController = UIAlertController(title: "AVCam", message: message, preferredStyle: .alert)
+       
         alertController.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Alert OK button"), style: .cancel, handler: nil))
+       
         present(alertController, animated: true, completion: nil)
+    
     }
     
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didChangeZoomLevel zoom: CGFloat) {
+        
         print("Zoom level did change. Level: \(zoom)")
         print(zoom)
         
     }
     
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didSwitchCameras camera: SwiftyCamViewController.CameraSelection) {
+        
         print("Camera did change to \(camera.rawValue)")
         print(camera)
+   
     }
     
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didFailToRecordVideo error: Error) {
+       
         print(error)
+   
     }
     
     func hideButtons() {
         UIView.animate(withDuration: 0.25) {
+            
             self.flipCameraButton.alpha = 0.0
-        }
+       }
     }
     
     func showButtons() {
+        
         UIView.animate(withDuration: 0.25) {
             self.flipCameraButton.alpha = 1.0
+        
         }
     }
     
@@ -210,6 +232,7 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
     }
     
     @IBAction func cameraSwitchTapped(_ sender: Any) {
+        
         switchCamera()
     
     }

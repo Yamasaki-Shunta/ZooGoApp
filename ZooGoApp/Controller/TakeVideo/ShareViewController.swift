@@ -6,14 +6,17 @@ import Photos
 
 class ShareViewController: UIViewController {
     
+    
     var captionString = String()
+   
     var passedURL = String()
+   
     var player:AVPlayer?
+   
     var playerController:AVPlayerViewController?
     
-    
-    
     @IBOutlet weak var textView: PlaceHolderTextView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +29,6 @@ class ShareViewController: UIViewController {
         notification.addObserver(self, selector: #selector(self.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     
     }
-    
-    override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-        }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -55,7 +54,8 @@ class ShareViewController: UIViewController {
            self.player?.volume = 1
           
            playerController = AVPlayerViewController()
-           playerController!.view.frame = CGRect(x: 0, y: 45, width: 390, height: 447)
+        playerController!.view.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height-225)
+        
            playerController?.videoGravity = .resizeAspectFill
            playerController!.showsPlaybackControls = false
            playerController!.player = player!
@@ -68,7 +68,6 @@ class ShareViewController: UIViewController {
            player?.play()
 
        }
-    
     
     @objc func playerItemDidReachEnd(_ notification:Notification){
         
@@ -90,7 +89,6 @@ class ShareViewController: UIViewController {
   
     }
     
-    
     @IBAction func savePhotoLibrary(_ sender: Any) {
         
         //completionHandler = 結果
@@ -109,19 +107,19 @@ class ShareViewController: UIViewController {
             if result{
              
                 DispatchQueue.main.async {
+                    
                     Alert.okAlert(vc: self, title: "動画を保存しました", message: "素敵な動画ができましたね")
-                        }
+                      
+                }
                 
                 print("保存されました")
+            
             }
             
         }
-    
         
      }
-    
-    
-    
+
     @IBAction func home(_ sender: Any) {
     
         player?.pause()
@@ -131,7 +129,6 @@ class ShareViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
         
     }
-    
     
     @IBAction func share(_ sender: Any) {
         
@@ -153,6 +150,7 @@ class ShareViewController: UIViewController {
         UIView.animate(withDuration: duration!) {
             self.view.transform = CGAffineTransform(translationX: 0, y: -(rect?.size.height)!)
         }
+        
     }
     
     //キーボードの高さの調節
@@ -160,7 +158,9 @@ class ShareViewController: UIViewController {
         let duration: TimeInterval? = notification?.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? Double
         UIView.animate(withDuration: duration!) {
             self.view.transform = CGAffineTransform.identity
+       
         }
+        
     }
-
+    
 }

@@ -85,8 +85,8 @@
 		6E8D4D2425BB39F500E40F70 /* 録画音声.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "録画音声.mp3"; sourceTree = "<group>"; };
 		6E8D4D2A25BD684900E40F70 /* PlaceHolderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderTextView.swift; sourceTree = "<group>"; };
 		6E9097A2259DCA4600DFDFA4 /* ZooGoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZooGoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E9097A5259DCA4600DFDFA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E9097A7259DCA4600DFDFA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6E9097A5259DCA4600DFDFA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Newsreader/AppDelegate.swift; sourceTree = "<group>"; };
+		6E9097A7259DCA4600DFDFA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = Newsreader/SceneDelegate.swift; sourceTree = "<group>"; };
 		6E9097AC259DCA4600DFDFA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E9097AE259DCA4700DFDFA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E9097B1259DCA4700DFDFA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -193,14 +193,11 @@
 		6E9097A4259DCA4600DFDFA4 /* ZooGoApp */ = {
 			isa = PBXGroup;
 			children = (
-				6E9097A5259DCA4600DFDFA4 /* AppDelegate.swift */,
-				6E9097A7259DCA4600DFDFA4 /* SceneDelegate.swift */,
 				6E9097FE259E042700DFDFA4 /* Model */,
 				6E9097FF259E044000DFDFA4 /* View */,
 				6E909800259E045300DFDFA4 /* Controller */,
-				6E9097B0259DCA4700DFDFA4 /* LaunchScreen.storyboard */,
 				6E9097B3259DCA4700DFDFA4 /* Info.plist */,
-				6EA85A8025C17F3D00AAEED4 /* 効果音 */,
+				6EA85A8025C17F3D00AAEED4 /*  SoundEffect */,
 				6E909819259E07F100DFDFA4 /* Json */,
 			);
 			path = ZooGoApp;
@@ -246,6 +243,7 @@
 				6E9097AE259DCA4700DFDFA4 /* Assets.xcassets */,
 				6E8D4CE625B9B57800E40F70 /* SwiftyRecordButton.swift */,
 				6E8D4CEB25B9B59800E40F70 /* LoadingView.swift */,
+				6E9097B0259DCA4700DFDFA4 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,9 +251,11 @@
 		6E909800259E045300DFDFA4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6E8D4CE225B9B25500E40F70 /* TakeVideo */,
+				6E9097A5259DCA4600DFDFA4 /* AppDelegate.swift */,
+				6E9097A7259DCA4600DFDFA4 /* SceneDelegate.swift */,
 				6E9098A325A2161900DFDFA4 /* MatchingZoo */,
-				6E90987C25A0612D00DFDFA4 /* Newsreader */,
+				6E90987C25A0612D00DFDFA4 /* NewsReader */,
+				6E8D4CE225B9B25500E40F70 /* TakeVideo */,
 				6E90982F259E0EBF00DFDFA4 /* IntroViewController.swift */,
 				6E90983A259EE73400DFDFA4 /* BaseViewController.swift */,
 			);
@@ -273,14 +273,14 @@
 			path = Json;
 			sourceTree = "<group>";
 		};
-		6E90987C25A0612D00DFDFA4 /* Newsreader */ = {
+		6E90987C25A0612D00DFDFA4 /* NewsReader */ = {
 			isa = PBXGroup;
 			children = (
 				6E90987D25A0620800DFDFA4 /* NewsViewController.swift */,
 				6E90988225A062DC00DFDFA4 /* PageViewController.swift */,
 				6E90988A25A0643200DFDFA4 /* WebViewController.swift */,
 			);
-			path = Newsreader;
+			path = NewsReader;
 			sourceTree = "<group>";
 		};
 		6E9098A325A2161900DFDFA4 /* MatchingZoo */ = {
@@ -294,13 +294,13 @@
 			path = MatchingZoo;
 			sourceTree = "<group>";
 		};
-		6EA85A8025C17F3D00AAEED4 /* 効果音 */ = {
+		6EA85A8025C17F3D00AAEED4 /*  SoundEffect */ = {
 			isa = PBXGroup;
 			children = (
 				6E8D4D2425BB39F500E40F70 /* 録画音声.mp3 */,
 				6E0F746E25C17D320000B7E1 /* 決定音声.mp3 */,
 			);
-			path = "効果音";
+			path = " SoundEffect";
 			sourceTree = "<group>";
 		};
 		E39746387424395ED82D836F /* Pods */ = {
