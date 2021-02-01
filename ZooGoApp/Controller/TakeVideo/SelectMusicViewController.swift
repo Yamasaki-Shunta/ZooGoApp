@@ -33,15 +33,17 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         
     }
     
-    
     func numberOfSections(in tableView: UITableView) -> Int {
+        
         return 1
+    
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       
         return musicModel.artistNameArray.count
+   
     }
-    
     
     //テーブルビューを管理する
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -51,7 +53,7 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         //ハイライトを消す
         cell.isHighlighted = false
         
-        //タグで管理している
+        //タグで管理
         let artWorkImageView = cell.contentView.viewWithTag(1) as! UIImageView
         let musicNameLabel = cell.contentView.viewWithTag(2) as! UILabel
         let artistNameLabel = cell.contentView.viewWithTag(3) as! UILabel
@@ -99,9 +101,9 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         
     }
     
-    
     //テーブルビューのセルの高さ
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
         return 130
    
     }
@@ -153,9 +155,7 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
             
         }
         //合成ができたら値を渡しながら画面を戻る
-        
     }
-    
     
     @objc func playButtonTap(_ sender:UIButton){
         //print(sender.tag)
@@ -181,10 +181,8 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         var dowloadTask:URLSessionDownloadTask
         dowloadTask = URLSession.shared.downloadTask(with: url, completionHandler: { (url, response, error) in
             
-            
             print(response!)
             self.play(url: url!)
-            
             
         })
         
@@ -192,10 +190,10 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         
     }
     
-    
     func play(url:URL){
         
         do {
+            
             self.player = try AVAudioPlayer(contentsOf: url)
             
             player?.prepareToPlay()
@@ -208,10 +206,7 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
             print(error.debugDescription)
             
         }
-        
-        
     }
-    
     
     func catchData(count: Int) {
         
@@ -221,8 +216,7 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
       
         }
     }
-    
-    
+
     func searchData(count: Int) {
         
         if count == 1{
@@ -230,7 +224,6 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
             Alert.okAlert(vc: self, title: "ヒットしませんでした", message: "別のキーワードで検索して下さい")
             
         }
-        
     }
     
     func refleshData(){
@@ -254,17 +247,13 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
             
         }
         
-        
     }
-    
     
     @IBAction func searchAction(_ sender: Any) {
         
         refleshData()
         
     }
-    
-    
     
     @IBAction func dismissButton(_ sender: Any) {
     
@@ -275,7 +264,7 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
             player!.stop()
      
         }
-    
+        
     }
-
+    
 }

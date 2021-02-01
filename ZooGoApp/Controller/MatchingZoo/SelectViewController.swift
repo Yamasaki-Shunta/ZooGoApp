@@ -4,6 +4,7 @@ import UIKit
 
 class SelectViewController: UIViewController {
     
+    
     @IBOutlet weak var eastJapanButton: UIButton!
     
     @IBOutlet weak var westJapanButton: UIButton!
@@ -25,7 +26,6 @@ class SelectViewController: UIViewController {
     self.dismiss(animated: true, completion: nil)
     
     }
-    
     
     @IBAction func eastScreenTransition(_ sender: Any) {
     
@@ -59,7 +59,5 @@ class SelectViewController: UIViewController {
             westmatchingVC.swipeCount = 5
             
         }
-        
     }
-    
 }

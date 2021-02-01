@@ -1,9 +1,4 @@
-//
-//  BaseViewController.swift
-//  NewsTest
-//
-//  Created by 山﨑隼汰 on 2020/11/29.
-//
+
 
 import UIKit
 
@@ -21,7 +16,6 @@ class BaseViewController: UIViewController {
         
         self.questionLabel.clipsToBounds = true
         
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,9 +28,7 @@ class BaseViewController: UIViewController {
         ud.synchronize()
      
         performSegue(withIdentifier: "introVC", sender: nil)
-            
-                
-  
+        
         }
 
     }
@@ -49,8 +41,6 @@ class BaseViewController: UIViewController {
         
     }
     
-    
-
     @IBAction func feedingScreenTransition(_ sender: Any) {
    
         soundFile.playSound(fileName: "決定音声", extensionName: "mp3")
@@ -58,7 +48,6 @@ class BaseViewController: UIViewController {
     
     
     }
-    
     
     @IBAction func eventScreenTransition(_ sender: Any) {
     
@@ -75,14 +64,11 @@ class BaseViewController: UIViewController {
     
     }
     
-    
     @IBAction func cuteTransition(_ sender: Any) {
    
         soundFile.playSound(fileName: "決定音声", extensionName: "mp3")
 
     }
-    
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      
@@ -112,6 +98,6 @@ class BaseViewController: UIViewController {
         endangeredSpeciesMatchingVC.swipeCount = 5
         
     }
-
 }
+    
 }

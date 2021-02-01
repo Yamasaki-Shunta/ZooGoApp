@@ -30,6 +30,7 @@ class MatchingViewController: UIViewController,KolodaViewDataSource,KolodaViewDe
     
     @IBOutlet weak var kolodaView: KolodaView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -191,8 +192,6 @@ class MatchingViewController: UIViewController,KolodaViewDataSource,KolodaViewDe
                 return
                 
             }
-            
-        
       }
         
     }

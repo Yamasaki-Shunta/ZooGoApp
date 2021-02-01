@@ -13,10 +13,10 @@ class EditViewController: UIViewController, UIAdaptivePresentationControllerDele
     var captionString = String()
     var passedURL = String()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
     }
     
     //ナビゲーションバーを消す
@@ -26,7 +26,6 @@ class EditViewController: UIViewController, UIAdaptivePresentationControllerDele
         self.navigationController?.isNavigationBarHidden = true
     }
     
-    //
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -67,7 +66,7 @@ class EditViewController: UIViewController, UIAdaptivePresentationControllerDele
         NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachEnd), name: Notification.Name.AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem)
         
         //キャンセルボタンを設定する
-        let cancelButton = UIButton(frame: CGRect(x: 10, y: 20, width: 30, height: 30))
+        let cancelButton = UIButton(frame: CGRect(x: 10, y: 50, width: 30, height: 30))
         //キャンセルボタンに画像をつける
         cancelButton.setImage(UIImage(named: "cancel"), for: UIControl.State())
         //キャンセルボタンが押された時、touchUpInside(ボタンをタッチして、離した時)
@@ -77,9 +76,7 @@ class EditViewController: UIViewController, UIAdaptivePresentationControllerDele
         
         player?.play()
        
-        
     }
-    
     
     @objc func cancel(){
         
@@ -87,9 +84,7 @@ class EditViewController: UIViewController, UIAdaptivePresentationControllerDele
         //画面をpopViewControllerで1つ戻る
         self.navigationController?.popViewController(animated: true)
         
-        
     }
-    
     
     @objc func playerItemDidReachEnd(_ notification:Notification){
         
@@ -107,7 +102,6 @@ class EditViewController: UIViewController, UIAdaptivePresentationControllerDele
         
     }
 
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //selectVC
         //はじめは飛ばされる(非同期処理)
@@ -154,11 +148,8 @@ class EditViewController: UIViewController, UIAdaptivePresentationControllerDele
         
     }
     
-    
     //画面遷移
- 
     @IBAction func next(_ sender: Any) {
-    
     
         //音楽名と楽曲名が空でないならば
         if captionString.isEmpty != true{
@@ -173,6 +164,5 @@ class EditViewController: UIViewController, UIAdaptivePresentationControllerDele
             print("楽曲を選択してください。")
             
         }
-        
     }
 }

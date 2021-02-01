@@ -25,7 +25,7 @@
                                             <constraint firstAttribute="height" constant="30" id="YIB-HK-hvu"/>
                                             <constraint firstAttribute="width" constant="30" id="aVk-8M-RKv"/>
                                         </constraints>
-                                        <state key="normal" image="バツのアイコン2"/>
+                                        <state key="normal" image="バツのアイコン2"/>
                                         <connections>
                                             <action selector="skipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyr-qH-9Mf"/>
                                         </connections>
@@ -123,7 +123,7 @@
                                     <constraint firstAttribute="width" constant="80" id="3Sh-EE-xag"/>
                                     <constraint firstAttribute="height" constant="80" id="JWE-lW-wnQ"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="フィーディング"/>
+                                <state key="normal" title="Button" image="フィーディング"/>
                                 <connections>
                                     <action selector="feedingScreenTransition:" destination="t7x-w4-Sb9" eventType="touchUpInside" id="bGm-M9-R3v"/>
                                     <segue destination="3ds-zJ-LRb" kind="presentation" identifier="feedingMatchingVC" id="C0Z-zv-xUb"/>
@@ -135,7 +135,7 @@
                                     <constraint firstAttribute="width" constant="80" id="1xT-V2-GBn"/>
                                     <constraint firstAttribute="height" constant="80" id="Oax-yK-aDy"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="かわいい"/>
+                                <state key="normal" title="Button" image="可愛い"/>
                                 <connections>
                                     <action selector="cuteTransition:" destination="t7x-w4-Sb9" eventType="touchUpInside" id="WYR-hc-gVw"/>
                                     <segue destination="nZr-hY-IaS" kind="presentation" id="qJg-0N-Unp"/>
@@ -211,7 +211,7 @@
                                     <constraint firstAttribute="height" constant="80" id="KrH-Zx-G7Q"/>
                                     <constraint firstAttribute="width" constant="80" id="bAE-yQ-3a5"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="イベント"/>
+                                <state key="normal" title="Button" image="イベント"/>
                                 <connections>
                                     <action selector="eventScreenTransition:" destination="t7x-w4-Sb9" eventType="touchUpInside" id="TbR-n6-Inw"/>
                                     <segue destination="3ds-zJ-LRb" kind="presentation" identifier="eventMatchingVC" id="5aQ-2Q-5oe"/>
@@ -322,7 +322,7 @@
                                             <action selector="dismissButton:" destination="nZr-hY-IaS" eventType="touchUpInside" id="wIt-bS-t3c"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ１" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-GW-vjR">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ１" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-GW-vjR">
                                         <rect key="frame" x="38" y="111" width="130" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="130" id="Icw-AG-qMa"/>
@@ -408,7 +408,7 @@
                                     <action selector="likeButton:" destination="3ds-zJ-LRb" eventType="touchUpInside" id="7uO-Hm-jcx"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ１" translatesAutoresizingMaskIntoConstraints="NO" id="8vh-jN-yAw">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ１" translatesAutoresizingMaskIntoConstraints="NO" id="8vh-jN-yAw">
                                 <rect key="frame" x="137.5" y="-12" width="100" height="100"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W78-PR-GYv">
@@ -451,11 +451,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="←いいえ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0S-IJ-Gz8">
-                                <rect key="frame" x="0.0" y="136" width="93" height="24"/>
+                                <rect key="frame" x="0.0" y="136" width="80" height="24"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="93" id="jX9-A2-ERc"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.04853696397581142" green="0.47551801762522339" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -551,7 +548,7 @@
                                             <action selector="dismissButton:" destination="l1v-Rc-as3" eventType="touchUpInside" id="hAZ-Em-B0L"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ１" translatesAutoresizingMaskIntoConstraints="NO" id="fLN-KK-ds2">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ１" translatesAutoresizingMaskIntoConstraints="NO" id="fLN-KK-ds2">
                                         <rect key="frame" x="137.5" y="-5" width="100" height="100"/>
                                     </imageView>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="56C-oE-v0g">
@@ -653,10 +650,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohN-3p-ebx">
-                                <rect key="frame" x="13" y="49" width="30" height="30"/>
+                                <rect key="frame" x="11" y="78" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="5Ls-xp-jmb"/>
-                                    <constraint firstAttribute="height" constant="30" id="vps-WO-iv3"/>
+                                    <constraint firstAttribute="width" constant="30" id="LdV-YL-uix"/>
+                                    <constraint firstAttribute="height" constant="30" id="aWR-nk-MOX"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="cancel"/>
                                 <connections>
@@ -667,15 +664,15 @@
                         <viewLayoutGuide key="safeArea" id="8Gn-cL-BId"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ohN-3p-ebx" firstAttribute="top" secondItem="R8J-T2-9no" secondAttribute="topMargin" constant="5" id="4k3-EL-jHb"/>
                             <constraint firstItem="851-ep-Od9" firstAttribute="centerX" secondItem="R8J-T2-9no" secondAttribute="centerX" id="5TA-fx-7Sy"/>
+                            <constraint firstItem="ohN-3p-ebx" firstAttribute="leading" secondItem="8Gn-cL-BId" secondAttribute="leading" constant="11" id="Bzh-1c-Xpe"/>
                             <constraint firstItem="bCp-EX-86N" firstAttribute="leading" secondItem="851-ep-Od9" secondAttribute="trailing" constant="70" id="Ewn-77-gro"/>
                             <constraint firstItem="dDL-ZD-sLq" firstAttribute="centerX" secondItem="R8J-T2-9no" secondAttribute="centerX" constant="-130" id="Kst-Sl-STs"/>
+                            <constraint firstItem="ohN-3p-ebx" firstAttribute="top" secondItem="8Gn-cL-BId" secondAttribute="top" constant="34" id="Mjm-M9-6BH"/>
                             <constraint firstItem="8Gn-cL-BId" firstAttribute="bottom" secondItem="dDL-ZD-sLq" secondAttribute="bottom" constant="54" id="TxN-eZ-bRK"/>
                             <constraint firstItem="bCp-EX-86N" firstAttribute="centerX" secondItem="R8J-T2-9no" secondAttribute="centerX" constant="130" id="XRg-pO-h44"/>
                             <constraint firstItem="8Gn-cL-BId" firstAttribute="bottom" secondItem="bCp-EX-86N" secondAttribute="bottom" constant="51" id="ZrA-En-6ES"/>
                             <constraint firstItem="8Gn-cL-BId" firstAttribute="bottom" secondItem="851-ep-Od9" secondAttribute="bottom" constant="43.5" id="cEd-mg-PYg"/>
-                            <constraint firstItem="ohN-3p-ebx" firstAttribute="leading" secondItem="R8J-T2-9no" secondAttribute="leadingMargin" constant="-3" id="uBw-0A-tMB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BPu-1J-i6p"/>
@@ -687,7 +684,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tvx-8M-weM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2793" y="1598"/>
+            <point key="canvasLocation" x="2792.8000000000002" y="1597.1514242878561"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="8EP-4k-nhg">
@@ -782,7 +779,7 @@
                                             <action selector="dismissButton:" destination="Mtr-E6-gYR" eventType="touchUpInside" id="wsm-NK-tpJ"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ１" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-X9-81I">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ１" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-X9-81I">
                                         <rect key="frame" x="139.5" y="-5" width="100" height="100"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="マッチング背景" translatesAutoresizingMaskIntoConstraints="NO" id="40l-5X-7EN">
@@ -868,7 +865,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWG-Dj-dHq">
-                                <rect key="frame" x="224.5" y="581" width="106" height="30"/>
+                                <rect key="frame" x="224.5" y="612" width="106" height="30"/>
                                 <color key="backgroundColor" red="0.99717861409999997" green="0.49496132139999999" blue="0.47449052330000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="106" id="20l-HS-JWg"/>
@@ -883,7 +880,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqy-4X-z7q">
-                                <rect key="frame" x="44.5" y="581" width="106" height="30"/>
+                                <rect key="frame" x="44.5" y="612" width="106" height="30"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="106" id="E91-xl-OjP"/>
@@ -901,10 +898,10 @@
                         <viewLayoutGuide key="safeArea" id="X70-tI-i6b"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="X70-tI-i6b" firstAttribute="bottom" secondItem="zqy-4X-z7q" secondAttribute="bottom" constant="56" id="47T-H3-Yf0"/>
+                            <constraint firstItem="X70-tI-i6b" firstAttribute="bottom" secondItem="zqy-4X-z7q" secondAttribute="bottom" constant="25" id="47T-H3-Yf0"/>
                             <constraint firstItem="zqy-4X-z7q" firstAttribute="centerX" secondItem="XyV-9S-Ya0" secondAttribute="centerX" constant="-90" id="9hd-RZ-LCh"/>
                             <constraint firstItem="fWG-Dj-dHq" firstAttribute="centerX" secondItem="XyV-9S-Ya0" secondAttribute="centerX" constant="90" id="BCe-ZI-FuC"/>
-                            <constraint firstItem="X70-tI-i6b" firstAttribute="bottom" secondItem="fWG-Dj-dHq" secondAttribute="bottom" constant="56" id="dPt-jx-YA4"/>
+                            <constraint firstItem="X70-tI-i6b" firstAttribute="bottom" secondItem="fWG-Dj-dHq" secondAttribute="bottom" constant="25" id="dPt-jx-YA4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YKM-mS-OhM"/>
@@ -1031,16 +1028,15 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アーティスト名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zco-zz-2HG">
-                                                    <rect key="frame" x="131" y="78" width="163" height="21"/>
+                                                    <rect key="frame" x="131" y="78" width="72" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="楽曲名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdj-dv-cHX">
-                                                    <rect key="frame" x="131" y="29" width="163" height="21"/>
+                                                    <rect key="frame" x="131" y="29" width="72" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="2yI-hz-YbK"/>
-                                                        <constraint firstAttribute="width" constant="163" id="dud-H3-zQd"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -1063,28 +1059,25 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sga-bX-3bJ">
-                                <rect key="frame" x="328" y="57" width="20" height="22"/>
+                                <rect key="frame" x="333" y="57" width="20" height="22"/>
                                 <state key="normal" image="magnifyingglass" catalog="system"/>
                                 <connections>
                                     <action selector="searchAction:" destination="btG-7s-hKR" eventType="touchUpInside" id="XEP-kw-O7f"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkw-EZ-l8D">
-                                <rect key="frame" x="7" y="10" width="20" height="20"/>
+                                <rect key="frame" x="7" y="10" width="25" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="20" id="YW0-5q-mUD"/>
-                                    <constraint firstAttribute="height" constant="20" id="qkE-36-CGq"/>
+                                    <constraint firstAttribute="height" constant="25" id="a94-3Z-Z0Q"/>
+                                    <constraint firstAttribute="width" constant="25" id="bq8-Lj-8t9"/>
                                 </constraints>
-                                <state key="normal" image="バツのアイコン2"/>
+                                <state key="normal" image="バツのアイコン2"/>
                                 <connections>
                                     <action selector="dismissButton:" destination="btG-7s-hKR" eventType="touchUpInside" id="QdX-wM-Web"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="アーティスト,楽曲" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohF-pN-Slk">
-                                <rect key="frame" x="26" y="48" width="285" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="285" id="kSf-CQ-TKF"/>
-                                </constraints>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="アーティスト,楽曲" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohF-pN-Slk">
+                                <rect key="frame" x="37" y="50" width="285" height="34"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1093,18 +1086,17 @@
                         <viewLayoutGuide key="safeArea" id="OVB-g1-FiG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ohF-pN-Slk" firstAttribute="leading" secondItem="Zpg-TO-SfS" secondAttribute="leadingMargin" constant="10" id="7mB-FT-NyR"/>
-                            <constraint firstItem="Sga-bX-3bJ" firstAttribute="leading" secondItem="ohF-pN-Slk" secondAttribute="trailing" constant="17" id="CO1-ND-NbJ"/>
+                            <constraint firstItem="ohF-pN-Slk" firstAttribute="leading" secondItem="Zpg-TO-SfS" secondAttribute="leadingMargin" constant="21" id="7mB-FT-NyR"/>
                             <constraint firstItem="RN0-SD-n9I" firstAttribute="top" secondItem="Sga-bX-3bJ" secondAttribute="bottom" constant="27" id="Dv6-uv-gpe"/>
                             <constraint firstItem="RN0-SD-n9I" firstAttribute="leading" secondItem="OVB-g1-FiG" secondAttribute="leading" id="IeW-NT-QWp"/>
                             <constraint firstItem="RN0-SD-n9I" firstAttribute="centerX" secondItem="Zpg-TO-SfS" secondAttribute="centerX" id="Y8C-9z-xiT"/>
-                            <constraint firstItem="ohF-pN-Slk" firstAttribute="top" secondItem="OVB-g1-FiG" secondAttribute="top" constant="48" id="bSu-aL-rSv"/>
-                            <constraint firstItem="RN0-SD-n9I" firstAttribute="top" secondItem="ohF-pN-Slk" secondAttribute="bottom" constant="24" id="ga7-We-Mi5"/>
+                            <constraint firstItem="ohF-pN-Slk" firstAttribute="top" secondItem="OVB-g1-FiG" secondAttribute="top" constant="50" id="bSu-aL-rSv"/>
+                            <constraint firstItem="RN0-SD-n9I" firstAttribute="top" secondItem="ohF-pN-Slk" secondAttribute="bottom" constant="22" id="ga7-We-Mi5"/>
                             <constraint firstItem="Tkw-EZ-l8D" firstAttribute="leading" secondItem="OVB-g1-FiG" secondAttribute="leading" constant="7" id="h5P-MP-LyQ"/>
                             <constraint firstItem="Sga-bX-3bJ" firstAttribute="top" secondItem="OVB-g1-FiG" secondAttribute="top" constant="57" id="l0w-pT-4Uo"/>
                             <constraint firstItem="Tkw-EZ-l8D" firstAttribute="top" secondItem="OVB-g1-FiG" secondAttribute="top" constant="10" id="qTa-eQ-KV5"/>
-                            <constraint firstItem="OVB-g1-FiG" firstAttribute="trailing" secondItem="Sga-bX-3bJ" secondAttribute="trailing" constant="27" id="s2d-V5-SWS"/>
-                            <constraint firstItem="Sga-bX-3bJ" firstAttribute="leading" secondItem="ohF-pN-Slk" secondAttribute="trailing" constant="17" id="vqd-3E-eUP"/>
+                            <constraint firstItem="OVB-g1-FiG" firstAttribute="trailing" secondItem="Sga-bX-3bJ" secondAttribute="trailing" constant="22" id="s2d-V5-SWS"/>
+                            <constraint firstItem="Sga-bX-3bJ" firstAttribute="leading" secondItem="ohF-pN-Slk" secondAttribute="trailing" constant="11" id="vqd-3E-eUP"/>
                             <constraint firstItem="RN0-SD-n9I" firstAttribute="bottom" secondItem="OVB-g1-FiG" secondAttribute="bottom" constant="38" id="wTt-Hy-azU"/>
                         </constraints>
                     </view>
@@ -1119,10 +1111,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="a03-jy-IyS"/>
+        <segue reference="QKs-rb-KgV"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="ZooGoロゴ１" width="500" height="500"/>
+        <image name="ZooGoロゴ１" width="500" height="500"/>
         <image name="cancel" width="64" height="64"/>
         <image name="home" width="513" height="494"/>
         <image name="likeButtonImage" width="500" height="500"/>
@@ -1131,16 +1123,16 @@
         <image name="save" width="128" height="128"/>
         <image name="share" width="129" height="128"/>
         <image name="switchcamera" width="72" height="72"/>
-        <image name="かわいい" width="757" height="800"/>
         <image name="やり直しのアイコン" width="256" height="256"/>
-        <image name="イベント" width="800" height="800"/>
+        <image name="イベント" width="400" height="400"/>
         <image name="カメラ" width="512" height="512"/>
         <image name="キリン背景" width="640" height="1280"/>
         <image name="ニュース" width="512" height="512"/>
-        <image name="バツのアイコン2" width="32" height="32"/>
-        <image name="フィーディング" width="574" height="572"/>
+        <image name="バツのアイコン2" width="32" height="32"/>
+        <image name="フィーディング" width="572" height="570"/>
         <image name="マッチング背景" width="1500" height="1500"/>
         <image name="動画フォルダ" width="2771" height="2199"/>
+        <image name="可愛い" width="757" height="800"/>
         <image name="吹き出し背景" width="542" height="547"/>
         <image name="太いバツのアイコン" width="256" height="256"/>
         <image name="絶滅危惧種" width="639" height="684"/>
