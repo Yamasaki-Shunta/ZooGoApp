@@ -322,7 +322,7 @@
                                             <action selector="dismissButton:" destination="nZr-hY-IaS" eventType="touchUpInside" id="wIt-bS-t3c"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-GW-vjR">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-GW-vjR">
                                         <rect key="frame" x="38" y="111" width="130" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="130" id="Icw-AG-qMa"/>
@@ -408,7 +408,7 @@
                                     <action selector="likeButton:" destination="3ds-zJ-LRb" eventType="touchUpInside" id="7uO-Hm-jcx"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="8vh-jN-yAw">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="8vh-jN-yAw">
                                 <rect key="frame" x="137.5" y="-12" width="100" height="100"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W78-PR-GYv">
@@ -548,7 +548,7 @@
                                             <action selector="dismissButton:" destination="l1v-Rc-as3" eventType="touchUpInside" id="hAZ-Em-B0L"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="fLN-KK-ds2">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="fLN-KK-ds2">
                                         <rect key="frame" x="137.5" y="-5" width="100" height="100"/>
                                     </imageView>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="56C-oE-v0g">
@@ -779,7 +779,7 @@
                                             <action selector="dismissButton:" destination="Mtr-E6-gYR" eventType="touchUpInside" id="wsm-NK-tpJ"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-X9-81I">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ZooGoロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-X9-81I">
                                         <rect key="frame" x="139.5" y="-5" width="100" height="100"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="マッチング背景" translatesAutoresizingMaskIntoConstraints="NO" id="40l-5X-7EN">
@@ -1114,7 +1114,7 @@
         <segue reference="a03-jy-IyS"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="ZooGoロゴ" width="500" height="500"/>
+        <image name="ZooGoロゴ" width="500" height="500"/>
         <image name="cancel" width="64" height="64"/>
         <image name="home" width="513" height="494"/>
         <image name="likeButtonImage" width="500" height="500"/>
