@@ -119,6 +119,8 @@ class MatchingViewController: UIViewController,KolodaViewDataSource,KolodaViewDe
            
             nopedArray.append((animalImage[index]as String?)!)
             
+            nopedArray.removeAll(where: {$0 == "NotSwipeSign"})
+            
             print(nopedArray)
        
      
@@ -211,13 +213,31 @@ class MatchingViewController: UIViewController,KolodaViewDataSource,KolodaViewDe
     //カードを一つ戻す
     @IBAction func revertButton(_ sender: Any) {
 
-        if  nopedArray == [] {
+        if likedArray == [] && nopedArray == [] {
+            
+        Alert.okAlert(vc: self, title: "カードをスワイプしてね", message: "このボタンはカードが一つ前に戻ります")
+            
+            return
+
+        } else if nopedArray.firstIndex(of: "NotSwipeSign") != nil {
+            
+        Alert.okAlert(vc: self, title: "カードをスワイプしてね", message: "一つ前にしか戻れません")
+            
+            return
+            
+        } else {
+            
+            kolodaView?.revertAction()
+            
+        }
+        
+        if  nopedArray == [] && likedArray != [] {
             
             likedArray.removeLast()
             
         }
         
-        kolodaView?.revertAction()
+        nopedArray.append("NotSwipeSign")
         
     }
     
