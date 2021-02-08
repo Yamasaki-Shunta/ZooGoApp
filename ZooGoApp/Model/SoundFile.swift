@@ -11,13 +11,11 @@ class SoundFile {
     
     var player:AVAudioPlayer?
     
-    
     func playSound(fileName:String,extensionName:String) {
     
     //再生する
         let soundURL = Bundle.main.url(forResource: fileName, withExtension: extensionName)
-        
-        
+    
         do {
           
             player = try AVAudioPlayer(contentsOf: soundURL!)

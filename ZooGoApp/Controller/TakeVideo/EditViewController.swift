@@ -8,9 +8,13 @@ class EditViewController: UIViewController, UIAdaptivePresentationControllerDele
 
     
     var url:URL?
+    
     var playerController:AVPlayerViewController?
+    
     var player:AVPlayer?
+   
     var captionString = String()
+   
     var passedURL = String()
     
     
@@ -61,7 +65,6 @@ class EditViewController: UIViewController, UIAdaptivePresentationControllerDele
         self.view.addSubview((playerController?.view)!)
        
         //プレイが終わったら呼ばれるメソッド
-        //Notification.Name.AVPlayerItemDidPlayToEndTime
         //(20秒に近付いたらplayerItemDidReachEnd)を呼ぶ
         NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachEnd), name: Notification.Name.AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem)
         
@@ -159,7 +162,7 @@ class EditViewController: UIViewController, UIAdaptivePresentationControllerDele
       
         }else{
             
-        Alert.okAlert(vc: self, title: "楽曲を選択してください", message: "")
+        Alert.okActionAlert(vc: self, title: "楽曲を選択してください", message: "")
                 
             print("楽曲を選択してください。")
             

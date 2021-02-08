@@ -83,45 +83,46 @@ class IntroViewController: UIViewController,UIScrollViewDelegate{
         //テキスト反映
         for i in 0...3{
             
-            let onboardLabel = UILabel(frame: CGRect(x:CGFloat(i)*view.frame.size.width, y: -225, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
+            let onboardLabelA = UILabel(frame: CGRect(x:CGFloat(i)*view.frame.size.width, y: -225, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
+            onboardLabelA.font = UIFont.boldSystemFont(ofSize: 20)
             
-            let onboardLabel2 = UILabel(frame: CGRect(x:CGFloat(i)*view.frame.size.width, y: -250, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
+            let onboardLabelB = UILabel(frame: CGRect(x:CGFloat(i)*view.frame.size.width, y: -250, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
+            onboardLabelB.text = "COVID‑19の影響で動物の展示やイベントが"
+            onboardLabelB.font = UIFont.boldSystemFont(ofSize: 15.0)
+            onboardLabelB.textAlignment =  .center
+           
             
-            let onboardLabel3 = UILabel(frame: CGRect(x:CGFloat(i)*view.frame.size.width, y: -200, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
+            let onboardLabelC = UILabel(frame: CGRect(x:CGFloat(i)*view.frame.size.width, y: -200, width: scrollView.frame.size.width, height: scrollView.frame.size.height))
+            onboardLabelC.text = "予めご了承下さい"
+            onboardLabelC.font = UIFont.boldSystemFont(ofSize: 15.0)
+            onboardLabelC.textAlignment =  .center
             
-            onboardLabel.text = onboardStringArray[i]
+            onboardLabelA.text = onboardStringArray[i]
      
-            onboardLabel.textAlignment =  .center
+            onboardLabelA.textAlignment =  .center
             
         if i == 0 {
             
-            onboardLabel2.text = "COVID‑19の影響で動物の展示やイベントが"
-            onboardLabel2.textAlignment =  .center
-            onboardLabel2.font = UIFont.boldSystemFont(ofSize: 15.0)
+            onboardLabelA.textColor = .red
+            onboardLabelA.font = UIFont.boldSystemFont(ofSize: 15.0)
             
-            onboardLabel3.text = "予めご了承下さい"
-            onboardLabel3.textAlignment =  .center
-            onboardLabel3.font = UIFont.boldSystemFont(ofSize: 15.0)
-            
-            onboardLabel.textColor = .red
-            onboardLabel.font = UIFont.boldSystemFont(ofSize: 15.0)
-            
-            scrollView.addSubview(onboardLabel2)
-            scrollView.addSubview(onboardLabel3)
+            scrollView.addSubview(onboardLabelB)
+            scrollView.addSubview(onboardLabelC)
                 
-        }else{
+        }else if i == 2 {
             
-            onboardLabel.font = UIFont.boldSystemFont(ofSize: 20)
-
+            onboardLabelC.text = "縦向きで撮影してね！"
+            onboardLabelC.textColor = .red
+            onboardLabelC.font = UIFont.boldSystemFont(ofSize: 20)
+            scrollView.addSubview(onboardLabelC)
     
         }
             
-            scrollView.addSubview(onboardLabel)
+            scrollView.addSubview(onboardLabelA)
             
     }
     
     }
-    
     
     @IBAction func tapPageControl(_ sender:UIPageControl) {
    
@@ -129,12 +130,10 @@ class IntroViewController: UIViewController,UIScrollViewDelegate{
     
     }
     
-    
     func scrollViewDidEndDecelerating (_ scrollView: UIScrollView) {
      
             //ページコントロールに現在のページ番号を設定する。
         pageContol.currentPage = Int (scrollView.contentOffset.x / scrollView.frame.maxX)
-        
         
         }
     

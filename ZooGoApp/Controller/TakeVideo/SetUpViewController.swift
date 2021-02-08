@@ -41,12 +41,19 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
         swipeToZoomInverted = true
     
     }
-    
+
     //ナビゲーションバーを消す
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
        
         self.navigationController?.isNavigationBarHidden = true
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+      
+        captureButton.delegate = self
         
     }
     
@@ -83,14 +90,6 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
    
     }
 
-    //キャプチャーボタンでデリゲートメソッドを使用するのか？
-    override func viewDidAppear(_ animated: Bool) {
-        
-        super.viewDidAppear(animated)
-        captureButton.delegate = self
-   
-    }
-    
     //キャプチャーボタンをずっと使えるようにする
     func swiftyCamSessionDidStartRunning(_ swiftyCam: SwiftyCamViewController) {
         
@@ -242,7 +241,5 @@ class SetUpViewController: SwiftyCamViewController,SwiftyCamViewControllerDelega
     self.navigationController?.popViewController(animated: true)
     
     }
-    
-    
-}
 
+}

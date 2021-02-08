@@ -23,7 +23,9 @@ class BaseViewController: UIViewController {
     
         let ud = UserDefaults.standard
         let firstLunchKey = "firstLunch"
+       
         if ud.bool(forKey: firstLunchKey) {
+        
         ud.set(false, forKey: firstLunchKey)
         ud.synchronize()
      
@@ -98,6 +100,7 @@ class BaseViewController: UIViewController {
         endangeredSpeciesMatchingVC.swipeCount = 5
         
     }
-}
+
+    }
     
 }

@@ -215,15 +215,15 @@ class MatchingViewController: UIViewController,KolodaViewDataSource,KolodaViewDe
 
         if likedArray == [] && nopedArray == [] {
             
-        Alert.okAlert(vc: self, title: "カードをスワイプしてね", message: "このボタンはカードが一つ前に戻ります")
+        Alert.okActionAlert(vc: self, title: "カードをスワイプしてね", message: "このボタンはカードが一つ前に戻ります")
             
             return
 
         } else if nopedArray.firstIndex(of: "NotSwipeSign") != nil {
             
-        Alert.okAlert(vc: self, title: "カードをスワイプしてね", message: "一つ前にしか戻れません")
+        Alert.okActionAlert(vc: self, title: "カードをスワイプしてね", message: "一つ前にしか戻れません")
             
-            return
+        return
             
         } else {
             

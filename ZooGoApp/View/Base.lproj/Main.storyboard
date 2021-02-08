@@ -494,6 +494,7 @@
                             <constraint firstItem="u0S-IJ-Gz8" firstAttribute="baseline" secondItem="Uml-UM-cU5" secondAttribute="baseline" id="kPu-kG-I65"/>
                             <constraint firstItem="aQ0-bP-AHJ" firstAttribute="leading" secondItem="8vh-jN-yAw" secondAttribute="trailing" constant="84.5" id="mBC-Uy-Rgv"/>
                             <constraint firstItem="u0S-IJ-Gz8" firstAttribute="top" secondItem="VdJ-WJ-JnL" secondAttribute="bottom" constant="15" id="sRe-NA-v3E"/>
+                            <constraint firstItem="Uml-UM-cU5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="u0S-IJ-Gz8" secondAttribute="trailing" constant="8" symbolic="YES" id="wSy-Zy-Kwj"/>
                         </constraints>
                     </view>
                     <connections>
@@ -684,7 +685,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tvx-8M-weM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2792.8000000000002" y="1597.1514242878561"/>
+            <point key="canvasLocation" x="2759" y="1596"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="8EP-4k-nhg">
@@ -1111,7 +1112,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="a03-jy-IyS"/>
+        <segue reference="C0Z-zv-xUb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ZooGoロゴ" width="500" height="500"/>

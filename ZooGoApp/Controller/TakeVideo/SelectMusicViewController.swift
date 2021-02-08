@@ -90,7 +90,6 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         
     }
     
-    
     //リターンボタンが押された時
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
@@ -108,7 +107,6 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
    
     }
     
-   
     @objc func favButtonTap(_ sender:UIButton){
         
         //音声が流れている時、止める
@@ -221,7 +219,7 @@ class SelectMusicViewController: UIViewController,UITableViewDelegate,UITableVie
         
         if count == 1{
             
-            Alert.okAlert(vc: self, title: "ヒットしませんでした", message: "別のキーワードで検索して下さい")
+            Alert.okActionAlert(vc: self, title: "ヒットしませんでした", message: "別のキーワードで検索して下さい")
             
         }
     }

@@ -19,7 +19,6 @@ class NewsViewController: SegementSlideDefaultViewController{
 
     defaultSelectedIndex = 0
         
-   
     }
 
     override func segementSlideHeaderView() -> UIView {
