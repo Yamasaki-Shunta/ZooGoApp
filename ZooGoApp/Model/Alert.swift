@@ -11,12 +11,21 @@ import UIKit
 
 class Alert {
  // OKのみアラート
- static func okAlert(vc: UIViewController, title: String, message: String, handler: ((UIAlertAction) -> Void)? = nil) {
+ static func okActionAlert(vc: UIViewController, title: String, message: String, handler: ((UIAlertAction) -> Void)? = nil) {
+    
     let okAlertVC = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
    okAlertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: handler))
    vc.present(okAlertVC, animated: true, completion: nil)
     
  }
+    
+    static func okAlert(vc: UIViewController, title: String, message: String, handler: ((UIAlertAction) -> Void)? = nil) {
+       
+        let okAlertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+      okAlertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: handler))
+      vc.present(okAlertVC, animated: true, completion: nil)
+       
+    }
 
  // OK&キャンセルアラート
     static func cancelAlert(vc: UIViewController, title: String, message: String, handler: ((UIAlertAction) -> Void)? = nil) {
@@ -49,6 +58,9 @@ class Alert {
      autoCloseAlertVC.dismiss(animated: true, completion: nil)
     
    }
+    
   }
+    
  }
+    
 }

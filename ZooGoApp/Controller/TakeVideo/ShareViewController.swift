@@ -45,7 +45,6 @@ class ShareViewController: UIViewController {
         
     }
     
-    
     func setUPVideoPlayer(url:URL){
            
            self.view.backgroundColor = UIColor.black

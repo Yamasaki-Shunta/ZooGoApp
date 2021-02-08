@@ -30,8 +30,6 @@ class MusicModel: UIViewController{
     
     var musicDelegate:MusicProtocol?
     
-    
-  
     //通信Alamofire
     //JSON解析
     
@@ -78,7 +76,6 @@ class MusicModel: UIViewController{
                         self.preViewUrlArray.append(json["results"][i]["previewUrl"].string!)
                         self.artworkUrl100Array.append(json["results"][i]["artworkUrl100"].string!)
                     
-                    
                     }
                     
                     //全てのデータが取得完了している状態
@@ -96,9 +93,7 @@ class MusicModel: UIViewController{
             }
             
         }
-    
         
     }
-    
     
 }
