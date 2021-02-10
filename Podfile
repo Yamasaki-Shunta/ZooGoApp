@@ -9,13 +9,11 @@ target 'ZooGoApp' do
 
 pod 'lottie-ios'
 pod 'SegementSlide'
-pod 'ImpressiveNotifications'
 pod "SwiftyCam"
 pod 'SwiftyJSON', '~> 4.0'
 pod 'Alamofire', '~> 5.2'
 pod 'SwiftVideoGenerator'
 pod 'SDWebImage', '~> 5.0'
-pod 'NVActivityIndicatorView'
 pod 'Koloda', '~> 5.0.1'
 
 
