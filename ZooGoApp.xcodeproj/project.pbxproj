@@ -41,8 +41,8 @@
 		6EE9E6CD25A2EE35008FDB33 /* MatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9E6CC25A2EE35008FDB33 /* MatchingViewController.swift */; };
 		6EE9E6D525A5FB3D008FDB33 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE9E6D425A5FB3D008FDB33 /* ResultViewController.swift */; };
 		6EEBE30725C2F43F002FBCB3 /* 4.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EEBE30325C2F43E002FBCB3 /* 4.json */; };
-		6EEBE30825C2F43F002FBCB3 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EEBE30425C2F43F002FBCB3 /* 3.json */; };
 		6EEBE30925C2F43F002FBCB3 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EEBE30525C2F43F002FBCB3 /* 2.json */; };
+		6EFC3F8325D226030035D658 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EFC3F8225D226030035D658 /* 3.json */; };
 		9BD4DC279D0074BEC8515CB0 /* Pods_ZooGoApp_ZooGoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912CE5296352D55BFE60C7AC /* Pods_ZooGoApp_ZooGoAppUITests.framework */; };
 		B0913851DCA00EE84F80BA5A /* Pods_ZooGoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C1728321376BFF4000E295 /* Pods_ZooGoAppTests.framework */; };
 		D58D36B24AE8CAC4442DF8DB /* Pods_ZooGoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33EE8755C58CFC0795C8E984 /* Pods_ZooGoApp.framework */; };
@@ -110,8 +110,8 @@
 		6EE9E6CC25A2EE35008FDB33 /* MatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingViewController.swift; sourceTree = "<group>"; };
 		6EE9E6D425A5FB3D008FDB33 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		6EEBE30325C2F43E002FBCB3 /* 4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 4.json; sourceTree = "<group>"; };
-		6EEBE30425C2F43F002FBCB3 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
 		6EEBE30525C2F43F002FBCB3 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
+		6EFC3F8225D226030035D658 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
 		70C1728321376BFF4000E295 /* Pods_ZooGoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZooGoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		912CE5296352D55BFE60C7AC /* Pods_ZooGoApp_ZooGoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZooGoApp_ZooGoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AE8A63A2E9C086DE1B2720 /* Pods-ZooGoApp-ZooGoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooGoApp-ZooGoAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZooGoApp-ZooGoAppUITests/Pods-ZooGoApp-ZooGoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -267,7 +267,7 @@
 			children = (
 				6E6A075A25C2FCEF00362DC9 /* 1.json */,
 				6EEBE30525C2F43F002FBCB3 /* 2.json */,
-				6EEBE30425C2F43F002FBCB3 /* 3.json */,
+				6EFC3F8225D226030035D658 /* 3.json */,
 				6EEBE30325C2F43E002FBCB3 /* 4.json */,
 			);
 			path = Json;
@@ -428,9 +428,9 @@
 				6E9097B2259DCA4700DFDFA4 /* LaunchScreen.storyboard in Resources */,
 				6E8D4D2625BB39F500E40F70 /* 録画音声.mp3 in Resources */,
 				6E9097AF259DCA4700DFDFA4 /* Assets.xcassets in Resources */,
-				6EEBE30825C2F43F002FBCB3 /* 3.json in Resources */,
 				6E9097AD259DCA4600DFDFA4 /* Main.storyboard in Resources */,
 				6EEBE30725C2F43F002FBCB3 /* 4.json in Resources */,
+				6EFC3F8325D226030035D658 /* 3.json in Resources */,
 				6E6A075B25C2FCEF00362DC9 /* 1.json in Resources */,
 				6E0F746F25C17D320000B7E1 /* 決定音声.mp3 in Resources */,
 			);
@@ -762,12 +762,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = 6Q39474W8H;
 				INFOPLIST_FILE = ZooGoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shunta.ZooGoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -782,12 +784,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = 6Q39474W8H;
 				INFOPLIST_FILE = ZooGoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shunta.ZooGoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
